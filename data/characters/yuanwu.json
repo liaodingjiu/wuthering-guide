@@ -1,1 +1,9 @@
-{"name": "Yuanwu", "slug": "yuanwu", "rarity": "4", "attribute": "Electro", "weapon": "Gauntlets", "cls": "Natural"}
+{
+  "name": "Yuanwu",
+  "slug": "yuanwu",
+  "rarity": "4",
+  "attribute": "Electro",
+  "weapon": "Gauntlets",
+  "cls": "Natural",
+  "description": "He owns a boxing gym where he teaches martial arts and health management, and is well-respected in the community for his cordial demeanor and pleasant temperament."
+}

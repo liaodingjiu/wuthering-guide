@@ -1,1 +1,9 @@
-{"name": "Sanhua", "slug": "sanhua", "rarity": "4", "attribute": "Glacio", "weapon": "Sword", "cls": "Mutant"}
+{
+  "name": "Sanhua",
+  "slug": "sanhua",
+  "rarity": "4",
+  "attribute": "Glacio",
+  "weapon": "Sword",
+  "cls": "Mutant",
+  "description": "She is the loyal and reliable guard of Jinzhou Magistrate Jinhsi who perceives a world distinctly different from that in the eyes of others."
+}

@@ -1,1 +1,7 @@
-{"name": "Rover", "slug": "rover", "rarity": "5", "attribute": "Multiple", "weapon": "Sword"}
+{
+  "name": "Rover",
+  "slug": "rover",
+  "rarity": "5",
+  "attribute": "Multiple",
+  "weapon": "Sword"
+}

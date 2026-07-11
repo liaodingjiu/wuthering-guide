@@ -1,1 +1,9 @@
-{"name": "Zani", "slug": "zani", "rarity": "5", "attribute": "Spectro", "weapon": "Gauntlets", "cls": "Mutant"}
+{
+  "name": "Zani",
+  "slug": "zani",
+  "rarity": "5",
+  "attribute": "Spectro",
+  "weapon": "Gauntlets",
+  "cls": "Mutant",
+  "description": "She is a staff member of the Montelli Family's Averardo Bank in Ragunna. As a serious and reliable Montelli employee, Zani follows a strict routine and manages tasks with ease. For years, she has clocked in on time without fail, finding as much enjoyment in her well-ordered life as in her carefully planned moments of leisure."
+}

@@ -1,1 +1,9 @@
-{"name": "Zhezhi", "slug": "zhezhi", "rarity": "5", "attribute": "Glacio", "weapon": "Rectifier", "cls": "Congenital"}
+{
+  "name": "Zhezhi",
+  "slug": "zhezhi",
+  "rarity": "5",
+  "attribute": "Glacio",
+  "weapon": "Rectifier",
+  "cls": "Congenital",
+  "description": "She is a commissioned painter, quiet and shy with a dedication to her craft. She's not very eloquent, but her persistence and love for painting speak volumes."
+}

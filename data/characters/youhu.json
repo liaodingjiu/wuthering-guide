@@ -1,1 +1,9 @@
-{"name": "Youhu", "slug": "youhu", "rarity": "4", "attribute": "Glacio", "weapon": "Gauntlets", "cls": "Mutant"}
+{
+  "name": "Youhu",
+  "slug": "youhu",
+  "rarity": "4",
+  "attribute": "Glacio",
+  "weapon": "Gauntlets",
+  "cls": "Mutant",
+  "description": "She is an antiquarian from Huanglong."
+}

@@ -1,1 +1,9 @@
-{"name": "Phoebe", "slug": "phoebe", "rarity": "5", "attribute": "Spectro", "weapon": "Rectifier", "cls": "Unclear"}
+{
+  "name": "Phoebe",
+  "slug": "phoebe",
+  "rarity": "5",
+  "attribute": "Spectro",
+  "weapon": "Rectifier",
+  "cls": "Unclear",
+  "description": "She is an [[Order of the Deep#Acolyte|Acolyte]] of the Order of the Deep. A young woman of quiet devotion and compassionate, nurturing nature, she upholds the teachings of her faith with unwavering diligence. Raised her entire life as a devout Acolyte, she extends her heartfelt kindness to everyone she meets with her good graces and unquestionable reverence to Sentinel Imperator."
+}

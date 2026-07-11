@@ -1,1 +1,9 @@
-{"name": "Yangyang", "slug": "yangyang", "rarity": "4", "attribute": "Aero", "weapon": "Sword", "cls": "Natural"}
+{
+  "name": "Yangyang",
+  "slug": "yangyang",
+  "rarity": "4",
+  "attribute": "Aero",
+  "weapon": "Sword",
+  "cls": "Natural",
+  "description": "She is an outrider of the Midnight Rangers."
+}

@@ -1,1 +1,9 @@
-{"name": "Rebecca", "slug": "rebecca", "rarity": "5", "attribute": "Electro", "weapon": "Pistols", "cls": "Mutant"}
+{
+  "name": "Rebecca",
+  "slug": "rebecca",
+  "rarity": "5",
+  "attribute": "Electro",
+  "weapon": "Pistols",
+  "cls": "Mutant",
+  "description": "She is a part of the collaboration with ."
+}

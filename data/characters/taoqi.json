@@ -1,1 +1,9 @@
-{"name": "Taoqi", "slug": "taoqi", "rarity": "4", "attribute": "Havoc", "weapon": "Broadblade", "cls": "Natural"}
+{
+  "name": "Taoqi",
+  "slug": "taoqi",
+  "rarity": "4",
+  "attribute": "Havoc",
+  "weapon": "Broadblade",
+  "cls": "Natural",
+  "description": "She is the director of border defense at the Ministry of Development."
+}

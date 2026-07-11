@@ -1,1 +1,9 @@
-{"name": "Sigrika", "slug": "sigrika", "rarity": "5", "attribute": "Aero", "weapon": "Gauntlets", "cls": "Congenital"}
+{
+  "name": "Sigrika",
+  "slug": "sigrika",
+  "rarity": "5",
+  "attribute": "Aero",
+  "weapon": "Gauntlets",
+  "cls": "Congenital",
+  "description": "She is a student in the Preparatory Program at Startorch Academy and a member of its Birding Fan Club as well as a  from the Roya Tribe."
+}

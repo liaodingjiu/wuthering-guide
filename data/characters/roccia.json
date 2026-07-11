@@ -1,1 +1,9 @@
-{"name": "Roccia", "slug": "roccia", "rarity": "5", "attribute": "Havoc", "weapon": "Gauntlets", "cls": "Acquired"}
+{
+  "name": "Roccia",
+  "slug": "roccia",
+  "rarity": "5",
+  "attribute": "Havoc",
+  "weapon": "Gauntlets",
+  "cls": "Acquired",
+  "description": "She is a gifted improvisational comedian and the First Mate of the Troupe of Fools. While bashful and introverted, she, alongside Pero, her closest companion, possesses a repertoire of tools and talents to protect and nurture her friends and newfound family."
+}

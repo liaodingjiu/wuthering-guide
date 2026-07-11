@@ -1,1 +1,8 @@
-{"name": "Suisui", "slug": "suisui", "rarity": "5", "attribute": "Glacio", "weapon": "Rectifier"}
+{
+  "name": "Suisui",
+  "slug": "suisui",
+  "rarity": "5",
+  "attribute": "Glacio",
+  "weapon": "Rectifier",
+  "description": "Born into a noble family of Mingting, she is the brilliant young director of the Zhaoming Commerce Guild."
+}

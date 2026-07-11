@@ -1,1 +1,9 @@
-{"name": "Xiangli Yao", "slug": "xiangli-yao", "rarity": "5", "attribute": "Electro", "weapon": "Gauntlets", "cls": "Mutant"}
+{
+  "name": "Xiangli Yao",
+  "slug": "xiangli-yao",
+  "rarity": "5",
+  "attribute": "Electro",
+  "weapon": "Gauntlets",
+  "cls": "Mutant",
+  "description": "He is the Principal Investigator in charge of the academics at [[Huaxu Academy|Huaxu Academy's]] Jinzhou Campus. He is the Academy's youngest multi-disciplinary scientist, and an expert in the research of Automata Mechanics."
+}
