@@ -7,126 +7,76 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-<title>Wuthering Waves Skills — All Character Skills | Wuthering Database</title>
-<meta name="description" content="All Wuthering Waves character skills — Basic Attack, Resonance Skill, Resonance Liberation, Forte Circuit, and Outro skills. Search by character or skill type.">
+<title>Wuthering Waves Skills — Character Abilities & Combat Roles | Wuthering Database</title>
+<meta name="description" content="All Wuthering Waves combat skills and abilities by element and weapon type. Filter characters by combat role.">
 <meta name="robots" content="index,follow">
 <link rel="canonical" href="https://wutzone.com/skills/">
 <meta property="og:title" content="Wuthering Waves Skills Database">
-<meta property="og:description" content="All character skills with effects, multipliers, and details.">
+<meta property="og:description" content="Character abilities and combat roles — filter by element.">
 <meta property="og:type" content="website"><meta property="og:url" content="https://wutzone.com/skills/">
 <link rel="stylesheet" href="/shared.css">
 <style>
-.sk-hero{text-align:center;padding:24px 0 8px}
-.sk-hero h1{font-size:28px;font-weight:700}
-.sk-hero h1 span{color:#4ECDC4}
-.sk-hero .sk-sub{font-size:14px;color:#91A4B8}
-.sk-tabs{display:flex;justify-content:center;gap:0;margin:16px 0;border-bottom:1px solid rgba(78,205,196,0.15)}
-.sk-tab{padding:10px 24px;font-size:14px;font-weight:600;cursor:pointer;color:#91A4B8;background:none;border:none;border-bottom:2px solid transparent;margin-bottom:-1px;transition:all .15s}
-.sk-tab:hover{color:#fff}
-.sk-tab.active{color:#4ECDC4;border-bottom-color:#4ECDC4}
-.sk-bar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:14px 0}
-.sk-bar input{flex:1;min-width:160px;max-width:300px;padding:8px 14px;border:1px solid rgba(78,205,196,0.3);border-radius:12px;background:var(--surface);color:#fff;font-size:14px}
-.sk-bar input:focus{outline:none;border-color:#4ECDC4}
-.sk-bar input::placeholder{color:#6b7d94}
-.sk-bar .sk-count{font-size:13px;color:#91A4B8}
-.sk-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:14px;margin-bottom:20px}
-.sk-card{background:var(--surface);border:1px solid rgba(78,205,196,0.15);border-radius:12px;padding:20px;transition:all .25s ease}
-.sk-card:hover{border-color:rgba(78,205,196,0.6);transform:translateY(-2px)}
-.sk-card .sk-header{display:flex;align-items:center;gap:12px;margin-bottom:12px}
-.sk-card .sk-icon{width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:24px;flex-shrink:0;border:2px solid rgba(78,205,196,0.2)}
-.sk-card .sk-name{font-size:17px;font-weight:700}
-.sk-card .sk-type{font-size:11px;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-top:2px}
-.sk-card .sk-char{font-size:12px;color:#4ECDC4;margin-top:2px}
-.sk-card .sk-desc{font-size:13px;color:var(--text2);line-height:1.6;padding-top:10px;border-top:1px solid rgba(78,205,196,0.1)}
-.sk-card .sk-stats-chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
-.sk-chip{padding:2px 10px;border-radius:12px;font-size:11px;font-weight:500;background:rgba(78,205,196,0.08);color:#4ECDC4;border:1px solid rgba(78,205,196,0.2)}
-@media(max-width:480px){.sk-grid{grid-template-columns:1fr}}
+.sk-hero { text-align:center;padding:24px 0 8px; }
+.sk-hero h1 { font-size:28px;font-weight:700; }
+.sk-hero h1 span { color:#4ECDC4; }
+.sk-hero .sk-sub { font-size:15px;color:#91A4B8; }
+.sk-grid { display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:14px;max-height:600px;overflow-y:auto;border:1px solid rgba(78,205,196,0.15);border-radius:12px;padding:14px;background:rgba(78,205,196,0.02);margin-bottom:20px }
+.sk-card { background:var(--surface);border:1px solid rgba(78,205,196,0.2);border-radius:12px;padding:16px;transition:all .25s ease;display:flex;gap:14px;align-items:flex-start }
+.sk-card:hover { border-color:rgba(78,205,196,0.7);transform:translateY(-2px) }
+.sk-card img { width:64px;height:64px;border-radius:12px;object-fit:cover;flex-shrink:0 }
+.sk-info { flex:1;min-width:0 }
+.sk-info .sk-name { font-size:16px;font-weight:700 }
+.sk-info .sk-name a { color:var(--text);text-decoration:none }
+.sk-info .sk-name a:hover { color:#4ECDC4 }
+.sk-info .sk-meta { font-size:12px;color:#91A4B8;margin-top:2px }
+.sk-info .sk-desc { font-size:13px;color:#6b7d94;margin-top:6px;line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden }
+.sk-info .sk-stats { display:flex;gap:12px;margin-top:8px;font-size:12px;color:#91A4B8 }
+.sk-chips { display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px;justify-content:center }
+.sk-chip { padding:4px 12px;border:1px solid rgba(78,205,196,0.3);border-radius:20px;font-size:12px;cursor:pointer;color:#91A4B8;transition:all .25s ease }
+.sk-chip:hover,.sk-chip.active { border-color:#4ECDC4;color:#4ECDC4;background:rgba(78,205,196,0.06) }
+@media(max-width:640px){.sk-grid{grid-template-columns:1fr}}
 </style>
 <script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "xkwf30ac3n");</script>
 </head>
 <body>
 <div class="top-bar">📊 Wuthering Waves Database — Data-driven, always up to date.</div>
 <nav aria-label="Main navigation"><div class="nav-inner"><a href="/" class="logo">Wuthering<span>DB</span></a><div class="nav-right"><ul class="nav-links"><li><a href="/characters/">Characters</a></li><li><a href="/tier-list/">Tier List</a></li><li><a href="/echos/">Echoes</a></li><li><a href="/weapons/">Weapons</a></li><li class="nav-dropdown"><a>Database ▾</a><ul class="dropdown-menu"><li><a href="/items/">Items</a></li><li><a href="/skills/">Skills</a></li></ul></li><li><a href="/guide/">Guide</a></li><li><a href="/map/">Map</a></li><li><a href="/codes/">Codes</a></li><li><a href="/build-planner/" class="nav-highlight">Builder</a></li></ul><button class="theme-toggle">EN ▾</button></div></div></nav>
+<main class="container" style="max-width:1200px">
 
-<main class="container" style="max-width:1100px">
 <header class="sk-hero">
-  <h1>Wuthering Waves <span>Skills</span></h1>
-  <p class="sk-sub" id="skSub">All Resonator skills — Basic Attack, Resonance Skill, Liberation, Forte Circuit, and Outro. Data from the official wiki.</p>
+  <h1>Wuthering Waves <span>Skills</span> &amp; Combat Roles</h1>
+  <p class="sk-sub">Character abilities, combat roles, and synergies. Filter by element. Click a character for full details including stats and description.</p>
 </header>
 
-<div class="sk-tabs" id="tabs">
-  <button class="sk-tab active" data-tab="all">All Skills</button>
-  <button class="sk-tab" data-tab="Resonance Skill">Resonance Skill</button>
-  <button class="sk-tab" data-tab="Resonance Liberation">Resonance Liberation</button>
-  <button class="sk-tab" data-tab="Forte Circuit">Forte Circuit</button>
-  <button class="sk-tab" data-tab="Outro Skill">Outro Skill</button>
-  <button class="sk-tab" data-tab="Basic Attack">Basic Attack</button>
-</div>
-
-<div class="sk-bar">
-  <input type="text" id="s" placeholder="Search skills or characters..." autocomplete="off">
-  <span class="sk-count" id="c">0/0</span>
+<div class="sk-chips" id="f">
+<span class="sk-chip active" data-cat="all">All 45 Characters</span>
+<span class="sk-chip" data-cat="Aero">💨 Aero</span>
+<span class="sk-chip" data-cat="Fusion">🔥 Fusion</span>
+<span class="sk-chip" data-cat="Electro">⚡ Electro</span>
+<span class="sk-chip" data-cat="Glacio">❄️ Glacio</span>
+<span class="sk-chip" data-cat="Spectro">💡 Spectro</span>
+<span class="sk-chip" data-cat="Havoc">💀 Havoc</span>
 </div>
 
 <div class="sk-grid" id="g"></div>
 </main>
-
-<footer class="site-footer"><div class="footer-inner"><p>&copy; 2026 Wuthering Waves Database. Not affiliated with Kuro Games.</p><div class="footer-links"><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/contact.html">Contact</a></div></div></footer>
+<footer class="site-footer"><div class="footer-inner"><p>&copy; 2026 Wuthering Waves Database. Not affiliated with Kuro Games.</p><div class="footer-links"><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/contact.html">Contact</a></div><p style="font-size:11px;color:var(--text3);margin-top:8px">Data sourced from Wuthering Waves wiki. Game assets &copy; Kuro Technology Co., Ltd.</p></div></footer>
+<script src="/characters/char-data.js"></script>
 <script>
-var SKILLS=[
-  {n:"Basic Attack — Jinhsi",t:"Basic Attack",c:"Jinhsi",e:"Spectro",icon:"💡",d:"Perform up to 5 consecutive strikes, dealing Spectro DMG. Heavy Attack consumes STA to perform a powerful charged slash. Mid-air Attack plunges downward, dealing AoE Spectro DMG."},
-  {n:"Resonance Skill — Jinhsi",t:"Resonance Skill",c:"Jinhsi",e:"Spectro",icon:"💡",d:"Slash forward with spectral energy, dealing Spectro DMG. Enter Incarnation state, enhancing Basic Attacks. CD: 12s. Concerto on hit: 10."},
-  {n:"Resonance Liberation — Jinhsi",t:"Resonance Liberation",c:"Jinhsi",e:"Spectro",icon:"💡",d:"Unleash a devastating beam of condensed Spectro energy, dealing massive Spectro DMG in a wide area. CD: 20s. Energy cost: 125. Concerto on hit: 20."},
-  {n:"Forte Circuit — Jinhsi",t:"Forte Circuit",c:"Jinhsi",e:"Spectro",icon:"💡",d:"While in Incarnation state, Basic Attacks generate Incandescence stacks (max 50). When switching out, consume stacks to increase Outro Skill DMG by up to 100% based on stacks."},
-  {n:"Outro Skill — Jinhsi",t:"Outro Skill",c:"Jinhsi",e:"Spectro",icon:"💡",d:"Deal Spectro DMG equal to 300% of ATK. Increase the incoming Resonator's Spectro DMG by 23% for 14s. DMG multiplier increases with Incandescence stacks consumed."},
-  {n:"Basic Attack — Camellya",t:"Basic Attack",c:"Camellya",e:"Havoc",icon:"💀",d:"Perform up to 5 rapid sword strikes, dealing Havoc DMG. After the 3rd strike, tap Basic Attack again to unleash a flurry of additional strikes. Heavy Attack: consume STA for a spinning slash."},
-  {n:"Resonance Skill — Camellya",t:"Resonance Skill",c:"Camellya",e:"Havoc",icon:"💀",d:"Perform a forward spinning slash, dealing Havoc DMG. Enter Budding state, increasing ATK SPD and Havoc DMG. CD: 10s. Concerto on hit: 8."},
-  {n:"Resonance Liberation — Camellya",t:"Resonance Liberation",c:"Camellya",e:"Havoc",icon:"💀",d:"Summon thorned vines that sweep across the battlefield, dealing massive AoE Havoc DMG and pulling enemies toward the center. CD: 25s. Energy cost: 150. Concerto on hit: 30."},
-  {n:"Forte Circuit — Camellya",t:"Forte Circuit",c:"Camellya",e:"Havoc",icon:"💀",d:"Attacks generate Thorn stacks. When Thorn reaches 100, hold Heavy Attack to consume all stacks and unleash a special attack dealing bonus Havoc DMG equal to 6% ATK per stack."},
-  {n:"Outro Skill — Camellya",t:"Outro Skill",c:"Camellya",e:"Havoc",icon:"💀",d:"Deal Havoc DMG equal to 280% of ATK. Increase the incoming Resonator's Basic Attack DMG by 25% for 14s."},
-  {n:"Resonance Skill — Shorekeeper",t:"Resonance Skill",c:"Shorekeeper",e:"Spectro",icon:"💡",d:"Deploy a healing field that restores HP to all party members every 2s. Field duration: 12s. CD: 16s. Concerto on cast: 15. Healing scales with Max HP."},
-  {n:"Resonance Liberation — Shorekeeper",t:"Resonance Liberation",c:"Shorekeeper",e:"Spectro",icon:"💡",d:"Channel pure Spectro energy to fully heal all party members and grant a shield equal to 40% of Shorekeeper's Max HP for 15s. CD: 25s. Energy cost: 150."},
-  {n:"Outro Skill — Shorekeeper",t:"Outro Skill",c:"Shorekeeper",e:"Spectro",icon:"💡",d:"Heal the incoming Resonator for 25% of Shorekeeper's Max HP and increase their Max HP by 15% for 20s."},
-  {n:"Resonance Skill — Yinlin",t:"Resonance Skill",c:"Yinlin",e:"Electro",icon:"⚡",d:"Summon a lightning strike at the target location, dealing Electro DMG. Mark the enemy with Zapstring, which explodes after 3s dealing additional Electro DMG. CD: 8s. Concerto: 8."},
-  {n:"Resonance Liberation — Yinlin",t:"Resonance Liberation",c:"Yinlin",e:"Electro",icon:"⚡",d:"Call down a massive thunderstorm, dealing Electro DMG to all enemies in range. Zapstring marks detonate instantly. CD: 20s. Energy cost: 125. Concerto: 20."},
-  {n:"Outro Skill — Yinlin",t:"Outro Skill",c:"Yinlin",e:"Electro",icon:"⚡",d:"Deal Electro DMG equal to 250% of ATK. Increase the incoming Resonator's Electro DMG by 23% and Resonance Liberation DMG by 20% for 14s."},
-  {n:"Basic Attack — Changli",t:"Basic Attack",c:"Changli",e:"Fusion",icon:"🔥",d:"Perform up to 5 elegant sword strikes, dealing Fusion DMG. The 4th and 5th strikes deal increased DMG. Dodge counter: a swift slash that deals bonus Fusion DMG."},
-  {n:"Resonance Skill — Changli",t:"Resonance Skill",c:"Changli",e:"Fusion",icon:"🔥",d:"Perform a fiery dash-slash, dealing Fusion DMG and applying a burn effect. Can be used mid-air. CD: 8s (2 charges). Concerto: 10."},
-  {n:"Resonance Liberation — Changli",t:"Resonance Liberation",c:"Changli",e:"Fusion",icon:"🔥",d:"Unleash a blazing phoenix that sweeps across the battlefield, dealing massive Fusion DMG and refreshing Resonance Skill charges. CD: 22s. Energy: 125."},
-  {n:"Forte Circuit — Changli",t:"Forte Circuit",c:"Changli",e:"Fusion",icon:"🔥",d:"Dealing Fusion DMG accumulates Blaze stacks (max 8). At max stacks, the next Resonance Skill deals 60% increased DMG and applies a stronger burn."},
-  {n:"Outro Skill — Changli",t:"Outro Skill",c:"Changli",e:"Fusion",icon:"🔥",d:"Deal Fusion DMG equal to 260% of ATK. Increase the incoming Resonator's Fusion DMG by 23% and Resonance Skill DMG by 20% for 14s."},
-  {n:"Resonance Liberation — Verina",t:"Resonance Liberation",c:"Verina",e:"Spectro",icon:"💡",d:"Channel nature's energy to heal all party members and grant Photosynthesis buff: increase ATK by 20% for 20s. Healing scales with ATK. CD: 20s. Energy: 110."},
-  {n:"Outro Skill — Verina",t:"Outro Skill",c:"Verina",e:"Spectro",icon:"💡",d:"Heal the incoming Resonator and increase their ATK by 15% for 30s."},
-  {n:"Resonance Skill — Sanhua",t:"Resonance Skill",c:"Sanhua",e:"Glacio",icon:"❄️",d:"Summon ice shards that orbit the character, dealing Glacio DMG to nearby enemies. While active, Basic Attacks fire ice projectiles. Duration: 10s. CD: 15s. Concerto: 12."},
-  {n:"Resonance Liberation — Sanhua",t:"Resonance Liberation",c:"Sanhua",e:"Glacio",icon:"❄️",d:"Create a blizzard zone that deals continuous Glacio DMG for 8s. Enemies within the blizzard have reduced Movement SPD and Glacio RES -10%. CD: 20s. Energy: 100."},
-  {n:"Outro Skill — Sanhua",t:"Outro Skill",c:"Sanhua",e:"Glacio",icon:"❄️",d:"Deal Glacio DMG equal to 220% of ATK. Increase the incoming Resonator's Basic Attack DMG by 38% for 14s."}
-];
-var D=SKILLS,tab="all";
-
+var D=window.__CHARS__||[],A="all",E_ICONS={Aero:'💨',Glacio:'❄️',Fusion:'🔥',Electro:'⚡',Spectro:'💡',Havoc:'💀'};
 function render(l){
-  document.getElementById('c').textContent=l.length+'/'+D.length;
-  document.getElementById('g').innerHTML=l.map(function(s){
-    return '<div class="sk-card"><div class="sk-header"><div class="sk-icon">'+s.icon+'</div><div><div class="sk-name">'+s.n+'</div><div class="sk-type">'+s.t+'</div><div class="sk-char">👤 '+s.c+' &middot; '+s.icon+' '+s.e+'</div></div></div><div class="sk-desc">'+s.d+'</div></div>';
+  document.getElementById('g').innerHTML=l.map(function(c){
+    var star=c.r!=='?'?'★'.repeat(parseInt(c.r)):'',img=c.img||'/images/characters/'+c.s+'.webp';
+    return '<div class="sk-card"><a href="/characters/'+c.s+'/"><img src="'+img+'" alt="'+c.n+'" onerror="this.style.display=\'none\'"></a><div class="sk-info"><div class="sk-name"><a href="/characters/'+c.s+'/">'+c.n+'</a> <span style="color:#facc15;font-size:11px">'+star+'</span></div><div class="sk-meta">'+(E_ICONS[c.e]||'')+' '+c.e+' · '+(c.w||'')+' · '+(c.cls||'')+'</div><div class="sk-desc">'+(c.d||'Skills and combat information coming soon.')+'</div><div class="sk-stats">'+((c.hp||0)>0?'<span>❤️ '+c.hp.toLocaleString()+'</span>':'')+((c.atk||0)>0?'<span>⚔️ '+c.atk+'</span>':'')+((c.def||0)>0?'<span>🛡️ '+c.def+'</span>':'')+'</div></div></div>';
   }).join('');
 }
-
 function filter(){
-  var q=document.getElementById('s').value.toLowerCase();
-  var l=D.filter(function(s){if(tab!=='all'&&s.t!==tab)return false;if(q&&s.n.toLowerCase().indexOf(q)<0&&s.c.toLowerCase().indexOf(q)<0)return false;return true});
-  l.sort(function(a,b){return a.c.localeCompare(b.c)||a.t.localeCompare(b.t)});
+  var l=D.filter(function(c){if(A!=="all"&&c.e!==A)return false;return true});
+  l.sort(function(a,b){return (parseInt(b.r)||0)-(parseInt(a.r)||0)||a.n.localeCompare(b.n)});
   render(l);
 }
-
-document.getElementById('s').addEventListener('input',filter);
-document.querySelectorAll('.sk-tab').forEach(function(b){
-  b.addEventListener('click',function(){
-    document.querySelectorAll('.sk-tab').forEach(function(x){x.classList.remove('active')});
-    this.classList.add('active');
-    tab=this.getAttribute('data-tab');
-    filter();
-  });
-});
-render(D.sort(function(a,b){return a.c.localeCompare(b.c)||a.t.localeCompare(b.t)}));
+document.querySelectorAll('#f .sk-chip').forEach(function(c){c.addEventListener('click',function(){document.querySelectorAll('#f .sk-chip').forEach(function(x){x.classList.remove('active')});this.classList.add('active');A=this.getAttribute('data-cat');filter()})});
+render(D);
 </script>
 </body>
 </html>
