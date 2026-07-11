@@ -20,7 +20,8 @@
 .wp-card { background:var(--surface); border:1px solid rgba(78,205,196,0.2); border-radius:12px; padding:14px 8px 10px; text-align:center; transition:all .25s ease; cursor:pointer; text-decoration:none; color:var(--text); display:flex; flex-direction:column; align-items:center; position:relative; }
 .wp-card:hover { border-color:rgba(78,205,196,0.7); transform:translateY(-2px); }
 .wp-card .wp-rarity { position:absolute;top:8px;right:8px;font-size:10px;padding:1px 6px;border-radius:4px;font-weight:700; }
-.wp-card .wp-icon { width:56px;height:56px;border-radius:50%;background:rgba(78,205,196,0.05);display:flex;align-items:center;justify-content:center;font-size:26px;margin-bottom:8px;border:2px solid rgba(78,205,196,0.2); }
+.wp-card .wp-icon { width:80px;height:80px;border-radius:12px;overflow:hidden;background:rgba(78,205,196,0.05);display:flex;align-items:center;justify-content:center;font-size:26px;margin-bottom:8px; }
+.wp-card .wp-icon img { width:100%;height:100%;object-fit:contain;background:transparent; }
 .wp-card .wp-name { font-size:12px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%; }
 .wp-card .wp-type { font-size:10px;color:#6b7d94;margin-top:2px; }
 .wp-card .wp-atk { font-size:13px;font-weight:700;color:#4ECDC4;margin-top:4px; }
@@ -74,7 +75,7 @@ function render(l){
     var star=w.r!=='?'?'★'+w.r:'',rc=w.r==='5'?'r-5':w.r==='4'?'r-4':'r-3',icon=TYPE_ICONS[w.t]||'⚔️';
     return '<a href="/weapons/'+w.s+'/" class="wp-card">'+
       (star?'<span class="wp-rarity '+rc+'">'+star+'</span>':'')+
-      '<div class="wp-icon"><img src="/images/weapons/'+w.s+'.webp" alt="'+w.n+'" style="width:56px;height:56px;border-radius:50%;object-fit:contain" onerror="this.style.display=\'none\'"></div>'+
+      '<div class="wp-icon"><img src="/images/weapons/'+w.s+'.webp" alt="'+w.n+'" style="width:100%;height:100%;object-fit:contain;background:transparent" onerror="this.style.display=\'none\'"></div>'+
       '<span class="wp-name">'+w.n+'</span>'+
       '<span class="wp-type">'+w.t+'</span>'+
       '<span class="wp-atk">ATK '+w.a+'</span>'+
