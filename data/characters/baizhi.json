@@ -7,5 +7,11 @@
   "cls": "Mutant",
   "birthday": "September 10th",
   "birthplace": "Huanglong",
-  "description": "She is a researcher in Remnant Ecoacoustics at Huaxu Academy. Baizhi's once unfulfilled wish has now manifested as her loyal companion. The Remnant Creature You'tan is her source of healing powers, and a lifelong research focus."
+  "description": "She is a researcher in Remnant Ecoacoustics at Huaxu Academy. Baizhi's once unfulfilled wish has now manifested as her loyal companion. The Remnant Creature You'tan is her source of healing powers, and a lifelong research focus.",
+  "stats": {
+    "hp": 12813,
+    "atk": 213,
+    "def": 1002,
+    "energy": 175
+  }
 }

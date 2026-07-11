@@ -7,5 +7,11 @@
   "cls": "Mutant",
   "birthday": "Unknown",
   "birthplace": "Ashinohara",
-  "description": "Chisa is a conscientious, level-headed student from the Startorch Academy. To her, everything can be broken down, analyzed, and resolved, with the exception of human bonding. Bonds can be severed, but this fragility is what makes them precious."
+  "description": "Chisa is a conscientious, level-headed student from the Startorch Academy. To her, everything can be broken down, analyzed, and resolved, with the exception of human bonding. Bonds can be severed, but this fragility is what makes them precious.",
+  "stats": {
+    "hp": 10775,
+    "atk": 438,
+    "def": 1136,
+    "energy": 125
+  }
 }

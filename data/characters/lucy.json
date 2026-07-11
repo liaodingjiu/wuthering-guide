@@ -7,5 +7,11 @@
   "cls": "Mutant",
   "birthday": "|birthplace       = Unknown",
   "birthplace": "Unknown",
-  "description": "She is a part of the collaboration with ."
+  "description": "She is a part of the collaboration with .",
+  "stats": {
+    "hp": 11025,
+    "atk": 425,
+    "def": 1149,
+    "energy": 150
+  }
 }

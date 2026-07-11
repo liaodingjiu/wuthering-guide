@@ -7,5 +7,11 @@
   "cls": "Natural",
   "birthday": "|birthplace       = New Federation",
   "birthplace": "New Federation",
-  "description": "She is a researcher for the Spacetrek Collective and a professor for Exostrider Engineering at Startorch Academy. She was a student at Startorch 20 years ago before the Void Storm hit Lahai-Roi."
+  "description": "She is a researcher for the Spacetrek Collective and a professor for Exostrider Engineering at Startorch Academy. She was a student at Startorch 20 years ago before the Void Storm hit Lahai-Roi.",
+  "stats": {
+    "hp": 15375,
+    "atk": 288,
+    "def": 1356,
+    "energy": 125
+  }
 }

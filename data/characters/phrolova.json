@@ -5,5 +5,11 @@
   "attribute": "Havoc",
   "weapon": "Rectifier",
   "cls": "Mutant",
-  "description": "She is a particularly powerful Resonator and a former Overseer of the Fractsidus. Her forte can manipulate and transfigure the frequencies of humans, Echoes, and Tacet Discords alike."
+  "description": "She is a particularly powerful Resonator and a former Overseer of the Fractsidus. Her forte can manipulate and transfigure the frequencies of humans, Echoes, and Tacet Discords alike.",
+  "stats": {
+    "hp": 10775,
+    "atk": 438,
+    "def": 1136,
+    "energy": 125
+  }
 }

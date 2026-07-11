@@ -7,5 +7,11 @@
   "cls": "Unclear",
   "birthday": "|birthplace       = Rinascita",
   "birthplace": "Rinascita",
-  "description": "She is a free-spirited, romantic, sincere, and whimsical bard wandering Rinascita in search of inspiration. A passionate musician, poet, and storyteller for both commoners as well as the Divinity, Ciaccona aims to spread her talents, truths, and discoveries of the world around her to all those daring enough to listen."
+  "description": "She is a free-spirited, romantic, sincere, and whimsical bard wandering Rinascita in search of inspiration. A passionate musician, poet, and storyteller for both commoners as well as the Divinity, Ciaccona aims to spread her talents, truths, and discoveries of the world around her to all those daring enough to listen.",
+  "stats": {
+    "hp": 12238,
+    "atk": 375,
+    "def": 1198,
+    "energy": 125
+  }
 }

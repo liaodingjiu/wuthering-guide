@@ -7,5 +7,11 @@
   "cls": "Unclear",
   "birthday": "|birthplace       = New Federation",
   "birthplace": "New Federation",
-  "description": "He is the head physician of the Resonator Nursing Unit at Startorch Academy, serving as an attending medical doctor and mental health counselor, with a mysterious past."
+  "description": "He is the head physician of the Resonator Nursing Unit at Startorch Academy, serving as an attending medical doctor and mental health counselor, with a mysterious past.",
+  "stats": {
+    "hp": 10300,
+    "atk": 463,
+    "def": 1112,
+    "energy": 125
+  }
 }

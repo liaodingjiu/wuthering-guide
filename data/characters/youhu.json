@@ -5,5 +5,11 @@
   "attribute": "Glacio",
   "weapon": "Gauntlets",
   "cls": "Mutant",
-  "description": "She is an antiquarian from Huanglong."
+  "description": "She is an antiquarian from Huanglong.",
+  "stats": {
+    "hp": 9975,
+    "atk": 263,
+    "def": 1051,
+    "energy": 125
+  }
 }

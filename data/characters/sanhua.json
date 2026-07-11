@@ -5,5 +5,11 @@
   "attribute": "Glacio",
   "weapon": "Sword",
   "cls": "Mutant",
-  "description": "She is the loyal and reliable guard of Jinzhou Magistrate Jinhsi who perceives a world distinctly different from that in the eyes of others."
+  "description": "She is the loyal and reliable guard of Jinzhou Magistrate Jinhsi who perceives a world distinctly different from that in the eyes of others.",
+  "stats": {
+    "hp": 10063,
+    "atk": 275,
+    "def": 941,
+    "energy": 100
+  }
 }

@@ -5,5 +5,11 @@
   "attribute": "Glacio",
   "weapon": "Rectifier",
   "cls": "Congenital",
-  "description": "She is a commissioned painter, quiet and shy with a dedication to her craft. She's not very eloquent, but her persistence and love for painting speak volumes."
+  "description": "She is a commissioned painter, quiet and shy with a dedication to her craft. She's not very eloquent, but her persistence and love for painting speak volumes.",
+  "stats": {
+    "hp": 12250,
+    "atk": 375,
+    "def": 1198,
+    "energy": 125
+  }
 }

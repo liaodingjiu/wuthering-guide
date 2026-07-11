@@ -7,5 +7,11 @@
   "cls": "Unclear",
   "birthday": "|birthplace       = Ashinohara",
   "birthplace": "Ashinohara",
-  "description": "She is a  and member of the Special Response Force with a long-standing connection to the Threnodian."
+  "description": "She is a  and member of the Special Response Force with a long-standing connection to the Threnodian.",
+  "stats": {
+    "hp": 10300,
+    "atk": 463,
+    "def": 1112,
+    "energy": 125
+  }
 }

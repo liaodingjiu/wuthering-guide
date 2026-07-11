@@ -5,5 +5,11 @@
   "attribute": "Havoc",
   "weapon": "Sword",
   "cls": "Natural",
-  "description": "==Combat Overview=="
+  "description": "==Combat Overview==",
+  "stats": {
+    "hp": 10200,
+    "atk": 250,
+    "def": 1100,
+    "energy": 100
+  }
 }

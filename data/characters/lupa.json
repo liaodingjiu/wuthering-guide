@@ -6,5 +6,11 @@
   "weapon": "Broadblade",
   "cls": "Non",
   "birthplace": "Rinascita",
-  "description": "She is a gladiator from Septimont, a warrior and undefeated champion of the arena with both an untamed,  competitive spirit and an honorable, valiant heart. While indulging in the adrenaline of hard-fought victories, she is also a loyal, prideful protector of her city and upholds its values with everything she holds dear."
+  "description": "She is a gladiator from Septimont, a warrior and undefeated champion of the arena with both an untamed,  competitive spirit and an honorable, valiant heart. While indulging in the adrenaline of hard-fought victories, she is also a loyal, prideful protector of her city and upholds its values with everything she holds dear.",
+  "stats": {
+    "hp": 11913,
+    "atk": 388,
+    "def": 1185,
+    "energy": 125
+  }
 }

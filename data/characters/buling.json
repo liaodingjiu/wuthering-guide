@@ -7,5 +7,11 @@
   "cls": "Natural",
   "birthday": "|birthplace       = Huanglong",
   "birthplace": "Huanglong",
-  "description": "She is a Black Shores Consultant, known as the \"Spiritchaser Taoist,\" who wanders far and wide investigating and sharing the strange and mysterious. She is a master of fortune-telling, feng shui, and other arts of divination. To cover the expenses in her travels, she sells talismans and offers her divination services, which she thinks of as a sort of guidance for those in need."
+  "description": "She is a Black Shores Consultant, known as the \"Spiritchaser Taoist,\" who wanders far and wide investigating and sharing the strange and mysterious. She is a master of fortune-telling, feng shui, and other arts of divination. To cover the expenses in her travels, she sells talismans and offers her divination services, which she thinks of as a sort of guidance for those in need.",
+  "stats": {
+    "hp": 10625,
+    "atk": 225,
+    "def": 1259,
+    "energy": 125
+  }
 }

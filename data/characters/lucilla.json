@@ -7,5 +7,11 @@
   "cls": "Unclear",
   "birthday": "|birthplace       = New Federation",
   "birthplace": "New Federation",
-  "description": "She is the president and the head of Startorch Academy. She was the former chief editor for the New Federation's top academic journal and an associate of Mortefi."
+  "description": "She is the president and the head of Startorch Academy. She was the former chief editor for the New Federation's top academic journal and an associate of Mortefi.",
+  "stats": {
+    "hp": 12238,
+    "atk": 375,
+    "def": 1198,
+    "energy": 150
+  }
 }

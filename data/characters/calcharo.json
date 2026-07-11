@@ -7,5 +7,11 @@
   "cls": "Natural",
   "birthday": "July 8th",
   "birthplace": "New Federation",
-  "description": "He is a former Exile from the New Federation's Lawless Zone and the leader of the Ghost Hounds."
+  "description": "He is a former Exile from the New Federation's Lawless Zone and the leader of the Ghost Hounds.",
+  "stats": {
+    "hp": 10500,
+    "atk": 438,
+    "def": 1185,
+    "energy": 125
+  }
 }

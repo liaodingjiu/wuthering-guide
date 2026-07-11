@@ -7,5 +7,11 @@
   "cls": "Mutant",
   "birthday": "November 6th",
   "birthplace": "New Federation",
-  "description": "He hails from the New Federation and is the head of the Branch of Tacetite Weaponry within the Department of Safety in Huaxu Academy at Jinzhou."
+  "description": "He hails from the New Federation and is the head of the Branch of Tacetite Weaponry within the Department of Safety in Huaxu Academy at Jinzhou.",
+  "stats": {
+    "hp": 10025,
+    "atk": 250,
+    "def": 1136,
+    "energy": 125
+  }
 }

@@ -5,5 +5,11 @@
   "attribute": "Havoc",
   "weapon": "Gauntlets",
   "cls": "Acquired",
-  "description": "She is a gifted improvisational comedian and the First Mate of the Troupe of Fools. While bashful and introverted, she, alongside Pero, her closest companion, possesses a repertoire of tools and talents to protect and nurture her friends and newfound family."
+  "description": "She is a gifted improvisational comedian and the First Mate of the Troupe of Fools. While bashful and introverted, she, alongside Pero, her closest companion, possesses a repertoire of tools and talents to protect and nurture her friends and newfound family.",
+  "stats": {
+    "hp": 12250,
+    "atk": 375,
+    "def": 1198,
+    "energy": 125
+  }
 }

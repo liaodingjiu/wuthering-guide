@@ -7,5 +7,11 @@
   "cls": "Congenital",
   "birthday": "|birthplace       = New Federation",
   "birthplace": "New Federation",
-  "description": "She is a Preparatory Program student at Startorch Academy. Before attending Startorch she was a mercenary from the Lawless Zone in New Federation. In order to escape from the Lawless Zone she stole the identity of the real [[Lynae (Fractsidus)|Lynae]]\u2014a Fractsidus operative, who was attending Startorch Academy as a spy."
+  "description": "She is a Preparatory Program student at Startorch Academy. Before attending Startorch she was a mercenary from the Lawless Zone in New Federation. In order to escape from the Lawless Zone she stole the identity of the real [[Lynae (Fractsidus)|Lynae]]\u2014a Fractsidus operative, who was attending Startorch Academy as a spy.",
+  "stats": {
+    "hp": 12238,
+    "atk": 375,
+    "def": 1198,
+    "energy": 125
+  }
 }

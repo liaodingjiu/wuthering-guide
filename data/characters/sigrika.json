@@ -5,5 +5,11 @@
   "attribute": "Aero",
   "weapon": "Gauntlets",
   "cls": "Congenital",
-  "description": "She is a student in the Preparatory Program at Startorch Academy and a member of its Birding Fan Club as well as a  from the Roya Tribe."
+  "description": "She is a student in the Preparatory Program at Startorch Academy and a member of its Birding Fan Club as well as a  from the Roya Tribe.",
+  "stats": {
+    "hp": 10775,
+    "atk": 438,
+    "def": 1136,
+    "energy": 125
+  }
 }

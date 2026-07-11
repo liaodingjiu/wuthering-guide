@@ -5,5 +5,11 @@
   "attribute": "Electro",
   "weapon": "Pistols",
   "cls": "Mutant",
-  "description": "She is a part of the collaboration with ."
+  "description": "She is a part of the collaboration with .",
+  "stats": {
+    "hp": 11600,
+    "atk": 400,
+    "def": 1173,
+    "energy": 150
+  }
 }
