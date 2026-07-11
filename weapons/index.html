@@ -74,7 +74,7 @@ function render(l){
     var star=w.r!=='?'?'★'+w.r:'',rc=w.r==='5'?'r-5':w.r==='4'?'r-4':'r-3',icon=TYPE_ICONS[w.t]||'⚔️';
     return '<a href="/weapons/'+w.s+'/" class="wp-card">'+
       (star?'<span class="wp-rarity '+rc+'">'+star+'</span>':'')+
-      '<div class="wp-icon">'+icon+'</div>'+
+      '<div class="wp-icon"><img src="/images/weapons/'+w.s+'.webp" alt="'+w.n+'" style="width:56px;height:56px;border-radius:50%;object-fit:contain" onerror="this.style.display=\'none\'"></div>'+
       '<span class="wp-name">'+w.n+'</span>'+
       '<span class="wp-type">'+w.t+'</span>'+
       '<span class="wp-atk">ATK '+w.a+'</span>'+

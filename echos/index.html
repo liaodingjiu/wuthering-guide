@@ -73,7 +73,7 @@ function render(l){
     var icon=ELEM_ICONS[e.e]||'🔮',elColor=ELEM_COLORS[e.e]||'#4ECDC4';
     return '<a href="/echos/'+e.s+'/" class="echo-card">'+
       '<span class="echo-cost">Cost '+e.c+'</span>'+
-      '<div class="echo-icon" style="border-color:'+elColor+'">'+icon+'</div>'+
+      '<div class="echo-icon" style="border-color:'+elColor+'"><img src="/images/echos/'+e.s+'.webp" alt="'+e.n+'" style="width:56px;height:56px;border-radius:50%;object-fit:contain" onerror="this.style.display=\'none\'"></div>'+
       '<span class="echo-name">'+e.n+'</span>'+
       '<span class="echo-element">'+icon+' '+e.e+'</span>'+
       '<span class="echo-sonata">'+(SE_ICONS[e.se]||'')+' '+e.se+'</span>'+
