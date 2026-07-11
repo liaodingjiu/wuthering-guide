@@ -1,0 +1,10 @@
+{
+  "name": "Dreamless",
+  "slug": "dreamless",
+  "cost": 4,
+  "element": "Havoc",
+  "sonata_effect": "Sun-sinking Eclipse",
+  "skill_name": "Nightmare Wave",
+  "skill_desc": "Transform into Dreamless and release a wave of Havoc energy, dealing DMG and reducing enemy DEF by 10% for 10s.",
+  "description": "An echo born from restless nightmares. It never truly sleeps, and neither do those caught in its wave of endless darkness."
+}

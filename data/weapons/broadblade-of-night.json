@@ -1,0 +1,12 @@
+{
+  "name": "Broadblade of Night",
+  "slug": "broadblade-of-night",
+  "rarity": "4",
+  "type": "Broadblade",
+  "base_atk": 462,
+  "substat": "ATK",
+  "substat_val": "36.4%",
+  "passive_name": "Nightfall Slash",
+  "passive_desc": "Increases DMG dealt to enemies with less than 50% HP by 20%.",
+  "description": "A broadblade that grows sharper as darkness approaches. When the sun sets and shadows lengthen, this blade awakens with a hunger for victory that can only be sated by the fall of mighty foes."
+}

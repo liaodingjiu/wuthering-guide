@@ -1,0 +1,10 @@
+{
+  "name": "Mech Abomination",
+  "slug": "mech-abomination",
+  "cost": 4,
+  "element": "Electro",
+  "sonata_effect": "Void Thunder",
+  "skill_name": "Mech Barrage",
+  "skill_desc": "Transform into Mech Abomination and fire a barrage of missiles, dealing Electro DMG to all enemies in the target area.",
+  "description": "A mechanical echo of unknown origin, bristling with weapons. It fights with cold, calculated precision, each missile launched a testament to its mysterious creator."
+}

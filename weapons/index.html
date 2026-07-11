@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<title>Wuthering Waves Weapons — All Weapons List | Wuthering Database</title>
+<meta name="description" content="All Wuthering Waves weapons with base ATK, substats, and passive effects. Search, filter by type and rarity, and find the best weapon for every Resonator.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://wutzone.com/weapons/">
+<meta property="og:title" content="Wuthering Waves Weapons List">
+<meta property="og:description" content="All weapons with base ATK, substats, and passive effects.">
+<meta property="og:type" content="website"><meta property="og:url" content="https://wutzone.com/weapons/">
+<link rel="stylesheet" href="/shared.css">
+<style>
+.wp-grid { display:grid; grid-template-columns:repeat(7,1fr); gap:10px; max-height:640px; overflow-y:auto; border:1px solid rgba(78,205,196,0.15); border-radius:12px; padding:12px; background:rgba(78,205,196,0.02); }
+.wp-card { background:var(--surface); border:1px solid rgba(78,205,196,0.2); border-radius:12px; padding:14px 8px 10px; text-align:center; transition:all .25s ease; cursor:pointer; text-decoration:none; color:var(--text); display:flex; flex-direction:column; align-items:center; position:relative; }
+.wp-card:hover { border-color:rgba(78,205,196,0.7); transform:translateY(-2px); }
+.wp-card .wp-rarity { position:absolute;top:8px;right:8px;font-size:10px;padding:1px 6px;border-radius:4px;font-weight:700; }
+.wp-card .wp-icon { width:56px;height:56px;border-radius:50%;background:rgba(78,205,196,0.05);display:flex;align-items:center;justify-content:center;font-size:26px;margin-bottom:8px;border:2px solid rgba(78,205,196,0.2); }
+.wp-card .wp-name { font-size:12px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%; }
+.wp-card .wp-type { font-size:10px;color:#6b7d94;margin-top:2px; }
+.wp-card .wp-atk { font-size:13px;font-weight:700;color:#4ECDC4;margin-top:4px; }
+.wp-card .wp-sub { font-size:10px;color:#91A4B8;margin-top:2px; }
+.r-5{background:rgba(250,204,21,0.2);color:#facc15}.r-4{background:rgba(192,132,252,0.2);color:#c084fc}.r-3{background:rgba(96,165,250,0.2);color:#60a5fa}
+.wp-bar { display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:14px 0; }
+.wp-bar input { flex:1;min-width:160px;max-width:320px;padding:8px 14px;border:1px solid rgba(78,205,196,0.3);border-radius:12px;background:var(--surface);color:#fff;font-size:15px; }
+.wp-bar input:focus { outline:none;border-color:#4ECDC4; }
+.wp-bar input::placeholder { color:#6b7d94; }
+.wp-bar select { padding:8px 12px;border:1px solid rgba(78,205,196,0.3);border-radius:12px;background:var(--surface);color:#fff;font-size:14px; }
+.wp-bar .wp-count { font-size:14px;color:#91A4B8;white-space:nowrap; }
+.wp-hero { text-align:center;padding:24px 0 8px; }
+.wp-hero h1 { font-size:32px;font-weight:700; }
+.wp-hero h1 span { color:#4ECDC4; }
+.wp-hero .wp-sub { font-size:15px;color:#91A4B8; }
+.TYPE_ICONS={Broadblade:'⚔️',Sword:'🗡️',Pistols:'🔫',Gauntlets:'🥊',Rectifier:'📿'}
+@media(max-width:1400px){.wp-grid{grid-template-columns:repeat(5,1fr)}}
+@media(max-width:768px){.wp-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:480px){.wp-grid{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+<div class="top-bar">📊 Wuthering Waves Database — Data-driven, always up to date.</div>
+<nav aria-label="Main navigation"><div class="nav-inner"><a href="/" class="logo">Wuthering<span>DB</span></a><div class="nav-right"><ul class="nav-links"><li><a href="/characters/">Characters</a></li><li><a href="/tier-list/">Tier List</a></li><li><a href="/echos/">Echoes</a></li><li><a href="/weapons/">Weapons</a></li><li class="nav-dropdown"><a>Database ▾</a><ul class="dropdown-menu"><li><a href="/items/">Items</a></li><li><a href="/skills/">Skills</a></li></ul></li><li><a href="/guide/">Guide</a></li><li><a href="/map/">Map</a></li><li><a href="/codes/">Codes</a></li><li><a href="/build-planner/" class="nav-highlight">Builder</a></li></ul><button class="theme-toggle">EN ▾</button></div></div></nav>
+
+<main class="container" style="max-width:1500px">
+
+<header class="wp-hero">
+  <h1>Wuthering Waves <span>Weapons</span></h1>
+  <p class="wp-sub" id="wpSub">All 48 weapons with base ATK, substats, and passive effects. Data from the official wiki.</p>
+</header>
+
+<div class="wp-bar">
+  <input type="text" id="s" placeholder="Search weapons..." autocomplete="off">
+  <span class="wp-count" id="c">48/48</span>
+  <select id="rarity"><option value="all">All Rarities</option><option value="5">★★★★★</option><option value="4">★★★★</option><option value="3">★★★</option></select>
+  <select id="type"><option value="all">All Types</option><option>Broadblade</option><option>Sword</option><option>Pistols</option><option>Gauntlets</option><option>Rectifier</option></select>
+</div>
+
+<div class="wp-grid" id="g"></div>
+</main>
+
+<footer class="site-footer"><div class="footer-inner"><p>&copy; 2026 Wuthering Waves Database. Not affiliated with Kuro Games.</p><div class="footer-links"><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/contact.html">Contact</a></div></div></footer>
+<script src="/weapons/weapons-data.js"></script>
+<script>
+var D=window.__WEAPONS__||[], TYPE_ICONS={Broadblade:'⚔️',Sword:'🗡️',Pistols:'🔫',Gauntlets:'🥊',Rectifier:'📿'};
+function render(l){
+  document.getElementById('c').textContent=l.length+'/'+D.length;
+  document.getElementById('g').innerHTML=l.map(function(w){
+    var star=w.r!=='?'?'★'+w.r:'',rc=w.r==='5'?'r-5':w.r==='4'?'r-4':'r-3',icon=TYPE_ICONS[w.t]||'⚔️';
+    return '<a href="/weapons/'+w.s+'/" class="wp-card">'+
+      (star?'<span class="wp-rarity '+rc+'">'+star+'</span>':'')+
+      '<div class="wp-icon">'+icon+'</div>'+
+      '<span class="wp-name">'+w.n+'</span>'+
+      '<span class="wp-type">'+w.t+'</span>'+
+      '<span class="wp-atk">ATK '+w.a+'</span>'+
+      '<span class="wp-sub">'+w.sub+' '+w.sv+'</span>'+
+    '</a>';
+  }).join('');
+}
+function filter(){
+  var q=document.getElementById('s').value.toLowerCase(),r=document.getElementById('rarity').value,t=document.getElementById('type').value;
+  var l=D.filter(function(w){if(r!=='all'&&w.r!==r)return false;if(t!=='all'&&w.t!==t)return false;if(q&&w.n.toLowerCase().indexOf(q)<0&&w.t.toLowerCase().indexOf(q)<0)return false;return true});
+  l.sort(function(a,b){if(a.r!==b.r)return parseInt(b.r)-parseInt(a.r);return a.n.localeCompare(b.n)});
+  render(l);
+}
+document.getElementById('s').addEventListener('input',filter);
+document.getElementById('rarity').addEventListener('change',filter);
+document.getElementById('type').addEventListener('change',filter);
+render(D);
+</script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "Sword of Voyager",
+  "slug": "sword-of-voyager",
+  "rarity": "4",
+  "type": "Sword",
+  "base_atk": 412,
+  "substat": "DEF",
+  "substat_val": "51.8%",
+  "passive_name": "Wanderer Edge",
+  "passive_desc": "Increases DEF by 16%. When taking DMG, increases ATK by 6% for 8s, stacking up to 3 times.",
+  "description": "A travel-worn sword carried across countless lands by wanderers who called no place home. Its nicked edge tells stories of distant shores and battles fought under unfamiliar stars."
+}

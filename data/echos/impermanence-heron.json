@@ -1,0 +1,10 @@
+{
+  "name": "Impermanence Heron",
+  "slug": "impermanence-heron",
+  "cost": 4,
+  "element": "Havoc",
+  "sonata_effect": "Sun-sinking Eclipse",
+  "skill_name": "Ephemeral Wing",
+  "skill_desc": "Transform into Impermanence Heron and unleash a flurry of wing strikes, dealing Havoc DMG. Upon hit, reduce enemy Havoc RES by 10%.",
+  "description": "A fleeting echo that embodies the impermanence of all things. Its wings beat once and vanish, leaving only the memory of their devastating passage."
+}

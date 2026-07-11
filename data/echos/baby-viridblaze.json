@@ -1,0 +1,10 @@
+{
+  "name": "Baby Viridblaze",
+  "slug": "baby-viridblaze",
+  "cost": 1,
+  "element": "Fusion",
+  "sonata_effect": "Molten Rift",
+  "skill_name": "Tiny Flame",
+  "skill_desc": "Spit a small fireball at enemies, dealing Fusion DMG.",
+  "description": "A tiny echo with a fiery temperament. What it lacks in size, it makes up for in enthusiasm, spitting flames with surprising accuracy."
+}

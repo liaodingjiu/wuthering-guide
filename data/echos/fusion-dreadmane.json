@@ -1,0 +1,10 @@
+{
+  "name": "Fusion Dreadmane",
+  "slug": "fusion-dreadmane",
+  "cost": 1,
+  "element": "Fusion",
+  "sonata_effect": "Molten Rift",
+  "skill_name": "Burning Bite",
+  "skill_desc": "Bite enemies with flaming jaws, dealing Fusion DMG and applying burn.",
+  "description": "An echo with a mane of living fire. Its bite sets wounds ablaze, leaving enemies to contend with both the initial damage and the lingering burn."
+}

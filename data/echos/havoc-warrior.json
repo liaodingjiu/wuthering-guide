@@ -1,0 +1,10 @@
+{
+  "name": "Havoc Warrior",
+  "slug": "havoc-warrior",
+  "cost": 1,
+  "element": "Havoc",
+  "sonata_effect": "Sun-sinking Eclipse",
+  "skill_name": "Dark Strike",
+  "skill_desc": "Strike enemies with Havoc energy, dealing Havoc DMG.",
+  "description": "A shadowy echo that wields raw Havoc power. Its strikes leave dark afterimages that confuse and disorient those who witness them."
+}

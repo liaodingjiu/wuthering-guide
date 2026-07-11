@@ -1,0 +1,10 @@
+{
+  "name": "Carapace",
+  "slug": "carapace",
+  "cost": 3,
+  "element": "Aero",
+  "sonata_effect": "Lingering Tunes",
+  "skill_name": "Armor Up",
+  "skill_desc": "Harden shell, increasing DEF by 30% for 10s. While active, reflects 15% of incoming DMG as Aero DMG.",
+  "description": "An echo whose shell is harder than forged steel. Wind swirls around it constantly, deflecting attacks back at those foolish enough to strike."
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Flautist",
+  "slug": "flautist",
+  "cost": 3,
+  "element": "Spectro",
+  "sonata_effect": "Celestial Light",
+  "skill_name": "Soothing Melody",
+  "skill_desc": "Transform into Flautist and play a melody that heals nearby allies and deals Spectro DMG to enemies.",
+  "description": "An echo that plays a flute whose notes can mend wounds or shatter stone. Its music bridges the gap between creation and destruction."
+}

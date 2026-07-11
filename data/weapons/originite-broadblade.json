@@ -1,0 +1,12 @@
+{
+  "name": "Originite Broadblade",
+  "slug": "originite-broadblade",
+  "rarity": "3",
+  "type": "Broadblade",
+  "base_atk": 354,
+  "substat": "ATK",
+  "substat_val": "24.2%",
+  "passive_name": "Basic Edge",
+  "passive_desc": "Increases Heavy Attack DMG by 12%.",
+  "description": "A standard-issue broadblade forged from refined Originite. Reliable and straightforward, it serves as the foundation upon which countless warriors have built their strength."
+}

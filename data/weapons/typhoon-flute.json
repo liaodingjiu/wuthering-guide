@@ -1,0 +1,12 @@
+{
+  "name": "Typhoon Flute",
+  "slug": "typhoon-flute",
+  "rarity": "4",
+  "type": "Rectifier",
+  "base_atk": 412,
+  "substat": "ATK",
+  "substat_val": "30.6%",
+  "passive_name": "Storm Caller",
+  "passive_desc": "Increases Aero DMG by 20%. After casting Resonance Liberation, increases party ATK by 8% for 12s.",
+  "description": "A rectifier shaped like an ancient flute that commands the winds. Its haunting melody can summon gentle breezes or raging typhoons, depending on the will of the one who plays it."
+}

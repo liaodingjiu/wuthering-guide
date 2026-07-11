@@ -1,0 +1,12 @@
+{
+  "name": "Celestial Spire",
+  "slug": "celestial-spire",
+  "rarity": "5",
+  "type": "Rectifier",
+  "base_atk": 500,
+  "substat": "ATK",
+  "substat_val": "53.9%",
+  "passive_name": "Heavenly Wisdom",
+  "passive_desc": "Increases all Elemental DMG Bonus by 16%. After casting Resonance Liberation, increases CRIT DMG by 20% for 12s.",
+  "description": "A rectifier that channels the accumulated knowledge of ancient astronomers. Its crystalline structure maps the positions of distant stars, and its power waxes and wanes with celestial rhythms."
+}

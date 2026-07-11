@@ -1,0 +1,10 @@
+{
+  "name": "Fission Junrock",
+  "slug": "fission-junrock",
+  "cost": 1,
+  "element": "Fusion",
+  "sonata_effect": "Lingering Tunes",
+  "skill_name": "Mini Eruption",
+  "skill_desc": "Cause a small volcanic eruption at target location, dealing Fusion DMG.",
+  "description": "A geological echo that taps into the planet molten core. Even its smallest eruptions can reshape the immediate terrain."
+}

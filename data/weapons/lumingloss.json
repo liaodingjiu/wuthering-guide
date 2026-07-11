@@ -1,0 +1,12 @@
+{
+  "name": "Lumingloss",
+  "slug": "lumingloss",
+  "rarity": "4",
+  "type": "Sword",
+  "base_atk": 462,
+  "substat": "ATK",
+  "substat_val": "36.4%",
+  "passive_name": "Dawn Blade",
+  "passive_desc": "Increases Resonance Skill DMG by 20%. After casting Resonance Skill, increases Basic Attack DMG by 12% for 8s.",
+  "description": "A blade that glows with the first light of dawn. Each morning, as sunlight touches its polished surface, it sings a single pure note that resonates with the awakening world."
+}

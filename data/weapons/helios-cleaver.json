@@ -1,0 +1,12 @@
+{
+  "name": "Helios Cleaver",
+  "slug": "helios-cleaver",
+  "rarity": "4",
+  "type": "Broadblade",
+  "base_atk": 412,
+  "substat": "ATK",
+  "substat_val": "30.6%",
+  "passive_name": "Solar Edge",
+  "passive_desc": "Increases Resonance Skill DMG by 16%. After Resonance Skill hits, increases ATK by 6% for 8s, stacking up to 2 times.",
+  "description": "A broadblade that captures and amplifies sunlight along its edge. Each swing releases stored solar energy in a devastating arc of heat and light."
+}

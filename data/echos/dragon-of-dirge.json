@@ -1,0 +1,10 @@
+{
+  "name": "Dragon of Dirge",
+  "slug": "dragon-of-dirge",
+  "cost": 4,
+  "element": "Aero",
+  "sonata_effect": "Sierra Gale",
+  "skill_name": "Dirge Breath",
+  "skill_desc": "Transform into Dragon of Dirge and breathe a torrent of wind, dealing Aero DMG in a large cone.",
+  "description": "A mournful dragon echo whose breath carries the lament of aeons. Its dirge is said to be the last sound heard by countless fallen warriors."
+}

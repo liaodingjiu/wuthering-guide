@@ -1,0 +1,10 @@
+{
+  "name": "Gulpuff",
+  "slug": "gulpuff",
+  "cost": 1,
+  "element": "Spectro",
+  "sonata_effect": "Rejuvenating Glow",
+  "skill_name": "Absorb",
+  "skill_desc": "Absorb surrounding energy, restoring a small amount of HP.",
+  "description": "A round, absorbent echo that soaks up ambient energy like a sponge. It shares this energy freely, making it a welcome companion in any party."
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Mourning Aix",
+  "slug": "mourning-aix",
+  "cost": 4,
+  "element": "Spectro",
+  "sonata_effect": "Celestial Light",
+  "skill_name": "Spectral Beam",
+  "skill_desc": "Transform into Mourning Aix and fire a concentrated beam of Spectro energy, dealing massive DMG in a line. Increases Spectro DMG Bonus by 12% for 15s.",
+  "description": "A sorrowful echo that weeps beams of pure light. Its mournful cry resonates with the grief of a thousand lost souls, yet its radiance pierces the deepest darkness."
+}

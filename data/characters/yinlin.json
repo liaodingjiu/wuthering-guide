@@ -1,0 +1,45 @@
+{
+  "s": "yinlin",
+  "n": "Yinlin",
+  "r": "5",
+  "e": "Electro",
+  "w": "Rectifier",
+  "cls": "Natural",
+  "hp": 13200,
+  "atk": 370,
+  "def": 1120,
+  "cr": 0.05,
+  "cd": 1.5,
+  "er": 1.1,
+  "desc": "The enigmatic consultant of the Public Security Bureau, Yinlin manipulates Electro energy with surgical precision. Her rectifier generates strings of lightning that mark and detonate targets from afar. Calm, calculating, and devastatingly effective — she never misses her mark.",
+  "skills": [
+    {
+      "n": "Basic Attack — Arc Lash",
+      "t": "Basic Attack",
+      "d": "Perform up to 4 ranged Electro attacks with the rectifier. The 4th attack fires a spread of 3 projectiles."
+    },
+    {
+      "n": "Resonance Skill — Zapstring Mark",
+      "t": "Resonance Skill",
+      "d": "Fire a lightning bolt at the target location, dealing Electro DMG and applying Zapstring mark. Marked enemies take bonus Electro DMG and explode after 3s for additional AoE DMG. CD: 8s. Concerto Energy: 8."
+    },
+    {
+      "n": "Resonance Liberation — Thunderstorm Decree",
+      "t": "Resonance Liberation",
+      "d": "Call down a devastating thunderstorm that strikes all enemies in a wide area, dealing massive Electro DMG. All active Zapstring marks detonate instantly for double damage. CD: 20s. Energy Cost: 125."
+    },
+    {
+      "n": "Forte Circuit — Conductive Web",
+      "t": "Forte Circuit",
+      "d": "When Zapstring marks detonate, they chain lightning to nearby unmarked enemies (max 3 chains). Chain lightning applies a weaker Zapstring. Each detonation grants 3 Concerto Energy."
+    },
+    {
+      "n": "Outro Skill — Static Discharge",
+      "t": "Outro Skill",
+      "d": "Deal Electro DMG equal to 250% of ATK. Increase the incoming Resonator's Electro DMG by 23% and Resonance Liberation DMG by 20% for 14s."
+    }
+  ],
+  "recWeapon": "stringmaster",
+  "recEcho": "thundering-mephis",
+  "recSet": "Void Thunder"
+}

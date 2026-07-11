@@ -1,0 +1,12 @@
+{
+  "name": "Ocean Gift",
+  "slug": "oceans-gift",
+  "rarity": "4",
+  "type": "Gauntlets",
+  "base_atk": 462,
+  "substat": "Energy Regen",
+  "substat_val": "30.6%",
+  "passive_name": "Tidal Blessing",
+  "passive_desc": "Increases Healing Bonus by 12%. When healing an ally, increases their ATK by 8% for 8s. CD 12s.",
+  "description": "Gauntlets bestowed by a mythical ocean spirit. Pearlescent scales shimmer across their surface, and they carry the gentle, rhythmic pulse of healing tides."
+}

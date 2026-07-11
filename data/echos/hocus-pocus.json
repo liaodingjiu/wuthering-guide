@@ -1,0 +1,10 @@
+{
+  "name": "Hocus Pocus",
+  "slug": "hocus-pocus",
+  "cost": 3,
+  "element": "Electro",
+  "sonata_effect": "Void Thunder",
+  "skill_name": "Trick Shot",
+  "skill_desc": "Fire a bouncing electro orb that hits up to 5 enemies. Each bounce increases DMG by 10%.",
+  "description": "A mischievous echo that delights in unpredictability. Its attacks never follow the same path twice, confounding enemies who try to anticipate its moves."
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Red Spring",
+  "slug": "red-spring",
+  "rarity": "5",
+  "type": "Sword",
+  "base_atk": 587,
+  "substat": "CRIT Rate",
+  "substat_val": "24.3%",
+  "passive_name": "Crimson Bloom",
+  "passive_desc": "Increases Basic Attack DMG by 20%. When dealing Basic Attack DMG, increases CRIT DMG by 8% for 4s, stacking up to 3 times.",
+  "description": "A scarlet blade said to bloom like spring flowers in the heat of battle. Each strike leaves a trail of crimson petals that scatter in the wind, marking the path of the swordmaster."
+}

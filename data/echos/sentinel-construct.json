@@ -1,0 +1,10 @@
+{
+  "name": "Sentinel Construct",
+  "slug": "sentinel-construct",
+  "cost": 4,
+  "element": "Spectro",
+  "sonata_effect": "Moonlit Clouds",
+  "skill_name": "Sentinel Beam",
+  "skill_desc": "Transform into Sentinel Construct and fire a massive laser, dealing Spectro DMG. Grants 20 Resonance Energy to the next character switching in.",
+  "description": "A towering construct echo that guards forgotten ruins. Its laser arrays can level buildings, and its energy reserves seem inexhaustible."
+}

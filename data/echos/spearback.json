@@ -1,0 +1,10 @@
+{
+  "name": "Spearback",
+  "slug": "spearback",
+  "cost": 3,
+  "element": "Fusion",
+  "sonata_effect": "Molten Rift",
+  "skill_name": "Spike Barrage",
+  "skill_desc": "Launch a volley of fiery spikes at enemies, dealing Fusion DMG. Ignites enemies, dealing additional DMG over 6s.",
+  "description": "A spiked echo that bristles with volcanic fury. Its quills burn at thousands of degrees, and it sheds them without hesitation in combat."
+}

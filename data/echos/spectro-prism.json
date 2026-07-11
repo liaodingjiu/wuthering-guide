@@ -1,0 +1,10 @@
+{
+  "name": "Spectro Prism",
+  "slug": "spectro-prism",
+  "cost": 1,
+  "element": "Spectro",
+  "sonata_effect": "Celestial Light",
+  "skill_name": "Light Beam",
+  "skill_desc": "Emit a focused beam of light, dealing Spectro DMG.",
+  "description": "A prismatic echo that concentrates ambient light into devastating beams. Each beam contains the full spectrum of visible light — and a few frequencies beyond."
+}

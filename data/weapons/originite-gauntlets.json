@@ -1,0 +1,12 @@
+{
+  "name": "Originite Gauntlets",
+  "slug": "originite-gauntlets",
+  "rarity": "3",
+  "type": "Gauntlets",
+  "base_atk": 354,
+  "substat": "ATK",
+  "substat_val": "24.2%",
+  "passive_name": "Iron Fist",
+  "passive_desc": "Increases Heavy Attack DMG by 10%.",
+  "description": "Heavy gauntlets cast from refined Originite ore. Their solid construction delivers satisfying impact with every punch, making them a favorite among brawlers."
+}

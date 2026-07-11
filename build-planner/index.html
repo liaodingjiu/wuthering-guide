@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<title>Wuthering Waves Build Planner — Create & Share Character Builds</title>
+<meta name="description" content="Interactive build planner for Wuthering Waves. Select a character, equip weapons and echoes, preview final stats. Save and share your builds.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://wutzone.com/build-planner/">
+<meta property="og:title" content="Wuthering Waves Build Planner">
+<meta property="og:description" content="Select a character, equip weapons and echoes, preview final stats.">
+<meta property="og:type" content="website"><meta property="og:url" content="https://wutzone.com/build-planner/">
+<link rel="stylesheet" href="/shared.css">
+<style>
+.bp-hero{text-align:center;padding:32px 0 8px}
+.bp-hero h1{font-size:32px;font-weight:700;margin-bottom:8px}
+.bp-hero h1 span{color:#3b82f6}
+.bp-hero .bp-sub{font-size:15px;color:#91A4B8;margin-bottom:8px}
+.bp-steps{display:flex;justify-content:center;gap:32px;margin:20px 0 24px;flex-wrap:wrap}
+.bp-step{display:flex;align-items:center;gap:8px;font-size:14px;color:#91A4B8}
+.bp-step .step-num{width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;background:var(--surface);border:2px solid rgba(78,205,196,0.3)}
+.bp-step.active .step-num{background:#3b82f6;border-color:#3b82f6;color:#fff}
+.bp-step.active{color:#fff;font-weight:600}
+.bp-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:10px;max-height:540px;overflow-y:auto;border:1px solid rgba(78,205,196,0.15);border-radius:12px;padding:12px;background:rgba(78,205,196,0.02)}
+.bp-card{background:var(--surface);border:1px solid rgba(78,205,196,0.2);border-radius:12px;padding:14px 8px 10px;text-align:center;cursor:pointer;text-decoration:none;color:var(--text);display:flex;flex-direction:column;align-items:center;position:relative;transition:all .25s ease}
+.bp-card:hover{border-color:rgba(59,130,246,0.7);transform:translateY(-2px)}
+.bp-card .bp-rarity{position:absolute;top:8px;right:8px;font-size:10px;padding:1px 6px;border-radius:4px;font-weight:700}
+.bp-card .bp-icon{width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;margin-bottom:8px;border:2px solid rgba(78,205,196,0.2)}
+.bp-card .bp-name{font-size:12px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+.bp-card .bp-meta{font-size:10px;color:#6b7d94;margin-top:2px}
+.bp-card .bp-weapon{font-size:10px;color:#91A4B8;margin-top:2px}
+.r-5{background:rgba(250,204,21,0.2);color:#facc15}.r-4{background:rgba(192,132,252,0.2);color:#c084fc}.r-3{background:rgba(96,165,250,0.2);color:#60a5fa}
+.bp-bar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:14px 0}
+.bp-bar input{flex:1;min-width:160px;max-width:320px;padding:8px 14px;border:1px solid rgba(78,205,196,0.3);border-radius:12px;background:var(--surface);color:#fff;font-size:15px}
+.bp-bar input:focus{outline:none;border-color:#3b82f6}
+.bp-bar input::placeholder{color:#6b7d94}
+.bp-bar select{padding:8px 12px;border:1px solid rgba(78,205,196,0.3);border-radius:12px;background:var(--surface);color:#fff;font-size:14px}
+.bp-bar .bp-count{font-size:14px;color:#91A4B8;white-space:nowrap}
+@media(max-width:1400px){.bp-grid{grid-template-columns:repeat(5,1fr)}}
+@media(max-width:768px){.bp-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:480px){.bp-grid{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+<div class="top-bar">📊 Wuthering Waves Database — Data-driven, always up to date.</div>
+<nav aria-label="Main navigation"><div class="nav-inner"><a href="/" class="logo">Wuthering<span>DB</span></a><div class="nav-right"><ul class="nav-links"><li><a href="/characters/">Characters</a></li><li><a href="/tier-list/">Tier List</a></li><li><a href="/echos/">Echoes</a></li><li><a href="/weapons/">Weapons</a></li><li class="nav-dropdown"><a>Database ▾</a><ul class="dropdown-menu"><li><a href="/items/">Items</a></li><li><a href="/skills/">Skills</a></li></ul></li><li><a href="/guide/">Guide</a></li><li><a href="/map/">Map</a></li><li><a href="/codes/">Codes</a></li><li><a href="/build-planner/" class="nav-highlight">Builder</a></li></ul><button class="theme-toggle">EN ▾</button></div></div></nav>
+
+<main class="container" style="max-width:1500px">
+
+<header class="bp-hero">
+  <h1>Wuthering Waves <span>Build Planner</span></h1>
+  <p class="bp-sub">Step 1: Select a character to start building. You'll choose weapons, echoes, and preview final stats.</p>
+  <div class="bp-steps">
+    <div class="bp-step active"><span class="step-num">1</span> Select Character</div>
+    <div class="bp-step"><span class="step-num">2</span> Equip Weapon</div>
+    <div class="bp-step"><span class="step-num">3</span> Choose Echoes</div>
+    <div class="bp-step"><span class="step-num">4</span> Preview Stats</div>
+  </div>
+</header>
+
+<div class="bp-bar">
+  <input type="text" id="s" placeholder="Search characters..." autocomplete="off">
+  <span class="bp-count" id="c">0/0</span>
+  <select id="rarity"><option value="all">All Rarities</option><option value="5">★★★★★</option><option value="4">★★★★</option></select>
+  <select id="element"><option value="all">All Elements</option><option value="Spectro">Spectro 💡</option><option value="Havoc">Havoc 💀</option><option value="Fusion">Fusion 🔥</option><option value="Glacio">Glacio ❄️</option><option value="Electro">Electro ⚡</option><option value="Aero">Aero 💨</option></select>
+  <select id="weapon"><option value="all">All Weapons</option><option>Broadblade</option><option>Sword</option><option>Pistols</option><option>Gauntlets</option><option>Rectifier</option></select>
+</div>
+
+<div class="bp-grid" id="g"></div>
+</main>
+
+<footer class="site-footer"><div class="footer-inner"><p>&copy; 2026 Wuthering Waves Database. Not affiliated with Kuro Games.</p><div class="footer-links"><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/contact.html">Contact</a></div></div></footer>
+<script src="/characters/char-data.js"></script>
+<script>
+var D=window.__CHARS__||[],WEP_ICONS={Broadblade:'⚔️',Sword:'🗡️',Pistols:'🔫',Gauntlets:'🥊',Rectifier:'📿'},ELEM_ICONS={Aero:'💨',Glacio:'❄️',Fusion:'🔥',Electro:'⚡',Spectro:'💡',Havoc:'💀'};
+
+// Filter to known playable characters (those with rarity, element and weapon type)
+var playable = D.filter(function(c){return c.r!=='?'&&c.e&&c.w});
+
+function render(l){
+  document.getElementById('c').textContent=l.length+'/'+playable.length;
+  document.getElementById('g').innerHTML=l.map(function(c){
+    var star='★'+c.r,rc=c.r==='5'?'r-5':c.r==='4'?'r-4':'',icon=ELEM_ICONS[c.e]||'👤';
+    return '<a href="/build-planner/editor.html?char='+encodeURIComponent(c.s)+'" class="bp-card">'+
+      '<span class="bp-rarity '+rc+'">'+star+'</span>'+
+      '<div class="bp-icon">'+icon+'</div>'+
+      '<span class="bp-name">'+c.n+'</span>'+
+      '<span class="bp-meta">'+icon+' '+c.e+'</span>'+
+      '<span class="bp-weapon">'+(WEP_ICONS[c.w]||'')+' '+c.w+'</span>'+
+    '</a>';
+  }).join('');
+}
+
+function filter(){
+  var q=document.getElementById('s').value.toLowerCase(),r=document.getElementById('rarity').value,el=document.getElementById('element').value,w=document.getElementById('weapon').value;
+  var l=playable.filter(function(c){if(r!=='all'&&c.r!==r)return false;if(el!=='all'&&c.e!==el)return false;if(w!=='all'&&c.w!==w)return false;if(q&&c.n.toLowerCase().indexOf(q)<0)return false;return true});
+  l.sort(function(a,b){if(a.r!==b.r)return parseInt(b.r)-parseInt(a.r);return a.n.localeCompare(b.n)});
+  render(l);
+}
+
+document.getElementById('s').addEventListener('input',filter);
+document.getElementById('rarity').addEventListener('change',filter);
+document.getElementById('element').addEventListener('change',filter);
+document.getElementById('weapon').addEventListener('change',filter);
+render(playable.sort(function(a,b){if(a.r!==b.r)return parseInt(b.r)-parseInt(a.r);return a.n.localeCompare(b.n)}));
+</script>
+</body>
+</html>

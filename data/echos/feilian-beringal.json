@@ -1,0 +1,10 @@
+{
+  "name": "Feilian Beringal",
+  "slug": "feilian-beringal",
+  "cost": 4,
+  "element": "Aero",
+  "sonata_effect": "Sierra Gale",
+  "skill_name": "Beringal Slam",
+  "skill_desc": "Transform into Feilian Beringal and perform a devastating ground slam, dealing Aero DMG in a wide area. Knocks down smaller enemies.",
+  "description": "A massive simian echo whose very footsteps cause tremors. It channels the raw power of mountain winds through its primal fury."
+}

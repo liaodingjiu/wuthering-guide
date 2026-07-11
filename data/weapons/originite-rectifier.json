@@ -1,0 +1,12 @@
+{
+  "name": "Originite Rectifier",
+  "slug": "originite-rectifier",
+  "rarity": "3",
+  "type": "Rectifier",
+  "base_atk": 325,
+  "substat": "ATK",
+  "substat_val": "24.2%",
+  "passive_name": "Focused Beam",
+  "passive_desc": "Increases Resonance Skill DMG by 10%.",
+  "description": "A basic rectifier that converts raw Resonance energy into coherent beams. Its simple design makes it easy to maintain and reliable in extended operations."
+}

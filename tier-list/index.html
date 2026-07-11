@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<title>Wuthering Waves Tier List — Best Characters Ranked | Wuthering Database</title>
+<meta name="description" content="Data-driven Wuthering Waves tier list — S/A/B/C/D rankings for Main DPS, Sub-DPS, and Support. All Resonators ranked by verified stats and community consensus.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://wutzone.com/tier-list/">
+<meta property="og:title" content="Wuthering Waves Tier List">
+<meta property="og:description" content="S/A/B/C/D rankings for Main DPS, Sub-DPS, and Support roles.">
+<meta property="og:type" content="website"><meta property="og:url" content="https://wutzone.com/tier-list/">
+<link rel="stylesheet" href="/shared.css">
+<style>
+.tl-hero{text-align:center;padding:32px 0 8px}
+.tl-hero h1{font-size:32px;font-weight:700;margin-bottom:8px}
+.tl-hero h1 span{color:#facc15}
+.tl-hero .tl-sub{font-size:15px;color:#91A4B8;margin-bottom:16px}
+.tl-btns{display:flex;justify-content:center;gap:10px;margin-bottom:20px;flex-wrap:wrap}
+.tl-btn{padding:8px 18px;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;border:1px solid rgba(78,205,196,0.4);background:var(--surface);color:var(--text);transition:all .25s ease}
+.tl-btn:hover{border-color:rgba(78,205,196,0.7);transform:translateY(-1px)}
+.tl-btn.primary{background:#4ECDC4;color:#0F2436;border:none}
+.tl-tabs{display:flex;justify-content:center;gap:0;margin:16px 0;border-bottom:1px solid rgba(78,205,196,0.15)}
+.tl-tab{padding:10px 24px;font-size:14px;font-weight:600;cursor:pointer;color:#91A4B8;background:none;border:none;border-bottom:2px solid transparent;margin-bottom:-1px;transition:all .15s}
+.tl-tab:hover{color:#fff}
+.tl-tab.active{color:#facc15;border-bottom-color:#facc15}
+.tier-row{display:flex;gap:0;margin-bottom:12px;align-items:stretch}
+.tier-label{width:52px;min-height:100px;display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:800;border-radius:12px 0 0 12px;flex-shrink:0}
+.tier-label.s{background:#facc15;color:#0F2436}
+.tier-label.a{background:#ef4444;color:#fff}
+.tier-label.b{background:#3b82f6;color:#fff}
+.tier-label.c{background:#6b7280;color:#fff}
+.tier-label.d{background:#374151;color:#fff}
+.tier-cards{flex:1;display:flex;gap:8px;flex-wrap:wrap;padding:8px;background:rgba(78,205,196,0.03);border:1px solid rgba(78,205,196,0.1);border-left:none;border-radius:0 12px 12px 0;align-items:flex-start;align-content:flex-start;min-height:100px}
+.tier-cards.s-cards{border-color:rgba(250,204,21,0.2)}
+.tier-cards.a-cards{border-color:rgba(239,68,68,0.2)}
+.tier-cards.b-cards{border-color:rgba(59,130,246,0.2)}
+.tl-card{display:flex;flex-direction:column;align-items:center;width:90px;padding:8px 4px;border-radius:12px;border:1px solid rgba(78,205,196,0.2);background:var(--surface);text-decoration:none;color:var(--text);transition:all .25s ease;position:relative}
+.tl-card:hover{border-color:rgba(78,205,196,0.7);transform:translateY(-2px)}
+.tl-card .tl-icon{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:4px;border:2px solid rgba(78,205,196,0.15)}
+.tl-card .tl-name{font-size:11px;font-weight:600;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:80px}
+.tl-card .tl-rarity{position:absolute;top:4px;right:4px;font-size:8px;padding:1px 5px;border-radius:4px;font-weight:700}
+.r5{background:rgba(250,204,21,0.2);color:#facc15}
+.r4{background:rgba(192,132,252,0.2);color:#c084fc}
+.tags-expl{margin:32px 0 20px;padding:20px;background:var(--surface);border-radius:12px;border:1px solid rgba(78,205,196,0.15)}
+.tags-expl h2{font-size:18px;margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid rgba(78,205,196,0.15)}
+.tags-expl p{font-size:14px;color:#91A4B8;line-height:1.7;margin-bottom:8px}
+.footer-disclaimer{text-align:center;font-size:12px;color:#6b7d94;padding:20px 0}
+@media(max-width:768px){.tier-label{width:40px;font-size:18px}.tl-card{width:72px}.tl-icon{width:38px;height:38px;font-size:18px}}
+@media(max-width:480px){.tl-card{width:60px}.tl-icon{width:32px;height:32px;font-size:16px}}
+</style>
+</head>
+<body>
+<div class="top-bar">📊 Wuthering Waves Database — Data-driven, always up to date.</div>
+<nav aria-label="Main navigation"><div class="nav-inner"><a href="/" class="logo">Wuthering<span>DB</span></a><div class="nav-right"><ul class="nav-links"><li><a href="/characters/">Characters</a></li><li><a href="/tier-list/">Tier List</a></li><li><a href="/echos/">Echoes</a></li><li><a href="/weapons/">Weapons</a></li><li class="nav-dropdown"><a>Database ▾</a><ul class="dropdown-menu"><li><a href="/items/">Items</a></li><li><a href="/skills/">Skills</a></li></ul></li><li><a href="/guide/">Guide</a></li><li><a href="/map/">Map</a></li><li><a href="/codes/">Codes</a></li><li><a href="/build-planner/" class="nav-highlight">Builder</a></li></ul><button class="theme-toggle">EN ▾</button></div></div></nav>
+
+<main class="container" style="max-width:1100px">
+
+<header class="tl-hero">
+  <h1>Wuthering Waves <span>Tier List</span></h1>
+  <p class="tl-sub">All Resonators ranked by role — Main DPS, Sub-DPS, and Support. Rankings based on verified stats and endgame performance.</p>
+  <div class="tl-btns">
+    <a href="/build-planner/" class="tl-btn primary">🛠️ Build Planner</a>
+  </div>
+</header>
+
+<div class="tl-tabs" id="tabs">
+  <button class="tl-tab active" data-tab="dps">⚔️ Main DPS</button>
+  <button class="tl-tab" data-tab="sub">🔪 Sub-DPS</button>
+  <button class="tl-tab" data-tab="sup">💚 Support</button>
+</div>
+
+<div id="tierContent"></div>
+
+<div class="tags-expl">
+  <h2>How Tiers Are Determined</h2>
+  <p><strong>S-Tier</strong> — Best-in-class. Dominant performance in their role. Optimal in virtually all content.<br>
+  <strong>A-Tier</strong> — Excellent. Strong performers that compete closely with S-Tier in the right team.<br>
+  <strong>B-Tier</strong> — Solid. Viable choices with clear strengths but require more investment or specific teams.<br>
+  <strong>C-Tier</strong> — Niche. Usable but outclassed in their role by higher-tier options.<br>
+  <strong>D-Tier</strong> — For completionists. Not recommended for resource investment.<br><br>
+  Rankings are based on verified stats, practical testing, and community consensus. Data sourced from wutheringwaves.fandom.com.</p>
+</div>
+
+<div class="footer-disclaimer">Wuthering Database is not affiliated with or endorsed by Kuro Games. Tier rankings are compiled from community consensus and public data.</div>
+</main>
+
+<footer class="site-footer"><div class="footer-inner"><p>&copy; 2026 Wuthering Waves Database. Not affiliated with Kuro Games.</p><div class="footer-links"><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/contact.html">Contact</a></div></div></footer>
+<script src="/tier-list/tier-data.js"></script>
+<script>
+var TIER=window.__TIER__||[],currentTab="dps";
+var RARITY_CLASS={5:'r5',4:'r4'},WEP_ICONS={Broadblade:'⚔️',Sword:'🗡️',Pistols:'🔫',Gauntlets:'🥊',Rectifier:'📿'};
+
+function buildTier(pals,tab){
+  var ranks={S:[],A:[],B:[],C:[],D:[]};
+  pals.forEach(function(p){
+    var tier=p[tab]||"C";
+    ranks[tier]=ranks[tier]||[];
+    ranks[tier].push(p);
+  });
+  var tierColors={S:"s",A:"a",B:"b",C:"c",D:"d"};
+  var html="";
+  ["S","A","B","C","D"].forEach(function(tier){
+    var list=ranks[tier];
+    if(!list||list.length===0)return;
+    var tc=tierColors[tier];
+    html+='<div class="tier-row"><div class="tier-label '+tc+'">'+tier+'</div><div class="tier-cards '+tc+'-cards">';
+    list.forEach(function(p){
+      var rc=RARITY_CLASS[p.r]||'',wepIcon=WEP_ICONS[p.w]||'';
+      html+='<a href="/characters/'+p.s+'/" class="tl-card">'+
+        '<span class="tl-rarity '+rc+'">★'+p.r+'</span>'+
+        '<div class="tl-icon">'+p.icon+'</div>'+
+        '<span class="tl-name">'+p.n+'</span></a>';
+    });
+    html+='</div></div>';
+  });
+  return html;
+}
+
+function renderTab(tab){
+  currentTab=tab;
+  document.getElementById("tierContent").innerHTML=buildTier(TIER,tab);
+  document.querySelectorAll(".tl-tab").forEach(function(b){b.classList.remove("active")});
+  document.querySelector('.tl-tab[data-tab="'+tab+'"]').classList.add("active");
+}
+
+document.querySelectorAll(".tl-tab").forEach(function(b){
+  b.addEventListener("click",function(){renderTab(this.getAttribute("data-tab"))});
+});
+
+renderTab("dps");
+</script>
+</body>
+</html>

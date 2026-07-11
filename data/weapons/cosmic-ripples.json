@@ -1,0 +1,12 @@
+{
+  "name": "Cosmic Ripples",
+  "slug": "cosmic-ripples",
+  "rarity": "5",
+  "type": "Rectifier",
+  "base_atk": 500,
+  "substat": "ATK",
+  "substat_val": "53.9%",
+  "passive_name": "Stellar Overflow",
+  "passive_desc": "Increases Energy Regen by 12%. When Resonance Liberation hits a target, increases Basic Attack DMG by 30% for 10s.",
+  "description": "A rectifier that draws power from the cosmic background radiation permeating the universe. Its pulses ripple outward like stones cast into a still pond, each wave carrying devastating force."
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Thundering Mephis",
+  "slug": "thundering-mephis",
+  "cost": 4,
+  "element": "Electro",
+  "sonata_effect": "Void Thunder",
+  "skill_name": "Thunderous Dive",
+  "skill_desc": "Transform into Thundering Mephis and dive at enemies, dealing massive Electro DMG. Upon landing, create a lightning field that deals continuous Electro DMG.",
+  "description": "A crackling echo that embodies the fury of an endless thunderstorm. Where it passes, the air itself splits with electric tension."
+}

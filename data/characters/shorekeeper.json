@@ -1,0 +1,45 @@
+{
+  "s": "shorekeeper",
+  "n": "Shorekeeper",
+  "r": "5",
+  "e": "Spectro",
+  "w": "Rectifier",
+  "cls": "Congenital",
+  "hp": 16000,
+  "atk": 320,
+  "def": 1300,
+  "cr": 0.05,
+  "cd": 1.5,
+  "er": 1.2,
+  "desc": "A gentle soul who tends the boundary between worlds, the Shorekeeper mends wounds and shields allies with the pure light of Spectro resonance. Her rectifier hums with soothing frequencies that can close the gravest wounds in moments, making her an indispensable anchor for any team.",
+  "skills": [
+    {
+      "n": "Basic Attack — Guiding Light",
+      "t": "Basic Attack",
+      "d": "Perform up to 4 attacks, dealing Spectro DMG. The 4th strike heals the active Resonator for a small amount based on Shorekeeper's Max HP."
+    },
+    {
+      "n": "Resonance Skill — Sanctuary Field",
+      "t": "Resonance Skill",
+      "d": "Deploy a healing field that restores HP to all party members every 2s for 12s. Healing scales with Shorekeeper's Max HP. While inside the field, allies gain 15% increased Healing Bonus. CD: 16s."
+    },
+    {
+      "n": "Resonance Liberation — Radiant Salvation",
+      "t": "Resonance Liberation",
+      "d": "Channel pure Spectro energy to fully heal all party members and grant a Radiant Shield equal to 40% of Shorekeeper's Max HP for 15s. Shielded allies gain 10% All Elemental RES. CD: 25s. Energy Cost: 150."
+    },
+    {
+      "n": "Forte Circuit — Ebb and Flow",
+      "t": "Forte Circuit",
+      "d": "Healing allies generates Tidal stacks (max 5). Each stack increases Shorekeeper's Healing Bonus by 5%. At max stacks, the next Resonance Skill also cleanses all debuffs from party members."
+    },
+    {
+      "n": "Outro Skill — Tidal Blessing",
+      "t": "Outro Skill",
+      "d": "Heal the incoming Resonator for 25% of Shorekeeper's Max HP and increase their Max HP by 15% for 20s."
+    }
+  ],
+  "recWeapon": "stellar-symphony",
+  "recEcho": "bell-borne-geochelone",
+  "recSet": "Rejuvenating Glow"
+}

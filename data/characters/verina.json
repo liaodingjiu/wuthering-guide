@@ -1,0 +1,45 @@
+{
+  "s": "verina",
+  "n": "Verina",
+  "r": "5",
+  "e": "Spectro",
+  "w": "Rectifier",
+  "cls": "Congenital",
+  "hp": 15500,
+  "atk": 310,
+  "def": 1250,
+  "cr": 0.05,
+  "cd": 1.5,
+  "er": 1.15,
+  "desc": "A gentle botanist who communes with the life force of Sol-3 itself. Verina channels Spectro energy through her rectifier to nurture and protect, her healing abilities drawn from the very essence of nature's restorative power.",
+  "skills": [
+    {
+      "n": "Basic Attack — Photosynthetic Pulse",
+      "t": "Basic Attack",
+      "d": "Perform up to 4 Spectro attacks. Every 3rd attack triggers a minor party heal scaling with Verina ATK."
+    },
+    {
+      "n": "Resonance Skill — Verdant Growth",
+      "t": "Resonance Skill",
+      "d": "Summon a field of healing flora that restores HP to all party members over 10s. While active, increases party ATK by 10%. CD: 16s."
+    },
+    {
+      "n": "Resonance Liberation — Nature's Embrace",
+      "t": "Resonance Liberation",
+      "d": "Unleash a burst of life energy that fully heals the party and grants Photosynthesis buff: +20% ATK for 20s. CD: 20s. Energy Cost: 110."
+    },
+    {
+      "n": "Forte Circuit — Symbiosis",
+      "t": "Forte Circuit",
+      "d": "Overhealing generates Bloom stacks (max 3). Each stack increases the next Resonance Skill's healing by 25%."
+    },
+    {
+      "n": "Outro Skill — Seedling's Gift",
+      "t": "Outro Skill",
+      "d": "Heal incoming Resonator and increase their ATK by 15% for 30s."
+    }
+  ],
+  "recWeapon": "cosmic-ripples",
+  "recEcho": "bell-borne-geochelone",
+  "recSet": "Rejuvenating Glow"
+}

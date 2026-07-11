@@ -1,0 +1,45 @@
+{
+  "s": "jiyan",
+  "n": "Jiyan",
+  "r": "5",
+  "e": "Aero",
+  "w": "Broadblade",
+  "cls": "Natural",
+  "hp": 14000,
+  "atk": 375,
+  "def": 1200,
+  "cr": 0.05,
+  "cd": 1.5,
+  "er": 1,
+  "desc": "The Commander of the Midnight Rangers, Jiyan wields the power of storms with his broadblade. His mastery over Aero resonance allows him to command the very winds, slicing through enemies with razor-sharp gales that leave no trace but devastation.",
+  "skills": [
+    {
+      "n": "Basic Attack — Storm Edge",
+      "t": "Basic Attack",
+      "d": "Perform up to 5 broadblade strikes dealing Aero DMG. Heavy Attack: consume STA to unleash a powerful wind slash that launches smaller enemies."
+    },
+    {
+      "n": "Resonance Skill — Gale Rush",
+      "t": "Resonance Skill",
+      "d": "Dash forward enveloped in wind, dealing Aero DMG to enemies in the path. Gain 15% Aero DMG Bonus for 8s. CD: 10s."
+    },
+    {
+      "n": "Resonance Liberation — Eye of the Storm",
+      "t": "Resonance Liberation",
+      "d": "Summon a massive cyclone that pulls in enemies and deals continuous Aero DMG for 8s. CD: 22s. Energy Cost: 125."
+    },
+    {
+      "n": "Forte Circuit — Wind Fury",
+      "t": "Forte Circuit",
+      "d": "Aero DMG generates Storm stacks. At 10 stacks, the next Heavy Attack consumes all stacks to become an empowered Tempest Slash dealing 200% increased DMG."
+    },
+    {
+      "n": "Outro Skill — Tailwind",
+      "t": "Outro Skill",
+      "d": "Deal Aero DMG. Increase incoming Resonator Aero DMG by 23% for 14s."
+    }
+  ],
+  "recWeapon": "verdant-summit",
+  "recEcho": "feilian-beringal",
+  "recSet": "Sierra Gale"
+}

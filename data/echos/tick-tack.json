@@ -1,0 +1,10 @@
+{
+  "name": "Tick Tack",
+  "slug": "tick-tack",
+  "cost": 1,
+  "element": "Electro",
+  "sonata_effect": "Void Thunder",
+  "skill_name": "Static Shock",
+  "skill_desc": "Release a small electric discharge, dealing Electro DMG.",
+  "description": "A clockwork echo that ticks with electric rhythm. Each tick builds a charge, and each tock releases it in a satisfying crackle."
+}

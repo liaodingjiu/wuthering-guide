@@ -1,0 +1,10 @@
+{
+  "name": "Snip Snap",
+  "slug": "snip-snap",
+  "cost": 1,
+  "element": "Glacio",
+  "sonata_effect": "Freezing Frost",
+  "skill_name": "Frostbite",
+  "skill_desc": "Bite enemies with frozen fangs, dealing Glacio DMG.",
+  "description": "A small but fierce echo with jaws that freeze on contact. Its bite is far worse than its bark, leaving patches of frost that linger for hours."
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Lustrous Razor",
+  "slug": "lustrous-razor",
+  "rarity": "5",
+  "type": "Broadblade",
+  "base_atk": 587,
+  "substat": "CRIT DMG",
+  "substat_val": "66.2%",
+  "passive_name": "Incinerating Radiance",
+  "passive_desc": "Increases Resonance Skill DMG by 20%. When Resonance Skill hits a target, increases the wielder ATK by 5% for 6s, stacking up to 3 times.",
+  "description": "A radiant broadblade infused with the essence of concentrated light. Its blinding edge can cleave through the darkest Tacet Fields, and its brilliance is said to be visible from miles away when unsheathed."
+}

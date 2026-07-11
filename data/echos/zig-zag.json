@@ -1,0 +1,10 @@
+{
+  "name": "Zig Zag",
+  "slug": "zig-zag",
+  "cost": 1,
+  "element": "Aero",
+  "sonata_effect": "Lingering Tunes",
+  "skill_name": "Wind Cutter",
+  "skill_desc": "Launch a blade of compressed air, dealing Aero DMG.",
+  "description": "A darting echo that never moves in a straight line. Its unpredictable trajectory makes it nearly impossible to track, let alone catch."
+}

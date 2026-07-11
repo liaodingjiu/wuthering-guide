@@ -1,0 +1,12 @@
+{
+  "name": "Waning Redshift",
+  "slug": "waning-redshift",
+  "rarity": "5",
+  "type": "Pistols",
+  "base_atk": 500,
+  "substat": "CRIT Rate",
+  "substat_val": "36.0%",
+  "passive_name": "Event Horizon",
+  "passive_desc": "Increases Resonance Skill DMG by 24%. After Resonance Skill hits a target, creates a gravity field that pulls enemies and deals 80% ATK as DMG. CD 12s.",
+  "description": "Pistols that manipulate gravitational forces through advanced Resonance technology. Their shots bend spacetime itself, dragging enemies toward the point of impact like matter spiraling into a black hole."
+}

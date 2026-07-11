@@ -1,0 +1,12 @@
+{
+  "name": "Commando of Conviction",
+  "slug": "commando-of-conviction",
+  "rarity": "4",
+  "type": "Sword",
+  "base_atk": 462,
+  "substat": "ATK",
+  "substat_val": "36.4%",
+  "passive_name": "Steadfast Resolve",
+  "passive_desc": "Increases ATK by 12%. When HP is above 80%, increases CRIT Rate by 8%.",
+  "description": "A soldier blade issued to only the most dedicated Jinzhou defenders. Its unadorned appearance belies the strength of will it demands from its wielder."
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Cyan Heron",
+  "slug": "cyan-heron",
+  "cost": 3,
+  "element": "Aero",
+  "sonata_effect": "Sierra Gale",
+  "skill_name": "Heron Dive",
+  "skill_desc": "Transform into Cyan Heron and dive at enemies from above, dealing Aero DMG. Restores 20 STA on hit.",
+  "description": "A graceful echo that soars on cyan wings. Its dive is as precise as it is beautiful, striking from angles that defy expectation."
+}

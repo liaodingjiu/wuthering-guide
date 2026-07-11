@@ -1,0 +1,12 @@
+{
+  "name": "Thundering Pulse",
+  "slug": "thundering-pulse",
+  "rarity": "4",
+  "type": "Pistols",
+  "base_atk": 412,
+  "substat": "CRIT Rate",
+  "substat_val": "20.2%",
+  "passive_name": "Lightning Reflex",
+  "passive_desc": "Increases Basic Attack SPD by 10%. After dealing 5 Basic Attacks, increases ATK by 12% for 6s.",
+  "description": "Pistols that fire bullets wreathed in lightning. Each shot is accompanied by a thunderclap, and the rapid rhythm of gunfire sounds like an approaching storm."
+}

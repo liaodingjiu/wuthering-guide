@@ -1,0 +1,12 @@
+{
+  "name": "Hollow Mirage",
+  "slug": "hollow-mirage",
+  "rarity": "4",
+  "type": "Gauntlets",
+  "base_atk": 462,
+  "substat": "ATK",
+  "substat_val": "36.4%",
+  "passive_name": "Illusion Strike",
+  "passive_desc": "Increases Heavy Attack DMG by 24%. After casting Resonance Skill, Basic Attacks deal additional 8% ATK as DMG for 8s.",
+  "description": "Gauntlets that create phantom afterimages with every strike. Opponents find themselves fighting shadows, never quite certain which blow is real until it has already landed."
+}

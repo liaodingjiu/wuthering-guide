@@ -1,0 +1,12 @@
+{
+  "name": "Static Mist",
+  "slug": "static-mist",
+  "rarity": "5",
+  "type": "Pistols",
+  "base_atk": 500,
+  "substat": "Energy Regen",
+  "substat_val": "51.8%",
+  "passive_name": "Thunderous Echo",
+  "passive_desc": "Increases Energy Regen by 12%. After casting Resonance Liberation, the next character switching in gains 15% ATK for 15s.",
+  "description": "A pair of pistols that crackle with barely-contained electrical energy. Each shot leaves a lingering static field, and the thunderous rapport echoes across the battlefield long after the bullet finds its mark."
+}

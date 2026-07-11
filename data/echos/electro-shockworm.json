@@ -1,0 +1,10 @@
+{
+  "name": "Electro Shockworm",
+  "slug": "electro-shockworm",
+  "cost": 1,
+  "element": "Electro",
+  "sonata_effect": "Void Thunder",
+  "skill_name": "Shock Burrow",
+  "skill_desc": "Burrow underground and emerge beneath enemies, dealing Electro DMG.",
+  "description": "A serpentine echo that swims through earth as if it were water. Its surprise attacks from below have ended many battles before they truly began."
+}

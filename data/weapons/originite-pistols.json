@@ -1,0 +1,12 @@
+{
+  "name": "Originite Pistols",
+  "slug": "originite-pistols",
+  "rarity": "3",
+  "type": "Pistols",
+  "base_atk": 325,
+  "substat": "ATK",
+  "substat_val": "24.2%",
+  "passive_name": "Quick Draw",
+  "passive_desc": "Increases Basic Attack SPD by 8%.",
+  "description": "Lightweight pistols prized for their rapid handling. While they lack the punch of heavier firearms, their rate of fire allows skilled users to maintain constant pressure on enemies."
+}

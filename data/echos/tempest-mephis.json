@@ -1,0 +1,10 @@
+{
+  "name": "Tempest Mephis",
+  "slug": "tempest-mephis",
+  "cost": 4,
+  "element": "Aero",
+  "sonata_effect": "Sierra Gale",
+  "skill_name": "Cyclone Strike",
+  "skill_desc": "Transform into Tempest Mephis and summon a cyclone that pulls enemies in, dealing Aero DMG. Increases Aero DMG Bonus by 12% for 15s after use.",
+  "description": "A whirling echo born from the eye of an eternal cyclone. It dances on the wind with terrifying grace, leaving destruction in its spiral path."
+}

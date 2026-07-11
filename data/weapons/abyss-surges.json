@@ -1,0 +1,12 @@
+{
+  "name": "Abyss Surges",
+  "slug": "abyss-surges",
+  "rarity": "5",
+  "type": "Gauntlets",
+  "base_atk": 587,
+  "substat": "ATK",
+  "substat_val": "53.9%",
+  "passive_name": "Tidal Force",
+  "passive_desc": "Increases Resonance Liberation DMG by 24%. When Resonance Liberation hits a target, increases Basic Attack SPD by 12% for 6s.",
+  "description": "Gauntlets imbued with the crushing pressure of the deepest ocean trenches. Each punch carries the weight of an entire sea, and the rhythmic surging of abyssal currents guides the wielder fists."
+}

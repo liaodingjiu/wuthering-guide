@@ -1,0 +1,10 @@
+{
+  "name": "Whiff Whaff",
+  "slug": "whiff-whaff",
+  "cost": 3,
+  "element": "Havoc",
+  "sonata_effect": "Sun-sinking Eclipse",
+  "skill_name": "Splash Havoc",
+  "skill_desc": "Splash Havoc-infused liquid in a cone, dealing Havoc DMG and reducing enemy ATK by 8% for 8s.",
+  "description": "A bubbling echo that spews concentrated Havoc energy. Its chaotic splashes corrode both armor and confidence alike."
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Lampylumen Myriad",
+  "slug": "lampylumen-myriad",
+  "cost": 4,
+  "element": "Glacio",
+  "sonata_effect": "Freezing Frost",
+  "skill_name": "Myriad Ice",
+  "skill_desc": "Summon multiple ice crystals that explode after a delay, dealing Glacio DMG. Each crystal that hits reduces the cooldown of this skill by 1s.",
+  "description": "A shimmering echo composed of countless frozen lights. Each light is a crystallized memory, and together they create a blinding spectacle of icy destruction."
+}

@@ -1,0 +1,45 @@
+{
+  "s": "camellya",
+  "n": "Camellya",
+  "r": "5",
+  "e": "Havoc",
+  "w": "Sword",
+  "cls": "Artificial",
+  "hp": 13500,
+  "atk": 390,
+  "def": 1150,
+  "cr": 0.05,
+  "cd": 1.5,
+  "er": 1,
+  "desc": "An enigma wrapped in crimson thorns, Camellya is a Havoc-wielding swordswoman of unknown origin. Her blade drips with Havoc energy that manifests as thorned vines, entangling and shredding anything in her path. She fights with an almost ecstatic abandon, each strike blooming into a deadly flower of destruction.",
+  "skills": [
+    {
+      "n": "Basic Attack — Thorned Edge",
+      "t": "Basic Attack",
+      "d": "Perform up to 5 rapid sword strikes, dealing Havoc DMG. After the 3rd strike, tap Basic Attack again to unleash a flurry of vine-enhanced slashes. Heavy Attack: consume STA for a spinning AoE slash."
+    },
+    {
+      "n": "Resonance Skill — Blooming Carnage",
+      "t": "Resonance Skill",
+      "d": "Dash forward with a spinning slash, dealing Havoc DMG. Enter the Budding state, increasing ATK SPD by 15% and Havoc DMG by 20% for 10s. CD: 10s. Concerto Energy: 8."
+    },
+    {
+      "n": "Resonance Liberation — Thorned Requiem",
+      "t": "Resonance Liberation",
+      "d": "Summon a massive field of thorned vines that erupt from the ground, dealing AoE Havoc DMG and pulling enemies toward the center. Applies Wither, reducing enemy ATK by 10% for 12s. CD: 25s. Energy Cost: 150."
+    },
+    {
+      "n": "Forte Circuit — Crimson Bloom",
+      "t": "Forte Circuit",
+      "d": "Attacks generate Thorn stacks (max 100). When Thorn reaches 100, hold Heavy Attack to consume all stacks and unleash a special blooming strike that deals bonus Havoc DMG equal to 6% ATK per stack consumed."
+    },
+    {
+      "n": "Outro Skill — Withering Rose",
+      "t": "Outro Skill",
+      "d": "Deal Havoc DMG equal to 280% of ATK. Increase the incoming Resonator's Basic Attack DMG by 25% for 14s."
+    }
+  ],
+  "recWeapon": "red-spring",
+  "recEcho": "crownless",
+  "recSet": "Sun-sinking Eclipse"
+}

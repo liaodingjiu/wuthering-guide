@@ -1,0 +1,10 @@
+{
+  "name": "Violet Heron",
+  "slug": "violet-heron",
+  "cost": 3,
+  "element": "Electro",
+  "sonata_effect": "Void Thunder",
+  "skill_name": "Thunder Talon",
+  "skill_desc": "Transform into Violet Heron and strike with electrified talons, dealing Electro DMG and reducing enemy Electro RES by 10%.",
+  "description": "A regal echo whose violet plumage crackles with contained lightning. Each beat of its wings discharges enough energy to power a city."
+}

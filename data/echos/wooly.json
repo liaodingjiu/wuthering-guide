@@ -1,0 +1,10 @@
+{
+  "name": "Wooly",
+  "slug": "wooly",
+  "cost": 1,
+  "element": "Aero",
+  "sonata_effect": "Sierra Gale",
+  "skill_name": "Fluffy Charge",
+  "skill_desc": "Roll forward while surrounded by wind, dealing Aero DMG.",
+  "description": "A fluffy echo that bounces on gusts of wind. Despite its soft appearance, it can barrel through enemies with surprising force."
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Novaburst",
+  "slug": "novaburst",
+  "rarity": "4",
+  "type": "Pistols",
+  "base_atk": 462,
+  "substat": "ATK",
+  "substat_val": "36.4%",
+  "passive_name": "Stellar Burst",
+  "passive_desc": "Increases Resonance Liberation DMG by 18%. After casting Resonance Liberation, increases ATK by 10% for 8s.",
+  "description": "Pistols that fire concentrated stellar energy in dazzling bursts. Each shot is a miniature supernova, collapsing and expanding in the span of a heartbeat."
+}

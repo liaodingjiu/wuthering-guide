@@ -1,0 +1,12 @@
+{
+  "name": "Undying Flame",
+  "slug": "undying-flame",
+  "rarity": "4",
+  "type": "Gauntlets",
+  "base_atk": 462,
+  "substat": "CRIT Rate",
+  "substat_val": "20.2%",
+  "passive_name": "Eternal Spark",
+  "passive_desc": "Increases Resonance Skill DMG by 16%. After Resonance Skill hits, increases CRIT Rate by 6% for 8s.",
+  "description": "Gauntlets containing an ember that has burned for a thousand years. No matter how fierce the battle or how cold the night, this flame refuses to be extinguished."
+}

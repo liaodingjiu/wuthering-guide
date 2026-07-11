@@ -1,0 +1,12 @@
+{
+  "name": "Discord",
+  "slug": "discord",
+  "rarity": "4",
+  "type": "Broadblade",
+  "base_atk": 412,
+  "substat": "Energy Regen",
+  "substat_val": "24.3%",
+  "passive_name": "Dissonant Strike",
+  "passive_desc": "Increases Resonance Liberation DMG by 18%. When Resonance Liberation deals CRIT DMG, restores 4 Resonance Energy.",
+  "description": "A weapon that thrives on chaos and conflict. Its dissonant frequencies grow stronger with each clash of steel, building toward a crescendo of overwhelming power."
+}

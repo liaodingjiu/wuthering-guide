@@ -1,0 +1,45 @@
+{
+  "s": "changli",
+  "n": "Changli",
+  "r": "5",
+  "e": "Fusion",
+  "w": "Sword",
+  "cls": "Natural",
+  "hp": 13800,
+  "atk": 385,
+  "def": 1180,
+  "cr": 0.05,
+  "cd": 1.5,
+  "er": 1,
+  "desc": "A blazing swordswoman whose passion burns as bright as her flames. Changli wields Fusion energy with the grace of a dancer and the ferocity of a wildfire, each strike leaving trails of fire that consume everything in their path. Her motto: fight first, ask questions never.",
+  "skills": [
+    {
+      "n": "Basic Attack — Blazing Dance",
+      "t": "Basic Attack",
+      "d": "Perform up to 5 elegant sword strikes, dealing Fusion DMG. The 4th and 5th strikes deal increased DMG and apply a burn effect. Dodge Counter: a swift flame slash."
+    },
+    {
+      "n": "Resonance Skill — Phoenix Dash",
+      "t": "Resonance Skill",
+      "d": "Perform a fiery dash-slash through enemies, dealing Fusion DMG and applying Ignite (DoT). Holds 2 charges. Can be used mid-air. CD per charge: 8s. Concerto Energy: 10."
+    },
+    {
+      "n": "Resonance Liberation — Inferno Phoenix",
+      "t": "Resonance Liberation",
+      "d": "Summon a blazing phoenix that sweeps across the battlefield, dealing massive AoE Fusion DMG and refreshing Resonance Skill charges. CD: 22s. Energy Cost: 125."
+    },
+    {
+      "n": "Forte Circuit — Blaze Accumulation",
+      "t": "Forte Circuit",
+      "d": "Dealing Fusion DMG accumulates Blaze stacks (max 8). At max stacks, the next Resonance Skill deals 60% increased DMG and applies a stronger burn effect that lasts 10s."
+    },
+    {
+      "n": "Outro Skill — Ember's Gift",
+      "t": "Outro Skill",
+      "d": "Deal Fusion DMG equal to 260% of ATK. Increase the incoming Resonator's Fusion DMG by 23% and Resonance Skill DMG by 20% for 14s."
+    }
+  ],
+  "recWeapon": "blazing-brilliance",
+  "recEcho": "inferno-rider",
+  "recSet": "Molten Rift"
+}

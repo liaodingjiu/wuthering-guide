@@ -1,0 +1,12 @@
+{
+  "name": "Marcato",
+  "slug": "marcato",
+  "rarity": "4",
+  "type": "Gauntlets",
+  "base_atk": 462,
+  "substat": "ATK",
+  "substat_val": "36.4%",
+  "passive_name": "Staccato Rhythm",
+  "passive_desc": "Increases Resonance Liberation DMG by 18%. When Resonance Liberation hits multiple enemies, increases ATK by 5% per enemy, up to 20%.",
+  "description": "Gauntlets that follow a sharp, percussive rhythm in combat. Each hit lands with a pronounced accent, building a staccato beat that crescendos into a devastating finale."
+}

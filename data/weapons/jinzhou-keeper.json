@@ -1,0 +1,12 @@
+{
+  "name": "Jinzhou Keeper",
+  "slug": "jinzhou-keeper",
+  "rarity": "4",
+  "type": "Rectifier",
+  "base_atk": 462,
+  "substat": "Energy Regen",
+  "substat_val": "51.8%",
+  "passive_name": "City Guardian",
+  "passive_desc": "Increases DEF by 20%. When HP is below 60%, increases Healing Bonus by 15%.",
+  "description": "A rectifier granted to the honored guardians of Jinzhou. Its protective aura extends beyond the wielder, forming an invisible shield that safeguards allies in the heat of combat."
+}

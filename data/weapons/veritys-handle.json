@@ -1,0 +1,12 @@
+{
+  "name": "Verity Handle",
+  "slug": "veritys-handle",
+  "rarity": "5",
+  "type": "Gauntlets",
+  "base_atk": 587,
+  "substat": "CRIT Rate",
+  "substat_val": "24.3%",
+  "passive_name": "Truth Seeker",
+  "passive_desc": "Increases Resonance Skill DMG by 18%. When Resonance Skill hits, increases CRIT DMG by 12% for 8s.",
+  "description": "Gauntlets forged in the pursuit of ultimate truth. Their crystalline knuckles refract light into prismatic patterns that reveal the hidden weaknesses of any foe."
+}

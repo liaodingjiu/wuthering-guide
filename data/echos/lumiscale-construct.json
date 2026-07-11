@@ -1,0 +1,10 @@
+{
+  "name": "Lumiscale Construct",
+  "slug": "lumiscale-construct",
+  "cost": 3,
+  "element": "Spectro",
+  "sonata_effect": "Moonlit Clouds",
+  "skill_name": "Energy Matrix",
+  "skill_desc": "Create an energy matrix that increases the next switch-in character Resonance Energy by 20.",
+  "description": "A construct echo built from luminescent scales. It stores and transfers energy with remarkable efficiency, making it invaluable in coordinated team tactics."
+}

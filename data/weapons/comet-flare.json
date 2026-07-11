@@ -1,0 +1,12 @@
+{
+  "name": "Comet Flare",
+  "slug": "comet-flare",
+  "rarity": "4",
+  "type": "Rectifier",
+  "base_atk": 412,
+  "substat": "CRIT DMG",
+  "substat_val": "40.5%",
+  "passive_name": "Tail of Light",
+  "passive_desc": "Increases Resonance Skill DMG by 16%. When Resonance Skill deals CRIT DMG, increases Energy Regen by 15% for 6s.",
+  "description": "A rectifier that traces the path of a legendary comet. Its energy signature mimics the comet brilliant tail, leaving trails of luminescent particles that hang in the air like frozen starlight."
+}

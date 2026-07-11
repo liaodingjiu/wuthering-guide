@@ -1,0 +1,12 @@
+{
+  "name": "Guardian Sword",
+  "slug": "guardian-sword",
+  "rarity": "3",
+  "type": "Sword",
+  "base_atk": 325,
+  "substat": "DEF",
+  "substat_val": "38.8%",
+  "passive_name": "Defensive Stance",
+  "passive_desc": "Increases DEF by 12%. Taking DMG has a 30% chance to heal 5% HP. CD 10s.",
+  "description": "A sword that prioritizes survival over aggression. Its guard is reinforced with energy-absorbing alloys that convert incoming attacks into healing resonance."
+}

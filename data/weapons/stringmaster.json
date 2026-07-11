@@ -1,0 +1,12 @@
+{
+  "name": "Stringmaster",
+  "slug": "stringmaster",
+  "rarity": "5",
+  "type": "Rectifier",
+  "base_atk": 500,
+  "substat": "CRIT Rate",
+  "substat_val": "36.0%",
+  "passive_name": "Resonance Quartet",
+  "passive_desc": "When Resonance Skill hits a target, increases ATK by 3% for 8s, stacking up to 5 times. Each stack is independent.",
+  "description": "An exquisite rectifier that transforms Resonance energy into shimmering strings of pure sound. In the hands of a skilled Resonator, each note becomes a weapon sharper than any blade."
+}

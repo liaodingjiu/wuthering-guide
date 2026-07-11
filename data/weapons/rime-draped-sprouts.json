@@ -1,0 +1,12 @@
+{
+  "name": "Rime-Draped Sprouts",
+  "slug": "rime-draped-sprouts",
+  "rarity": "5",
+  "type": "Rectifier",
+  "base_atk": 500,
+  "substat": "CRIT DMG",
+  "substat_val": "72.0%",
+  "passive_name": "Verdant Frost",
+  "passive_desc": "Increases Resonance Skill DMG by 20%. Upon dealing DMG with Resonance Skill, restores 8 Resonance Energy. Can trigger once every 8s.",
+  "description": "A rectifier wrapped in eternal frost that paradoxically nurtures new growth. Delicate ice crystals form and shatter with each activation, leaving trails of blooming rime in their wake."
+}

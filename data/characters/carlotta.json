@@ -1,0 +1,45 @@
+{
+  "s": "carlotta",
+  "n": "Carlotta",
+  "r": "5",
+  "e": "Glacio",
+  "w": "Pistols",
+  "cls": "Mutant",
+  "hp": 13000,
+  "atk": 385,
+  "def": 1100,
+  "cr": 0.08,
+  "cd": 1.55,
+  "er": 1,
+  "desc": "A frost-bound gunslinger who freezes enemies in their tracks. Carlotta dual-wields pistols that fire shards of absolute zero, each shot crystallizing the air itself. Cold, precise, and utterly relentless.",
+  "skills": [
+    {
+      "n": "Basic Attack — Frost Volley",
+      "t": "Basic Attack",
+      "d": "Fire up to 6 rapid pistol shots dealing Glacio DMG. Every 3rd shot applies Frostbite, slowing the enemy."
+    },
+    {
+      "n": "Resonance Skill — Cryo Barrage",
+      "t": "Resonance Skill",
+      "d": "Unload a barrage of ice-imbued bullets in a cone, dealing Glacio DMG. Enemies with Frostbite take 30% increased DMG. CD: 12s."
+    },
+    {
+      "n": "Resonance Liberation — Absolute Zero",
+      "t": "Resonance Liberation",
+      "d": "Fire a massive cryo-blast that freezes all enemies in its path, dealing massive Glacio DMG. Frozen enemies have Glacio RES reduced by 15% for 10s. CD: 24s. Energy Cost: 150."
+    },
+    {
+      "n": "Forte Circuit — Frostbite Marksman",
+      "t": "Forte Circuit",
+      "d": "Critical hits on Frostbitten enemies generate Frost Marks. At 5 marks, the next Resonance Skill has its CD reduced by 50%."
+    },
+    {
+      "n": "Outro Skill — Cold Snap",
+      "t": "Outro Skill",
+      "d": "Deal Glacio DMG. Increase incoming Resonator Glacio DMG by 23% and CRIT Rate by 10% for 14s."
+    }
+  ],
+  "recWeapon": "last-dance",
+  "recEcho": "lampylumen-myriad",
+  "recSet": "Freezing Frost"
+}

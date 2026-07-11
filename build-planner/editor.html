@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<title>Build Planner — Wuthering Waves</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="stylesheet" href="/shared.css">
+<style>
+.ed-hero{text-align:center;padding:24px 0 8px}
+.ed-hero h1{font-size:28px;font-weight:700;margin-bottom:4px}
+.ed-hero h1 span{color:#3b82f6}
+.ed-hero .ed-sub{font-size:14px;color:#91A4B8}
+.ed-layout{display:flex;gap:20px;flex-wrap:wrap}
+.ed-left{flex:1;min-width:300px;max-width:420px}
+.ed-right{flex:1;min-width:340px}
+.ed-char-card{background:var(--surface);border:1px solid rgba(78,205,196,0.2);border-radius:12px;padding:20px;text-align:center;margin-bottom:16px}
+.ed-char-card .ed-char-icon{width:80px;height:80px;border-radius:50%;margin:0 auto 12px;display:flex;align-items:center;justify-content:center;font-size:36px;border:3px solid rgba(78,205,196,0.3)}
+.ed-char-card .ed-char-name{font-size:24px;font-weight:700}
+.ed-char-card .ed-char-meta{font-size:13px;color:#91A4B8;margin-top:4px}
+.ed-section{background:var(--surface);border:1px solid rgba(78,205,196,0.15);border-radius:12px;padding:18px;margin-bottom:14px}
+.ed-section h2{font-size:16px;font-weight:600;margin-bottom:12px;color:#4ECDC4}
+.ed-section label{display:block;font-size:12px;color:#91A4B8;margin-bottom:4px;text-transform:uppercase;letter-spacing:.06em}
+.ed-section select{width:100%;padding:10px 12px;border:1px solid rgba(78,205,196,0.3);border-radius:8px;background:var(--bg);color:#fff;font-size:14px;margin-bottom:10px}
+.ed-section select:focus{outline:none;border-color:#3b82f6}
+.echo-slot{display:flex;align-items:center;gap:10px;padding:10px;background:var(--bg);border-radius:8px;margin-bottom:8px;border:1px solid rgba(78,205,196,0.1)}
+.echo-slot .slot-label{font-size:11px;font-weight:700;color:#3b82f6;width:44px;flex-shrink:0;text-align:center}
+.echo-slot select{flex:1;margin-bottom:0}
+.echo-slot .slot-se{font-size:10px;color:#6b7d94;white-space:nowrap;max-width:80px;overflow:hidden;text-overflow:ellipsis}
+.stats-panel{background:var(--surface);border:1px solid rgba(59,130,246,0.3);border-radius:12px;padding:20px}
+.stats-panel h2{font-size:18px;font-weight:700;margin-bottom:16px;color:#3b82f6;text-align:center}
+.stats-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.stat-cell{background:var(--bg);border-radius:10px;padding:14px;text-align:center}
+.stat-cell .stat-val{font-size:26px;font-weight:700;color:#4ECDC4}
+.stat-cell .stat-val.bonus{color:#facc15}
+.stat-cell .stat-lbl{font-size:11px;color:#91A4B8;margin-top:4px;text-transform:uppercase;letter-spacing:.06em}
+.stat-total{border-top:1px solid rgba(78,205,196,0.2);margin-top:12px;padding-top:12px}
+.stat-total .stat-row{display:flex;justify-content:space-between;padding:6px 0;font-size:14px}
+.stat-total .stat-row .label{color:#91A4B8}
+.stat-total .stat-row .value{font-weight:600;color:#4ECDC4}
+.ed-actions{display:flex;gap:12px;margin-top:16px;flex-wrap:wrap}
+.ed-btn{padding:10px 20px;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;border:none;transition:all .2s ease;flex:1;min-width:120px;text-align:center;text-decoration:none}
+.ed-btn.primary{background:#3b82f6;color:#fff}
+.ed-btn.primary:hover{background:#2563eb}
+.ed-btn.secondary{background:var(--surface);color:var(--text);border:1px solid rgba(78,205,196,0.3)}
+.ed-btn.secondary:hover{border-color:#4ECDC4}
+.ed-back{margin-bottom:16px}
+.ed-back a{color:#4ECDC4;text-decoration:none;font-size:14px}
+.ed-back a:hover{text-decoration:underline}
+.r-5{color:#facc15}.r-4{color:#c084fc}.r-3{color:#60a5fa}
+@media(max-width:768px){.ed-layout{flex-direction:column}.ed-left{max-width:100%}}
+</style>
+</head>
+<body>
+<div class="top-bar">📊 Wuthering Waves Database — Data-driven, always up to date.</div>
+<nav aria-label="Main navigation"><div class="nav-inner"><a href="/" class="logo">Wuthering<span>DB</span></a><div class="nav-right"><ul class="nav-links"><li><a href="/characters/">Characters</a></li><li><a href="/tier-list/">Tier List</a></li><li><a href="/echos/">Echoes</a></li><li><a href="/weapons/">Weapons</a></li><li class="nav-dropdown"><a>Database ▾</a><ul class="dropdown-menu"><li><a href="/items/">Items</a></li><li><a href="/skills/">Skills</a></li></ul></li><li><a href="/guide/">Guide</a></li><li><a href="/map/">Map</a></li><li><a href="/codes/">Codes</a></li><li><a href="/build-planner/" class="nav-highlight">Builder</a></li></ul><button class="theme-toggle">EN ▾</button></div></div></nav>
+
+<main class="container" style="max-width:1100px">
+<div class="ed-back"><a href="/build-planner/">← Back to Character Selection</a></div>
+
+<div class="ed-hero"><div id="charDisplay"></div></div>
+
+<div class="ed-layout">
+<div class="ed-left">
+  <div id="charCard"></div>
+  <div class="ed-section">
+    <h2>⚔️ Select Weapon</h2>
+    <label>Weapon</label>
+    <select id="weaponSelect"><option value="">-- Choose a weapon --</option></select>
+    <div id="weaponInfo" style="font-size:12px;color:#91A4B8;margin-top:6px"></div>
+  </div>
+  <div class="ed-section">
+    <h2>🔮 Echoes (5 Slots)</h2>
+    <div id="echoSlots"></div>
+  </div>
+</div>
+
+<div class="ed-right">
+  <div class="stats-panel">
+    <h2>📊 Final Stats Preview</h2>
+    <div class="stats-grid" id="statsGrid">
+      <div class="stat-cell"><div class="stat-val" id="statAtk">0</div><div class="stat-lbl">Total ATK</div></div>
+      <div class="stat-cell"><div class="stat-val" id="statHp">0</div><div class="stat-lbl">HP</div></div>
+      <div class="stat-cell"><div class="stat-val" id="statCr">0%</div><div class="stat-lbl">CRIT Rate</div></div>
+      <div class="stat-cell"><div class="stat-val" id="statCd">0%</div><div class="stat-lbl">CRIT DMG</div></div>
+      <div class="stat-cell"><div class="stat-val bonus" id="statElem">0%</div><div class="stat-lbl">Element DMG</div></div>
+      <div class="stat-cell"><div class="stat-val" id="statEr">0%</div><div class="stat-lbl">Energy Regen</div></div>
+    </div>
+    <div class="stat-total" id="statTotal"></div>
+  </div>
+
+  <div class="ed-actions">
+    <button class="ed-btn secondary" onclick="resetBuild()">🔄 Reset</button>
+    <button class="ed-btn primary" onclick="shareBuild()">🔗 Share Build</button>
+  </div>
+  <div id="shareMsg" style="text-align:center;margin-top:10px;font-size:13px;color:#4ECDC4;display:none">Link copied!</div>
+</div>
+</div>
+</main>
+
+<footer class="site-footer"><div class="footer-inner"><p>&copy; 2026 Wuthering Waves Database. Not affiliated with Kuro Games.</p><div class="footer-links"><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/contact.html">Contact</a></div></div></footer>
+
+<script src="/characters/char-data.js"></script>
+<script src="/weapons/weapons-data.js"></script>
+<script src="/echos/echos-data.js"></script>
+<script>
+var W=window.__WEAPONS__||[],E=window.__ECHOES__||[],CHARS=window.__CHARS__||[];
+var ELEM_ICONS={Aero:'💨',Glacio:'❄️',Fusion:'🔥',Electro:'⚡',Spectro:'💡',Havoc:'💀'};
+var WEP_ICONS={Broadblade:'⚔️',Sword:'🗡️',Pistols:'🔫',Gauntlets:'🥊',Rectifier:'📿'};
+
+// Read character from URL
+var params=new URLSearchParams(window.location.search);
+var charSlug=params.get('char')||'jinhsi';
+var character=CHARS.find(function(c){return c.s===charSlug})||CHARS.find(function(c){return c.s==='jinhsi'});
+
+// Character display
+var icon=ELEM_ICONS[character.e]||'👤';
+document.getElementById('charDisplay').innerHTML='<h1>Build Planner: <span>'+character.n+'</span></h1><p class="ed-sub">'+icon+' '+character.e+' &middot; '+(WEP_ICONS[character.w]||'')+' '+character.w+' &middot; ★'+character.r+'</p>';
+
+document.getElementById('charCard').innerHTML='<div class="ed-char-card"><div class="ed-char-icon">'+icon+'</div><div class="ed-char-name">'+character.n+'</div><div class="ed-char-meta">★'+character.r+' &middot; '+character.e+' &middot; '+character.w+'</div></div>';
+
+// Populate weapon dropdown (filter by character's weapon type)
+var charWeapons=W.filter(function(w){return w.t===character.w});
+var wpnSel=document.getElementById('weaponSelect');
+charWeapons.sort(function(a,b){if(a.r!==b.r)return parseInt(b.r)-parseInt(a.r);return a.n.localeCompare(b.n)});
+charWeapons.forEach(function(w){
+  var opt=document.createElement('option');
+  opt.value=w.s;
+  opt.textContent='★'+w.r+' '+w.n+' (ATK '+w.a+', '+w.sub+' '+w.sv+')';
+  wpnSel.appendChild(opt);
+});
+wpnSel.addEventListener('change',updateStats);
+
+// Populate echo slots
+var echoSlots=document.getElementById('echoSlots');
+var slotLabels=['Cost 4','Cost 3','Cost 3','Cost 1','Cost 1'];
+var slotCosts=[4,3,3,1,1];
+for(var i=0;i<5;i++){
+  (function(idx){
+    var div=document.createElement('div');
+    div.className='echo-slot';
+    div.innerHTML='<span class="slot-label">'+slotLabels[idx]+'</span><select id="echo'+idx+'"><option value="">-- Empty --</option></select><span class="slot-se" id="se'+idx+'"></span>';
+    echoSlots.appendChild(div);
+    var sel=div.querySelector('select');
+    var available=E.filter(function(e){return e.c===slotCosts[idx]});
+    available.sort(function(a,b){return a.n.localeCompare(b.n)});
+    available.forEach(function(e){
+      var opt=document.createElement('option');
+      opt.value=e.s;
+      opt.textContent=(ELEM_ICONS[e.e]||'')+' '+e.n+' ('+e.se+')';
+      sel.appendChild(opt);
+    });
+    sel.addEventListener('change',function(){updateEchoLabel(idx);updateStats()});
+  })(i);
+}
+
+function updateEchoLabel(idx){
+  var slug=document.getElementById('echo'+idx).value;
+  var echoData=E.find(function(e){return e.s===slug});
+  document.getElementById('se'+idx).textContent=echoData?echoData.se:'';
+}
+
+// Base stats (level 90 approximation)
+var baseStats={atk:400,hp:12000,def:1200,cr:0.05,cd:1.50,er:1.00,elemDmg:0};
+
+function updateStats(){
+  // Weapon bonuses
+  var wSlug=wpnSel.value;
+  var weapon=W.find(function(w){return w.s===wSlug});
+  var wAtk=weapon?weapon.a:0;
+  var wSub=weapon?weapon.sub:'';
+  var wSubVal=weapon?parseFloat(weapon.sv)||0:0;
+
+  // Echo bonuses (simplified: each echo grants a flat bonus)
+  var echoAtkPct=0,echoCr=0,echoCd=0,echoEr=0,echoElem=0;
+  var selectedSe=new Set();
+  for(var i=0;i<5;i++){
+    var eSlug=document.getElementById('echo'+i).value;
+    var echo=E.find(function(e){return e.s===eSlug});
+    if(echo){
+      selectedSe.add(echo.se);
+      // Simulated echo substats
+      if(echo.c===4){echoCr+=0.05;echoCd+=0.10}
+      else if(echo.c===3){echoAtkPct+=0.08;echoCd+=0.05}
+      else{echoAtkPct+=0.04;echoCr+=0.03}
+    }
+  }
+
+  // Count sonata effects (2-piece and 5-piece bonuses)
+  var seCounts={};
+  selectedSe.forEach(function(se){seCounts[se]=(seCounts[se]||0)+1});
+  var seBonuses={elemDmg:0,atkPct:0,cr:0,er:0,heal:0};
+  Object.keys(seCounts).forEach(function(se){
+    var c=seCounts[se];
+    if(c>=2){
+      // 2-piece bonus
+      if(se==='Molten Rift'||se==='Freezing Frost'||se==='Void Thunder'||se==='Sierra Gale'||se==='Celestial Light'||se==='Sun-sinking Eclipse'){seBonuses.elemDmg+=0.10}
+      else if(se==='Rejuvenating Glow'){seBonuses.heal+=0.10}
+      else if(se==='Moonlit Clouds'){seBonuses.er+=0.10}
+      else if(se==='Lingering Tunes'){seBonuses.atkPct+=0.10}
+    }
+    if(c>=5){
+      // 5-piece bonus
+      if(se==='Molten Rift'||se==='Sierra Gale'||se==='Celestial Light'){seBonuses.elemDmg+=0.30}
+      else if(se==='Freezing Frost'){seBonuses.elemDmg+=0.10;seBonuses.cr+=0.20}
+      else if(se==='Void Thunder'){seBonuses.elemDmg+=0.30}
+      else if(se==='Sun-sinking Eclipse'){seBonuses.elemDmg+=0.30}
+      else if(se==='Rejuvenating Glow'){seBonuses.atkPct+=0.15}
+      else if(se==='Moonlit Clouds'){seBonuses.atkPct+=0.225}
+      else if(se==='Lingering Tunes'){seBonuses.atkPct+=0.20}
+    }
+  });
+
+  // Compute substat conversion
+  var subCr=0,subCd=0,subEr=0,subAtkPct=0;
+  if(wSub==='CRIT Rate')subCr=wSubVal/100;
+  else if(wSub==='CRIT DMG')subCd=wSubVal/100;
+  else if(wSub==='Energy Regen')subEr=wSubVal/100;
+  else if(wSub==='ATK')subAtkPct=wSubVal/100;
+
+  // Total ATK = base ATK + weapon ATK + ATK% from echoes/sonata/substat
+  var totalAtkPct=1+echoAtkPct+seBonuses.atkPct+subAtkPct;
+  var totalAtk=Math.round((baseStats.atk+wAtk)*totalAtkPct);
+
+  // Other stats
+  var totalCr=Math.round((baseStats.cr+echoCr+subCr+seBonuses.cr)*100);
+  var totalCd=Math.round((baseStats.cd+echoCd+subCd)*100);
+  var totalEr=Math.round((baseStats.er+subEr+seBonuses.er)*100);
+  var totalElem=Math.round((baseStats.elemDmg+echoElem+seBonuses.elemDmg)*100);
+
+  // Update display
+  document.getElementById('statAtk').textContent=totalAtk.toLocaleString();
+  document.getElementById('statHp').textContent=(baseStats.hp).toLocaleString();
+  document.getElementById('statCr').textContent=totalCr+'%';
+  document.getElementById('statCd').textContent=totalCd+'%';
+  document.getElementById('statElem').textContent=totalElem+'%';
+  document.getElementById('statEr').textContent=totalEr+'%';
+
+  // Weapon info
+  if(weapon){
+    document.getElementById('weaponInfo').innerHTML='<strong>'+weapon.passive_name+'</strong>: '+weapon.passive_desc+'<br><span style="color:#4ECDC4">Substat: '+weapon.sub+' '+weapon.sv+'</span>';
+  }
+
+  // Total breakdown
+  var seList=[];
+  selectedSe.forEach(function(s){seList.push(s)});
+  document.getElementById('statTotal').innerHTML=
+    '<div class="stat-row"><span class="label">Weapon ATK</span><span class="value">'+wAtk+'</span></div>'+
+    '<div class="stat-row"><span class="label">Weapon Sub</span><span class="value">'+(wSub?wSub+' +'+wSubVal:'--')+'</span></div>'+
+    '<div class="stat-row"><span class="label">Active Sonata Effects</span><span class="value">'+(seList.length?seList.join(', '):'None')+'</span></div>';
+}
+
+function resetBuild(){
+  wpnSel.value='';
+  for(var i=0;i<5;i++){document.getElementById('echo'+i).value='';document.getElementById('se'+i).textContent='';}
+  updateStats();
+}
+
+function shareBuild(){
+  var wSlug=wpnSel.value;
+  var eSlugs=[];
+  for(var i=0;i<5;i++){var v=document.getElementById('echo'+i).value;if(v)eSlugs.push(v)}
+  var url=window.location.origin+'/build-planner/editor.html?char='+charSlug+'&w='+wSlug+'&e='+eSlugs.join(',');
+  if(navigator.clipboard){navigator.clipboard.writeText(url);document.getElementById('shareMsg').style.display='block';setTimeout(function(){document.getElementById('shareMsg').style.display='none'},2000)}
+}
+
+// Restore from URL params
+function restoreBuild(){
+  var wParam=params.get('w');
+  if(wParam){wpnSel.value=wParam}
+  var eParam=params.get('e');
+  if(eParam){
+    var slugs=eParam.split(',');
+    for(var i=0;i<Math.min(slugs.length,5);i++){
+      var sel=document.getElementById('echo'+i);
+      if(sel){sel.value=slugs[i];updateEchoLabel(i)}
+    }
+  }
+  updateStats();
+}
+
+restoreBuild();
+</script>
+</body>
+</html>

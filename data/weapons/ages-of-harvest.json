@@ -1,0 +1,12 @@
+{
+  "name": "Ages of Harvest",
+  "slug": "ages-of-harvest",
+  "rarity": "5",
+  "type": "Broadblade",
+  "base_atk": 587,
+  "substat": "CRIT Rate",
+  "substat_val": "24.3%",
+  "passive_name": "Gleaming Harvest",
+  "passive_desc": "Increases ATK by 12%. After casting Resonance Skill, increases Heavy Attack DMG by 24% for 8s.",
+  "description": "A ceremonial broadblade forged during the first harvest festival of Jinzhou. The golden wheat patterns etched along its blade are said to bless the wielder with the bounty of the land itself."
+}

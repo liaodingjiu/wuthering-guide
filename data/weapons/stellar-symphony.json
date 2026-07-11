@@ -1,0 +1,12 @@
+{
+  "name": "Stellar Symphony",
+  "slug": "stellar-symphony",
+  "rarity": "5",
+  "type": "Gauntlets",
+  "base_atk": 500,
+  "substat": "Energy Regen",
+  "substat_val": "51.8%",
+  "passive_name": "Cosmic Harmony",
+  "passive_desc": "Increases all party members ATK by 10%. Upon casting Resonance Liberation, heals the wielder by 15% of Max HP.",
+  "description": "Gauntlets that resonate with the music of the spheres. Each movement produces a harmonic frequency that strengthens allies and disrupts enemies, conducting the battlefield like a cosmic orchestra."
+}

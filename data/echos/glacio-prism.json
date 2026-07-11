@@ -1,0 +1,10 @@
+{
+  "name": "Glacio Prism",
+  "slug": "glacio-prism",
+  "cost": 1,
+  "element": "Glacio",
+  "sonata_effect": "Freezing Frost",
+  "skill_name": "Crystal Shard",
+  "skill_desc": "Fire a shard of ice at enemies, dealing Glacio DMG.",
+  "description": "A crystalline echo that refracts light into shards of ice. Each shard hums with a different frequency, creating an eerie chorus as they fly."
+}

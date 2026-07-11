@@ -1,0 +1,12 @@
+{
+  "name": "Guardian Rectifier",
+  "slug": "guardian-rectifier",
+  "rarity": "3",
+  "type": "Rectifier",
+  "base_atk": 300,
+  "substat": "HP",
+  "substat_val": "32.4%",
+  "passive_name": "Vitality",
+  "passive_desc": "Increases Max HP by 12%.",
+  "description": "A rectifier tuned to life-preserving frequencies. Medics and support Resonators favor it for its ability to sustain vitality through prolonged encounters."
+}

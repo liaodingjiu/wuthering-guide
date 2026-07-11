@@ -1,0 +1,12 @@
+{
+  "name": "Guardian Gauntlets",
+  "slug": "guardian-gauntlets",
+  "rarity": "3",
+  "type": "Gauntlets",
+  "base_atk": 325,
+  "substat": "DEF",
+  "substat_val": "38.8%",
+  "passive_name": "Iron Guard",
+  "passive_desc": "Increases DEF by 10%. When hit, increases DEF by 5% for 8s, stacking up to 3 times.",
+  "description": "Defensive gauntlets built to withstand prolonged punishment. Each absorbed blow hardens their surface further, turning the enemy strength against them."
+}

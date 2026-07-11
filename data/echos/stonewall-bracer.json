@@ -1,0 +1,10 @@
+{
+  "name": "Stonewall Bracer",
+  "slug": "stonewall-bracer",
+  "cost": 3,
+  "element": "Glacio",
+  "sonata_effect": "Freezing Frost",
+  "skill_name": "Fortified Wall",
+  "skill_desc": "Raise a stone wall that blocks enemy projectiles. When destroyed, deals Glacio DMG to nearby enemies.",
+  "description": "An echo that has perfected the art of defense. Its walls have stood for millennia, and its shattering is as dangerous as any weapon."
+}

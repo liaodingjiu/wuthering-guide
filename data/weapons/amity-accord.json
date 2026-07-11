@@ -1,0 +1,12 @@
+{
+  "name": "Amity Accord",
+  "slug": "amity-accord",
+  "rarity": "4",
+  "type": "Gauntlets",
+  "base_atk": 412,
+  "substat": "DEF",
+  "substat_val": "51.8%",
+  "passive_name": "Unified Defense",
+  "passive_desc": "Increases DEF by 16%. When switching characters, grants a shield equal to 10% of Max HP for 10s.",
+  "description": "Gauntlets forged as a symbol of friendship between two rival schools of martial arts. Their balanced design embodies the harmony that arises when differences are set aside for a common purpose."
+}

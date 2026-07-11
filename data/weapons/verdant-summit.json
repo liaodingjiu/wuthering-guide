@@ -1,0 +1,12 @@
+{
+  "name": "Verdant Summit",
+  "slug": "verdant-summit",
+  "rarity": "5",
+  "type": "Broadblade",
+  "base_atk": 587,
+  "substat": "CRIT DMG",
+  "substat_val": "48.6%",
+  "passive_name": "Swordsworn Ambition",
+  "passive_desc": "For every 0.5s Resonance Skill is active, Heavy Attack DMG Bonus increases by 8%, stacking up to 4 times. When Resonance Skill ends, the effect persists for 3s.",
+  "description": "A peerless broadblade once wielded by the legendary Swordsworn of Huanglong. Its edge sings with the resolve of a thousand warriors, and those who grasp its hilt hear the echo of ancient oaths sworn in defense of the realm."
+}

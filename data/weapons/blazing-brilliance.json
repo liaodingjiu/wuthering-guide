@@ -1,0 +1,12 @@
+{
+  "name": "Blazing Brilliance",
+  "slug": "blazing-brilliance",
+  "rarity": "5",
+  "type": "Sword",
+  "base_atk": 587,
+  "substat": "CRIT DMG",
+  "substat_val": "66.2%",
+  "passive_name": "Scorching Precipice",
+  "passive_desc": "Increases Resonance Skill DMG by 24%. After casting Resonance Skill, Basic Attack DMG increases by 30% for 10s.",
+  "description": "A sword that burns with an eternal flame, its blade forged from the heart of a dying star. The intense heat emanating from its edge can turn the tide of any battle in an instant."
+}

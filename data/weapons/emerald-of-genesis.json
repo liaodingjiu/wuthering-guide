@@ -1,0 +1,12 @@
+{
+  "name": "Emerald of Genesis",
+  "slug": "emerald-of-genesis",
+  "rarity": "5",
+  "type": "Sword",
+  "base_atk": 587,
+  "substat": "CRIT Rate",
+  "substat_val": "24.3%",
+  "passive_name": "Stormy Resolution",
+  "passive_desc": "Increases Energy Regen by 12%. After casting Resonance Liberation, increases ATK by 15% for 10s.",
+  "description": "A sword that has witnessed the birth and death of worlds. The emerald embedded in its guard pulses with the rhythm of creation, guiding its wielder through the storms of fate."
+}

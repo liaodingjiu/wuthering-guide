@@ -1,0 +1,10 @@
+{
+  "name": "Fusion Warrior",
+  "slug": "fusion-warrior",
+  "cost": 4,
+  "element": "Fusion",
+  "sonata_effect": "Molten Rift",
+  "skill_name": "Meteor Punch",
+  "skill_desc": "Transform into Fusion Warrior and deliver a meteor-like punch, dealing massive Fusion DMG and staggering enemies.",
+  "description": "An echo of a warrior who mastered the art of fusing body and flame. Each punch lands with the force of a falling star."
+}

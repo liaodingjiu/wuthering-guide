@@ -1,0 +1,10 @@
+{
+  "name": "Rosemary",
+  "slug": "rosemary",
+  "cost": 3,
+  "element": "Spectro",
+  "sonata_effect": "Rejuvenating Glow",
+  "skill_name": "Healing Bloom",
+  "skill_desc": "Summon a field of flowers that continuously heals allies within it. Duration: 8s.",
+  "description": "A gentle echo that blooms with restorative energy. Where its petals fall, life springs anew, closing wounds and renewing strength."
+}

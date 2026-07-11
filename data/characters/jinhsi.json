@@ -1,0 +1,45 @@
+{
+  "s": "jinhsi",
+  "n": "Jinhsi",
+  "r": "5",
+  "e": "Spectro",
+  "w": "Broadblade",
+  "cls": "Congenital",
+  "hp": 14500,
+  "atk": 380,
+  "def": 1250,
+  "cr": 0.05,
+  "cd": 1.5,
+  "er": 1,
+  "desc": "The Magistrate of Jinzhou, a Radiant Resonator who commands the power of concentrated light. Jinhsi channels celestial energy through her broadblade, unleashing devastating beams of Spectro power that can purify even the deepest Tacet corruption. Her calm demeanor belies the overwhelming force she brings to every battle.",
+  "skills": [
+    {
+      "n": "Basic Attack — Radiant Slash",
+      "t": "Basic Attack",
+      "d": "Perform up to 5 consecutive strikes, dealing Spectro DMG. Heavy Attack consumes STA to perform a powerful charged slash dealing increased Spectro DMG. Mid-air Attack plunges downward, dealing AoE Spectro DMG."
+    },
+    {
+      "n": "Resonance Skill — Luminous Incarnation",
+      "t": "Resonance Skill",
+      "d": "Slash forward with Incarnation energy, dealing Spectro DMG. Enter Incarnation state, greatly increasing the damage of Basic Attacks and converting them to Spectro DMG. CD: 12s. Concerto Energy on hit: 10."
+    },
+    {
+      "n": "Resonance Liberation — Purifying Radiance",
+      "t": "Resonance Liberation",
+      "d": "Unleash a concentrated beam of Spectro energy that sweeps across the battlefield, dealing massive Spectro DMG to all enemies in its path. CD: 20s. Energy Cost: 125. Concerto Energy on hit: 30."
+    },
+    {
+      "n": "Forte Circuit — Incandescence",
+      "t": "Forte Circuit",
+      "d": "While in Incarnation state, Basic Attacks generate Incandescence stacks (max 50). When switching out via Outro Skill, consume all stacks to increase Outro Skill DMG by up to 100% proportionally."
+    },
+    {
+      "n": "Outro Skill — Light's Judgment",
+      "t": "Outro Skill",
+      "d": "Deal Spectro DMG equal to 300% of ATK to nearby enemies. Increase the incoming Resonator's Spectro DMG by 23% for 14s. DMG multiplier increases based on Incandescence stacks consumed."
+    }
+  ],
+  "recWeapon": "verdant-summit",
+  "recEcho": "mourning-aix",
+  "recSet": "Celestial Light"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Autumntrace",
+  "slug": "autumntrace",
+  "rarity": "4",
+  "type": "Sword",
+  "base_atk": 462,
+  "substat": "CRIT Rate",
+  "substat_val": "20.2%",
+  "passive_name": "Falling Leaves",
+  "passive_desc": "Increases Basic Attack DMG by 16%. After dodging, increases ATK by 10% for 6s.",
+  "description": "A sword that embodies the melancholy beauty of autumn. Its edge scatters spectral leaves with each swing, and its movements carry the bittersweet grace of the season final days."
+}

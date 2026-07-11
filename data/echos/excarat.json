@@ -1,0 +1,10 @@
+{
+  "name": "Excarat",
+  "slug": "excarat",
+  "cost": 1,
+  "element": "Havoc",
+  "sonata_effect": "Moonlit Clouds",
+  "skill_name": "Energy Drain",
+  "skill_desc": "Drain energy from enemies, restoring 5 Resonance Energy on hit.",
+  "description": "A parasitic echo that feeds on the Resonance of others. It siphons energy with surgical precision, leaving enemies drained and vulnerable."
+}

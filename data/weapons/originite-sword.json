@@ -1,0 +1,12 @@
+{
+  "name": "Originite Sword",
+  "slug": "originite-sword",
+  "rarity": "3",
+  "type": "Sword",
+  "base_atk": 354,
+  "substat": "ATK",
+  "substat_val": "24.2%",
+  "passive_name": "Sharpened Edge",
+  "passive_desc": "Increases Basic Attack DMG by 12%.",
+  "description": "A finely honed sword made from pure Originite. Its balance and temper make it the ideal training weapon for aspiring Resonators throughout Jinzhou."
+}

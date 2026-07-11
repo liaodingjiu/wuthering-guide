@@ -1,0 +1,10 @@
+{
+  "name": "Hoartoise",
+  "slug": "hoartoise",
+  "cost": 3,
+  "element": "Glacio",
+  "sonata_effect": "Freezing Frost",
+  "skill_name": "Ice Spikes",
+  "skill_desc": "Summon ice spikes from the ground that impale enemies, dealing Glacio DMG and slowing them.",
+  "description": "An ancient echo that carries the cold of centuries on its shell. The ice it summons is said to be as old as the first winter."
+}

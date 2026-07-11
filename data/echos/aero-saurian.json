@@ -1,0 +1,10 @@
+{
+  "name": "Aero Saurian",
+  "slug": "aero-saurian",
+  "cost": 1,
+  "element": "Aero",
+  "sonata_effect": "Sierra Gale",
+  "skill_name": "Wind Slash",
+  "skill_desc": "Slash enemies with wind-infused claws, dealing Aero DMG.",
+  "description": "A reptilian echo whose claws carve the very wind. Each slash leaves visible trails in the air that persist for moments before dissipating."
+}

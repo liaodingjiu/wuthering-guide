@@ -1,0 +1,12 @@
+{
+  "name": "Cadenza",
+  "slug": "cadenza",
+  "rarity": "4",
+  "type": "Sword",
+  "base_atk": 462,
+  "substat": "Energy Regen",
+  "substat_val": "51.8%",
+  "passive_name": "Flowing Melody",
+  "passive_desc": "Increases Energy Regen by 16%. Upon dodging an attack, gains 8 Resonance Energy. CD 10s.",
+  "description": "A sword that moves like a flowing musical passage. Its wielder dances through combat with the grace of a virtuoso, each dodge and strike part of an improvised masterpiece."
+}

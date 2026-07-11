@@ -1,0 +1,12 @@
+{
+  "name": "Dauntless Evernight",
+  "slug": "dauntless-evernight",
+  "rarity": "4",
+  "type": "Broadblade",
+  "base_atk": 462,
+  "substat": "Energy Regen",
+  "substat_val": "30.6%",
+  "passive_name": "Unyielding Night",
+  "passive_desc": "Increases Heavy Attack DMG by 20%. When hit by an enemy, increases DEF by 15% for 6s.",
+  "description": "A broadblade forged in the endless night between worlds. Its dark surface seems to absorb light itself, yet in the hands of a determined wielder, it becomes an unbreakable beacon of defiance."
+}

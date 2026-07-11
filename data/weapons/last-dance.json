@@ -1,0 +1,12 @@
+{
+  "name": "Last Dance",
+  "slug": "last-dance",
+  "rarity": "5",
+  "type": "Pistols",
+  "base_atk": 500,
+  "substat": "CRIT DMG",
+  "substat_val": "72.0%",
+  "passive_name": "Finale Waltz",
+  "passive_desc": "Increases Resonance Liberation DMG by 30%. After casting Resonance Liberation, gains 10% CRIT Rate for 10s.",
+  "description": "Elegant pistols designed for a final, unforgettable performance. Every bullet fired is a step in a deadly waltz, and the crescendo comes when the music stops and only the echo remains."
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Guardian Broadblade",
+  "slug": "guardian-broadblade",
+  "rarity": "3",
+  "type": "Broadblade",
+  "base_atk": 325,
+  "substat": "DEF",
+  "substat_val": "38.8%",
+  "passive_name": "Steadfast",
+  "passive_desc": "Increases DEF by 12%. When HP is below 50%, increases DEF by an additional 10%.",
+  "description": "A broadblade designed for those who stand between danger and the innocent. Its weight distribution favors defensive stances, allowing the wielder to hold the line against overwhelming odds."
+}

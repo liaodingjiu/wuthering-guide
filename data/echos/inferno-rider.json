@@ -1,0 +1,10 @@
+{
+  "name": "Inferno Rider",
+  "slug": "inferno-rider",
+  "cost": 4,
+  "element": "Fusion",
+  "sonata_effect": "Molten Rift",
+  "skill_name": "Flame Charge",
+  "skill_desc": "Transform into Inferno Rider and charge forward on a motorcycle, leaving a trail of fire that deals continuous Fusion DMG. Gain 12% Fusion DMG Bonus for 15s.",
+  "description": "A blazing echo that rides a phantom motorcycle through the battlefield. The flames it leaves behind burn for days, fueled by its unquenchable spirit of rebellion."
+}

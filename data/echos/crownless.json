@@ -1,0 +1,10 @@
+{
+  "name": "Crownless",
+  "slug": "crownless",
+  "cost": 4,
+  "element": "Havoc",
+  "sonata_effect": "Sun-sinking Eclipse",
+  "skill_name": "Crownless Slash",
+  "skill_desc": "Transform into Crownless and unleash 3 consecutive slashes, dealing Havoc DMG. After casting, gain 12% Havoc DMG Bonus for 15s.",
+  "description": "An echo of a fallen king who lost his crown and his kingdom. It still fights with the pride of royalty, though its domain has long since crumbled to dust."
+}

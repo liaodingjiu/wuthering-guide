@@ -1,0 +1,12 @@
+{
+  "name": "Overture",
+  "slug": "overture",
+  "rarity": "4",
+  "type": "Pistols",
+  "base_atk": 462,
+  "substat": "Energy Regen",
+  "substat_val": "51.8%",
+  "passive_name": "Opening Movement",
+  "passive_desc": "Increases Energy Regen by 16%. When switching characters, the next character gains 8% ATK for 10s.",
+  "description": "Pistols designed to set the stage for greatness. The opening notes they fire into battle compose the prelude to a symphony of coordinated strikes and flawless teamwork."
+}

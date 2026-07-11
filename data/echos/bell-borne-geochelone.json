@@ -1,0 +1,10 @@
+{
+  "name": "Bell-Borne Geochelone",
+  "slug": "bell-borne-geochelone",
+  "cost": 4,
+  "element": "Glacio",
+  "sonata_effect": "Freezing Frost",
+  "skill_name": "Frozen Shell",
+  "skill_desc": "Transform into Bell-Borne Geochelone and create a protective shell that absorbs DMG. Upon shattering, deals Glacio DMG to nearby enemies and applies Freeze.",
+  "description": "An ancient echo carrying a bell of primordial frost on its back. Each toll of the bell freezes the air, and its shell is said to be harder than glacier ice."
+}

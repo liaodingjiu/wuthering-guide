@@ -1,0 +1,12 @@
+{
+  "name": "Augment",
+  "slug": "augment",
+  "rarity": "4",
+  "type": "Rectifier",
+  "base_atk": 462,
+  "substat": "ATK",
+  "substat_val": "36.4%",
+  "passive_name": "Enhanced Resonance",
+  "passive_desc": "Increases Resonance Liberation DMG by 20%. After casting Resonance Liberation, gains 15% CRIT DMG for 10s.",
+  "description": "A rectifier engineered to push Resonance abilities beyond their natural limits. The augmentation process is intense but the results are undeniable — raw power amplified to extraordinary levels."
+}

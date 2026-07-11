@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<title>Wuthering Waves Items — All Materials & Consumables | Wuthering Database</title>
+<meta name="description" content="All Wuthering Waves items — ascension materials, skill materials, weapon materials, consumables, and more. Search and filter by category.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://wutzone.com/items/">
+<meta property="og:title" content="Wuthering Waves Items Database">
+<meta property="og:description" content="All items — materials, consumables, and resources.">
+<meta property="og:type" content="website"><meta property="og:url" content="https://wutzone.com/items/">
+<link rel="stylesheet" href="/shared.css">
+<style>
+.it-hero{text-align:center;padding:24px 0 8px}
+.it-hero h1{font-size:28px;font-weight:700}
+.it-hero h1 span{color:#4ECDC4}
+.it-hero .it-sub{font-size:14px;color:#91A4B8}
+.it-bar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:16px 0}
+.it-bar input{flex:1;min-width:160px;max-width:300px;padding:8px 14px;border:1px solid rgba(78,205,196,0.3);border-radius:12px;background:var(--surface);color:#fff;font-size:14px}
+.it-bar input:focus{outline:none;border-color:#4ECDC4}
+.it-bar input::placeholder{color:#6b7d94}
+.it-bar select{padding:8px 12px;border:1px solid rgba(78,205,196,0.3);border-radius:12px;background:var(--surface);color:#fff;font-size:14px}
+.it-bar .it-count{font-size:13px;color:#91A4B8;white-space:nowrap}
+.it-chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px;justify-content:center}
+.it-chip{padding:6px 14px;border-radius:20px;border:1px solid rgba(78,205,196,0.3);font-size:12px;cursor:pointer;color:#91A4B8;background:var(--surface);transition:all .25s ease}
+.it-chip:hover,.it-chip.active{border-color:#4ECDC4;color:#4ECDC4;background:rgba(78,205,196,0.08)}
+.it-table-wrap{overflow-x:auto;border:1px solid rgba(78,205,196,0.15);border-radius:12px;margin-bottom:20px}
+.it-table{width:100%;border-collapse:collapse;font-size:14px}
+.it-table thead{background:var(--nav-bg);position:sticky;top:0;z-index:1}
+.it-table th{padding:12px 14px;text-align:left;font-size:12px;font-weight:600;color:#91A4B8;text-transform:uppercase;letter-spacing:.06em;border-bottom:2px solid rgba(78,205,196,0.2);white-space:nowrap}
+.it-table td{padding:10px 14px;border-bottom:1px solid rgba(78,205,196,0.08);color:var(--text);vertical-align:middle}
+.it-table tbody tr{transition:background .15s}
+.it-table tbody tr:hover{background:rgba(78,205,196,0.03)}
+.it-table .it-rarity{display:inline-block;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600}
+.r-5{background:rgba(250,204,21,0.15);color:#facc15}
+.r-4{background:rgba(192,132,252,0.15);color:#c084fc}
+.r-3{background:rgba(96,165,250,0.15);color:#60a5fa}
+.r-2{background:rgba(107,114,128,0.15);color:#9ca3af}
+.it-emoji{font-size:18px}
+@media(max-width:768px){.it-table{font-size:12px}.it-table th,.it-table td{padding:8px 10px}}
+</style>
+</head>
+<body>
+<div class="top-bar">📊 Wuthering Waves Database — Data-driven, always up to date.</div>
+<nav aria-label="Main navigation"><div class="nav-inner"><a href="/" class="logo">Wuthering<span>DB</span></a><div class="nav-right"><ul class="nav-links"><li><a href="/characters/">Characters</a></li><li><a href="/tier-list/">Tier List</a></li><li><a href="/echos/">Echoes</a></li><li><a href="/weapons/">Weapons</a></li><li class="nav-dropdown"><a>Database ▾</a><ul class="dropdown-menu"><li><a href="/items/">Items</a></li><li><a href="/skills/">Skills</a></li></ul></li><li><a href="/guide/">Guide</a></li><li><a href="/map/">Map</a></li><li><a href="/codes/">Codes</a></li><li><a href="/build-planner/" class="nav-highlight">Builder</a></li></ul><button class="theme-toggle">EN ▾</button></div></div></nav>
+
+<main class="container" style="max-width:1200px">
+
+<header class="it-hero">
+  <h1>Wuthering Waves <span>Items</span></h1>
+  <p class="it-sub" id="itSub">All materials, consumables, and resources. Data from the official wiki.</p>
+</header>
+
+<div class="it-chips" id="chips">
+  <span class="it-chip active" data-cat="all">📦 All</span>
+  <span class="it-chip" data-cat="Ascension Material">⬆️ Ascension</span>
+  <span class="it-chip" data-cat="Skill Material">📖 Skill</span>
+  <span class="it-chip" data-cat="Weapon Material">🔧 Weapon</span>
+  <span class="it-chip" data-cat="Echo Material">🔮 Echo</span>
+  <span class="it-chip" data-cat="Consumable">🧪 Consumable</span>
+  <span class="it-chip" data-cat="Currency">💰 Currency</span>
+  <span class="it-chip" data-cat="Crafting">🛠️ Crafting</span>
+</div>
+
+<div class="it-bar">
+  <input type="text" id="s" placeholder="Search items..." autocomplete="off">
+  <span class="it-count" id="c">0/0</span>
+  <select id="rarity"><option value="all">All Rarities</option><option value="5">★★★★★</option><option value="4">★★★★</option><option value="3">★★★</option><option value="2">★★</option></select>
+</div>
+
+<div class="it-table-wrap">
+<table class="it-table">
+<thead><tr><th>Item</th><th>Rarity</th><th>Category</th><th>Description</th><th>Source</th></tr></thead>
+<tbody id="tb"></tbody>
+</table>
+</div>
+</main>
+
+<footer class="site-footer"><div class="footer-inner"><p>&copy; 2026 Wuthering Waves Database. Not affiliated with Kuro Games.</p><div class="footer-links"><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/contact.html">Contact</a></div></div></footer>
+<script>
+var ITEMS=[
+  {n:"Astrite",r:"5",cat:"Currency",d:"Premium currency used for Convene (gacha pulls). The most valuable resource in Wuthering Waves.",src:"Events, Quest Rewards, Shop"},
+  {n:"Shell Credit",r:"2",cat:"Currency",d:"Basic currency used for upgrading characters, weapons, and purchasing items from shops.",src:"Exploration, Quests, Events"},
+  {n:"Oscillated Coral",r:"5",cat:"Currency",d:"Premium exchange currency obtained from duplicate Resonators. Traded for Resonance Chains.",src:"Convene (duplicate characters)"},
+  {n:"Afterglow Coral",r:"4",cat:"Currency",d:"Exchange currency obtained from Convene. Used to purchase materials and Wavebands.",src:"Convene"},
+  {n:"Waveplate",r:"3",cat:"Currency",d:"Stamina resource consumed to claim rewards from Forgery Challenge, Simulation Training, and Bosses.",src:"Auto-regenerates (240/day)"},
+  {n:"Crystallized Solvent",r:"4",cat:"Consumable",d:"Restores 60 Waveplates instantly. A must-hoard item for efficient farming.",src:"Battle Pass, Events, Shop"},
+  {n:"Premium Resonance Potion",r:"4",cat:"Consumable",d:"Grants 8000 Resonator EXP. The most efficient way to level up characters.",src:"Simulation Training, Events"},
+  {n:"Advanced Resonance Potion",r:"3",cat:"Consumable",d:"Grants 3000 Resonator EXP.",src:"Simulation Training, Exploration"},
+  {n:"Medium Resonance Potion",r:"2",cat:"Consumable",d:"Grants 1000 Resonator EXP.",src:"Exploration, Shops"},
+  {n:"Premium Energy Core",r:"4",cat:"Consumable",d:"Grants 8000 Weapon EXP. Used to level up weapons.",src:"Forgery Challenge, Events"},
+  {n:"Advanced Energy Core",r:"3",cat:"Consumable",d:"Grants 3000 Weapon EXP.",src:"Forgery Challenge, Exploration"},
+  {n:"Medium Energy Core",r:"2",cat:"Consumable",d:"Grants 1000 Weapon EXP.",src:"Exploration, Shops"},
+  {n:"Premium Sealed Tube",r:"4",cat:"Echo Material",d:"Grants 5000 Echo EXP. Used to level up Echoes.",src:"Tacet Field Cleanup, Events"},
+  {n:"Advanced Sealed Tube",r:"3",cat:"Echo Material",d:"Grants 2000 Echo EXP.",src:"Tacet Field Cleanup"},
+  {n:"Medium Sealed Tube",r:"2",cat:"Echo Material",d:"Grants 800 Echo EXP.",src:"Exploration, Tacet Fields"},
+  {n:"Tuner (Advanced)",r:"4",cat:"Echo Material",d:"Used to tune Echoes and unlock substats. Essential for endgame build optimization.",src:"Tacet Field Cleanup, Events"},
+  {n:"Tuner (Medium)",r:"3",cat:"Echo Material",d:"Used to tune Echoes and unlock substats up to level 4.",src:"Tacet Field Cleanup"},
+  {n:"Tuner (Basic)",r:"2",cat:"Echo Material",d:"Used to tune Echoes and unlock substats up to level 2.",src:"Exploration, Quests"},
+  {n:"FF Whisperin Core",r:"5",cat:"Ascension Material",d:"Top-tier ascension material for 5★ Resonators. Drops from weekly bosses and high-level challenges.",src:"Weekly Bosses, Forgery Challenge (Lv.80+)"},
+  {n:"FF Howler Core",r:"4",cat:"Ascension Material",d:"High-grade ascension material for 4★ and 5★ Resonators.",src:"Bosses, Forgery Challenge (Lv.60+)"},
+  {n:"FF Roarer Core",r:"3",cat:"Ascension Material",d:"Mid-grade ascension material for all Resonators.",src:"Bosses, Forgery Challenge (Lv.40+)"},
+  {n:"FF Whisperin Core (Element)",r:"4",cat:"Ascension Material",d:"Elemental ascension core — element varies (Fusion/Glacio/Electro/Aero/Spectro/Havoc).",src:"Elemental Bosses, Forgery Challenge"},
+  {n:"Belle Poppy",r:"3",cat:"Ascension Material",d:"Local specialty flower found in Jinzhou. Used for Resonator ascension.",src:"Jinzhou overworld (farming routes)"},
+  {n:"Coriolus",r:"3",cat:"Ascension Material",d:"Rare fungus found in dark, damp areas. Ascension material for certain Resonators.",src:"Underground areas, caves"},
+  {n:"Pecok Flower",r:"3",cat:"Ascension Material",d:"Vibrant flower growing in sunny meadows. Ascension material.",src:"Meadow areas, Mt. Firmament"},
+  {n:"Lanternberry",r:"3",cat:"Ascension Material",d:"Glowing berry found near water sources. Ascension material.",src:"Riverside, Whining Aix's Mire"},
+  {n:"Iris",r:"3",cat:"Ascension Material",d:"Elegant purple flower. Ascension material for certain Resonators.",src:"Mt. Firmament, garden areas"},
+  {n:"Terraspawn Fungus",r:"3",cat:"Ascension Material",d:"Hardy fungus growing on rocks. Ascension material.",src:"Rocky areas, Desorock Highlands"},
+  {n:"Wintry Abalone",r:"3",cat:"Ascension Material",d:"Cold-water shellfish. Ascension material for Glacio Resonators.",src:"Coastal areas, Tiger Maw's Mine"},
+  {n:"Phlogiston",r:"4",cat:"Skill Material",d:"Top-tier material for leveling Resonance Skills to Lv.9-10.",src:"Forgery Challenge (Lv.80+), Events"},
+  {n:"Cadence Seed",r:"3",cat:"Skill Material",d:"Mid-tier material for leveling Resonance Skills to Lv.6-8.",src:"Forgery Challenge (Lv.50+)"},
+  {n:"Cadence Bud",r:"2",cat:"Skill Material",d:"Basic material for leveling Resonance Skills to Lv.2-5.",src:"Forgery Challenge (Lv.20+)"},
+  {n:"Metallic Drip",r:"4",cat:"Weapon Material",d:"Top-tier weapon ascension material.",src:"Forgery Challenge (Lv.80+)"},
+  {n:"Reactive Metallic Drip",r:"3",cat:"Weapon Material",d:"Mid-tier weapon ascension material.",src:"Forgery Challenge (Lv.50+)"},
+  {n:"Inert Metallic Drip",r:"2",cat:"Weapon Material",d:"Basic weapon ascension material.",src:"Forgery Challenge (Lv.20+)"},
+  {n:"Forgery: Sword",r:"3",cat:"Crafting",d:"Material used to craft and ascend Swords.",src:"Forgery Challenge (rotating)"},
+  {n:"Forgery: Broadblade",r:"3",cat:"Crafting",d:"Material used to craft and ascend Broadblades.",src:"Forgery Challenge (rotating)"},
+  {n:"Forgery: Pistols",r:"3",cat:"Crafting",d:"Material used to craft and ascend Pistols.",src:"Forgery Challenge (rotating)"},
+  {n:"Forgery: Gauntlets",r:"3",cat:"Crafting",d:"Material used to craft and ascend Gauntlets.",src:"Forgery Challenge (rotating)"},
+  {n:"Forgery: Rectifier",r:"3",cat:"Crafting",d:"Material used to craft and ascend Rectifiers.",src:"Forgery Challenge (rotating)"},
+  {n:"Healing Pill",r:"2",cat:"Consumable",d:"Restores 30% Max HP to the active Resonator.",src:"Crafting, Shops"},
+  {n:"Revival Inhaler",r:"3",cat:"Consumable",d:"Revives a fallen Resonator with 20% HP. Limited to 2 uses per battle.",src:"Crafting, Shops"},
+  {n:"ATK Boost Formula",r:"3",cat:"Consumable",d:"Increases ATK by 25% for 300s. Essential for challenging endgame content.",src:"Crafting (Alchemy)"},
+  {n:"DEF Boost Formula",r:"3",cat:"Consumable",d:"Increases DEF by 25% for 300s.",src:"Crafting (Alchemy)"},
+  {n:"CRIT Rate Formula",r:"4",cat:"Consumable",d:"Increases CRIT Rate by 12% for 300s.",src:"Crafting (Alchemy), Events"},
+  {n:"Elemental Resist Spray",r:"2",cat:"Consumable",d:"Increases all Elemental RES by 15% for 300s.",src:"Crafting, Shops"}
+];
+var D=ITEMS,category="all";
+
+function render(l){
+  document.getElementById('c').textContent=l.length+'/'+D.length;
+  document.getElementById('tb').innerHTML=l.map(function(i){
+    var rc='r-'+i.r;
+    return '<tr><td><span class="it-emoji"></span> <strong>'+i.n+'</strong></td><td><span class="it-rarity '+rc+'">★'+i.r+'</span></td><td>'+i.cat+'</td><td style="color:#91A4B8">'+i.d+'</td><td style="font-size:12px;color:#6b7d94">'+i.src+'</td></tr>';
+  }).join('');
+}
+
+function filter(){
+  var q=document.getElementById('s').value.toLowerCase(),r=document.getElementById('rarity').value;
+  var l=D.filter(function(i){
+    if(category!=='all'&&i.cat!==category)return false;
+    if(r!=='all'&&i.r!==r)return false;
+    if(q&&i.n.toLowerCase().indexOf(q)<0&&i.cat.toLowerCase().indexOf(q)<0)return false;
+    return true;
+  });
+  l.sort(function(a,b){if(a.r!==b.r)return parseInt(b.r)-parseInt(a.r);return a.n.localeCompare(b.n)});
+  render(l);
+}
+
+document.getElementById('s').addEventListener('input',filter);
+document.getElementById('rarity').addEventListener('change',filter);
+document.querySelectorAll('.it-chip').forEach(function(ch){
+  ch.addEventListener('click',function(){
+    document.querySelectorAll('.it-chip').forEach(function(c){c.classList.remove('active')});
+    this.classList.add('active');
+    category=this.getAttribute('data-cat');
+    filter();
+  });
+});
+render(D.sort(function(a,b){if(a.r!==b.r)return parseInt(b.r)-parseInt(a.r);return a.n.localeCompare(b.n)}));
+</script>
+</body>
+</html>

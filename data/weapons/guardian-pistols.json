@@ -1,0 +1,12 @@
+{
+  "name": "Guardian Pistols",
+  "slug": "guardian-pistols",
+  "rarity": "3",
+  "type": "Pistols",
+  "base_atk": 300,
+  "substat": "Energy Regen",
+  "substat_val": "32.4%",
+  "passive_name": "Vigilant",
+  "passive_desc": "Increases Energy Regen by 10%.",
+  "description": "Pistols carried by Jinzhou patrol guards. Modified with an auxiliary resonance chamber that slowly accumulates energy between engagements."
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Diamondclaw",
+  "slug": "diamondclaw",
+  "cost": 1,
+  "element": "Spectro",
+  "sonata_effect": "Celestial Light",
+  "skill_name": "Crystal Claw",
+  "skill_desc": "Slash with crystalline claws, dealing Spectro DMG.",
+  "description": "An echo with claws of pure diamond. They sparkle brilliantly with each strike, turning combat into a dazzling — if deadly — light show."
+}

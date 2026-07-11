@@ -1,0 +1,10 @@
+{
+  "name": "Chaserazor",
+  "slug": "chaserazor",
+  "cost": 3,
+  "element": "Fusion",
+  "sonata_effect": "Molten Rift",
+  "skill_name": "Blade Rush",
+  "skill_desc": "Dash forward while spinning blades, dealing Fusion DMG to all enemies in the path.",
+  "description": "A relentless echo that pursues its prey with spinning blades. It never stops, never slows, until every target in its path has been cut down."
+}
