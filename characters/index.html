@@ -71,7 +71,7 @@ function render(l){
     var star=c.r!=='?'?'★'+c.r:'',rc=c.r==='5'?'r-5':c.r==='4'?'r-4':'',icon=ELEM_ICONS[c.e]||'👤';
     return '<a href="/characters/'+c.s+'/" class="ch-card">'+
       (star?'<span class="ch-rarity '+rc+'">'+star+'</span>':'')+
-      '<div class="ch-img">'+icon+'</div>'+
+      '<div class="ch-img"><img src="'+(c.img||'/images/characters/'+c.s+'.webp')+'" alt="'+c.n+'" style="width:64px;height:64px;border-radius:50%;object-fit:contain" onerror="this.style.display=\'none\'"></div>'+
       '<span class="ch-name">'+c.n+'</span>'+
       (c.e?'<span class="ch-meta">'+icon+' '+c.e+'</span>':'')+
       (c.w?'<span class="ch-weapon">'+(WEP_ICONS[c.w]||'')+' '+c.w+'</span>':'')+
