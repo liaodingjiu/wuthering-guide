@@ -20,7 +20,8 @@
 .ch-card { background:var(--surface); border:1px solid rgba(78,205,196,0.2); border-radius:12px; padding:14px 8px 10px; text-align:center; transition:all .25s ease; cursor:pointer; text-decoration:none; color:var(--text); display:flex; flex-direction:column; align-items:center; position:relative; }
 .ch-card:hover { border-color:rgba(78,205,196,0.7); transform:translateY(-2px); }
 .ch-card .ch-rarity { position:absolute;top:8px;right:8px;font-size:10px;padding:1px 6px;border-radius:4px;font-weight:700; }
-.ch-card .ch-img { width:64px;height:64px;border-radius:50%;background:rgba(78,205,196,0.05);display:flex;align-items:center;justify-content:center;font-size:28px;margin-bottom:8px;border:2px solid rgba(78,205,196,0.2); }
+.ch-card .ch-img { width:80px;height:80px;border-radius:12px;overflow:hidden;background:rgba(78,205,196,0.05);display:flex;align-items:center;justify-content:center;font-size:28px;margin-bottom:8px;border:1px solid rgba(78,205,196,0.2); }
+.ch-card .ch-img img { width:100%;height:100%;object-fit:cover; }
 .ch-card .ch-name { font-size:13px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%; }
 .ch-card .ch-meta { font-size:10px;color:#6b7d94;margin-top:2px; }
 .ch-card .ch-weapon { font-size:10px;color:#91A4B8;margin-top:2px; }
@@ -71,7 +72,7 @@ function render(l){
     var star=c.r!=='?'?'★'+c.r:'',rc=c.r==='5'?'r-5':c.r==='4'?'r-4':'',icon=ELEM_ICONS[c.e]||'👤';
     return '<a href="/characters/'+c.s+'/" class="ch-card">'+
       (star?'<span class="ch-rarity '+rc+'">'+star+'</span>':'')+
-      '<div class="ch-img"><img src="'+(c.img||'/images/characters/'+c.s+'.webp')+'" alt="'+c.n+'" style="width:64px;height:64px;border-radius:50%;object-fit:contain" onerror="this.style.display=\'none\'"></div>'+
+      '<div class="ch-img"><img src="'+(c.img||'/images/characters/'+c.s+'.webp')+'" alt="'+c.n+'" style="width:80px;height:80px;border-radius:12px;object-fit:cover" onerror="this.style.display=\'none\'"></div>'+
       '<span class="ch-name">'+c.n+'</span>'+
       (c.e?'<span class="ch-meta">'+icon+' '+c.e+'</span>':'')+
       (c.w?'<span class="ch-weapon">'+(WEP_ICONS[c.w]||'')+' '+c.w+'</span>':'')+
