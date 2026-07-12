@@ -8,15 +8,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <title>Wuthering Waves Database — Characters, Weapons, Echoes & Builds</title>
-<meta name="description" content="The comprehensive Wuthering Waves database — 500+ characters, weapons, echoes, tier list, build planner, and interactive map. All data from the official wiki.">
+<meta name="description" content="The comprehensive Wuthering Waves database — 45 playable Resonators, weapons, echoes, tier list, build planner, and interactive map. All data from the official wiki.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://wutzone.com/">
 <meta property="og:title" content="Wuthering Waves Database">
-<meta property="og:description" content="500+ characters, weapons, echoes, tier list, and build planner.">
+<meta property="og:description" content="45+ characters, weapons, echoes, tier list, and build planner.">
 <meta property="og:type" content="website"><meta property="og:url" content="https://wutzone.com/">
 <link rel="stylesheet" href="/shared.css">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Wuthering Waves Database","url":"https://wutzone.com/","description":"The comprehensive Wuthering Waves database — 500+ characters, weapons, echoes, tier list, build planner, and interactive map.","potentialAction":{"@type":"SearchAction","target":"https://wutzone.com/characters/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is Wuthering Waves?","acceptedAnswer":{"@type":"Answer","text":"Wuthering Waves is an open-world action RPG developed by Kuro Games. It features a gacha system for obtaining characters called Resonators, real-time combat with dodge and parry mechanics, and an Echo system for customizing character builds."}},{"@type":"Question","name":"How many characters are in Wuthering Waves?","acceptedAnswer":{"@type":"Answer","text":"There are over 500 characters in the Wuthering Waves universe, including playable Resonators (5★ and 4★) and NPCs. Our database catalogs all of them with full stats, skills, and build recommendations."}},{"@type":"Question","name":"What is the best character in Wuthering Waves?","acceptedAnswer":{"@type":"Answer","text":"Top-tier characters include Jinhsi (Spectro DPS), Camellya (Havoc DPS), Shorekeeper (Support/Healer), and Yinlin (Electro Sub-DPS). Check our Tier List page for complete S/A/B/C/D rankings by role."}},{"@type":"Question","name":"How do I build a character in Wuthering Waves?","acceptedAnswer":{"@type":"Answer","text":"Use our Build Planner to select a character, equip weapons and echoes, and preview final stats. Key build components: weapon (matching the character's type), 5 echo slots (Cost 4+3+3+1+1), and sonata effect set bonuses."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What's the best way to spend real money in Wuthering Waves?","acceptedAnswer":{"@type":"Answer","text":"Priority order: Lunite Subscription ($5/mo, $0.27 per pull) → Weekly Subscription ($10, $0.70/pull, once per patch) → Battle Pass ($10, $1.08/pull) → Top-up bundles (buy each tier's first-purchase bonus before repeating any tier)."}},{"@type":"Question","name":"Is the Battle Pass worth buying?","acceptedAnswer":{"@type":"Answer","text":"If you're a new player who needs EXP mats, shell credits, and a BP weapon — yes, the raw materials alone justify the $10. For veterans with nothing to build: it's about 9 extra limited pulls for $10. Still better pull-per-dollar than top-ups."}},{"@type":"Question","name":"Do the first-time top-up bonuses reset?","acceptedAnswer":{"@type":"Answer","text":"Yes — once a year during the anniversary event (late May). Don't buy a tier a second time until you've first-purchased every tier at least once."}},{"@type":"Question","name":"How many free pulls do I get per patch?","acceptedAnswer":{"@type":"Answer","text":"Approximately 110 pulls per version as F2P from dailies, events, ToA, exploration, and codes. With Lunite Sub + BP, that jumps to ~138. With Lunite + BP + Weekly Subscription, roughly 152 pulls per patch."}},{"@type":"Question","name":"How does the pity system work?","acceptedAnswer":{"@type":"Answer","text":"80 pulls to hit pity (soft pity starts around 65). 50/50 on first pity — 50% chance of featured character. If you lose, next pity is guaranteed. 160 pulls is the absolute worst case to guarantee a limited 5-star."}},{"@type":"Question","name":"What should I spend Waveplates on daily?","acceptedAnswer":{"@type":"Answer","text":"Priority: Weekly bosses (3/week for Forte upgrades) → Ascension/upgrade materials for your active team → Tacet Fields (echo farming) → Shell credits. Never let Waveplates cap at 240."}}]}</script>
 <script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "xkwf30ac3n");</script>
 </head>
 <body>
@@ -47,16 +47,28 @@
 </nav>
 
 <main class="container">
+
+<!-- ── Hero ── -->
 <section class="hero">
   <h1>Wuthering Waves <span style="color:#4ECDC4">Database</span></h1>
-  <p>The comprehensive Wuthering Waves database — 500+ characters with full builds, all weapons, echoes, tier list, and an interactive build planner. Data from the official wiki.</p>
+  <p>The comprehensive Wuthering Waves database — 45 playable Resonators with full builds, all weapons, echoes, tier list, and an interactive build planner. Data from the official wiki.</p>
+  <form class="hero-search" action="/characters/" method="GET" onsubmit="var v=this.querySelector('input').value.trim();if(v)this.action='/characters/?s='+encodeURIComponent(v)">
+    <input type="text" name="s" placeholder="Search characters, weapons, echoes..." autocomplete="off">
+    <button type="submit">🔍 Search</button>
+  </form>
 </section>
 
+<!-- ── Ad Slot: Leaderboard (replace data-ad-client & data-ad-slot with your IDs) ── -->
+<div class="ad-box ad-leaderboard ad-placeholder">
+  <!-- <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX" data-ad-format="auto" data-full-width-responsive="true"></ins> -->
+</div>
+
+<!-- ── Hub Grid ── -->
 <div class="hub-grid">
   <a href="/characters/" class="hub-card" style="border-top:3px solid #4ECDC4">
     <div class="hub-icon">👤</div>
     <h3>Characters</h3>
-    <p>500+ characters with full stats, skills, ascension materials, and best builds. Search, filter, and compare.</p>
+    <p>45 playable Resonators with full stats, skills, ascension materials, and best builds. Search, filter, and compare.</p>
   </a>
   <a href="/tier-list/" class="hub-card" style="border-top:3px solid #facc15">
     <div class="hub-icon">⭐</div>
@@ -94,10 +106,140 @@
     <p>Beginner tips, farming routes, boss strategies, and team composition guides.</p>
   </a>
 </div>
+
+<!-- ── Ad Slot: Banner ── -->
+<div class="ad-box ad-banner ad-placeholder">
+  <!-- <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX" data-ad-format="auto" data-full-width-responsive="true"></ins> -->
+</div>
+
+<!-- ── Beginner's Guide ── -->
+<div class="section-header">
+  <h2>🚀 <span>New Player</span> Quick Start</h2>
+  <p>Everything you need to know to get started in Wuthering Waves</p>
+</div>
+<div class="guide-strip">
+  <a href="/guide/" class="guide-strip-card">
+    <div class="gs-num">01</div>
+    <h4>Understanding the Gacha</h4>
+    <p>How the Convene system works — pity, rates, and which banners to pull on as a new player.</p>
+  </a>
+  <a href="/guide/" class="guide-strip-card">
+    <div class="gs-num">02</div>
+    <h4>Echo System Basics</h4>
+    <p>Equip monster skills, match Sonata sets, and stack the right stats for massive power gains.</p>
+  </a>
+  <a href="/guide/" class="guide-strip-card">
+    <div class="gs-num">03</div>
+    <h4>Combat Fundamentals</h4>
+    <p>Dodge, parry, Intro/Outro skills, and Concerto energy — master the combat loop.</p>
+  </a>
+  <a href="/guide/" class="guide-strip-card">
+    <div class="gs-num">04</div>
+    <h4>Resource Priorities</h4>
+    <p>What to spend Waveplates on, which materials to farm first, and how to avoid common mistakes.</p>
+  </a>
+  <a href="/characters/" class="guide-strip-card">
+    <div class="gs-num">05</div>
+    <h4>Pick Your Main DPS</h4>
+    <p>Browse all characters, compare stats, and choose the right Resonator to build your team around.</p>
+  </a>
+  <a href="/tier-list/" class="guide-strip-card">
+    <div class="gs-num">06</div>
+    <h4>Check the Tier List</h4>
+    <p>See which characters rank highest for Main DPS, Sub-DPS, and Support roles in the current meta.</p>
+  </a>
+  <a href="/build-planner/" class="guide-strip-card">
+    <div class="gs-num">07</div>
+    <h4>Plan Your Build</h4>
+    <p>Use the interactive Build Planner to preview stats with different weapons and echo combinations.</p>
+  </a>
+  <a href="/codes/" class="guide-strip-card">
+    <div class="gs-num">08</div>
+    <h4>Redeem Free Codes</h4>
+    <p>Grab active redemption codes for free Astrite, shell credits, and upgrade materials.</p>
+  </a>
+</div>
+
+<!-- ── FAQ Section ── -->
+<div class="section-header">
+  <h2>❓ <span>Community</span> FAQ</h2>
+  <p>Practical questions answered by the player community</p>
+</div>
+<div class="faq-grid">
+  <div class="faq-card">
+    <h4>💎 What's the best way to spend real money?</h4>
+    <p>Priority order: <strong>Lunite Subscription</strong> ($5/mo, ~$0.27 per pull — by far the best value) → <strong>Weekly Subscription</strong> ($10, ~$0.70/pull, once per patch) → <strong>Battle Pass</strong> ($10, ~$1.08/pull) → <strong>Top-up bundles</strong> (buy each tier's first-purchase bonus before repeating any tier). Every other option is significantly less efficient.</p>
+  </div>
+  <div class="faq-card">
+    <h4>📦 Is the Battle Pass worth buying?</h4>
+    <p>If you're a <strong>new player</strong> who needs EXP mats, shell credits, and a BP weapon — yes, the raw materials alone justify the $10. <strong>For veterans</strong> sitting on millions of credits with nothing to build: it's ~9 extra limited pulls for $10. Still better pull-per-dollar than top-ups, but not life-changing if you skip it.</p>
+  </div>
+  <div class="faq-card">
+    <h4>🔄 Do the first-time top-up bonuses ever reset?</h4>
+    <p>Yes — <strong>once a year</strong> during the anniversary event (late May). Don't buy a tier a second time until you've first-purchased every tier at least once. The $30 bundle first-time bonus gives 3960 Lunite (double); repeat purchases at that tier give only 2240.</p>
+  </div>
+  <div class="faq-card">
+    <h4>🎫 How many free pulls do I get per patch?</h4>
+    <p>Approximately <strong>110 pulls per version</strong> as F2P (dailies, events, ToA, exploration, codes). With Lunite Sub + BP, that jumps to ~138. With Lunite + BP + Weekly Subscription, you're looking at roughly 152 pulls per patch cycle — nearly enough to guarantee a limited character.</p>
+  </div>
+  <div class="faq-card">
+    <h4>💰 How does pity work and how many pulls to guarantee a character?</h4>
+    <p><strong>80 pulls</strong> to hit pity (soft pity starts ~65). <strong>50/50</strong> on first pity — you have a 50% chance of getting the featured character. If you lose, the next pity is guaranteed. <strong>160 pulls = absolute worst case</strong> to guarantee a limited 5★. Weapon banner uses a separate pity system (80 max, no 50/50). Pity carries over between banners of the same type.</p>
+  </div>
+  <div class="faq-card">
+    <h4>⚡ What should I spend Waveplates on daily?</h4>
+    <p>Priority: <strong>Weekly bosses</strong> (3/week, needed for Forte upgrades) → <strong>Ascension/upgrade materials</strong> for your active team → <strong>Tacet Fields</strong> (echo farming) → <strong>Shell credits</strong> (you burn through these fast at endgame). Never let Waveplates cap at 240 — log in twice a day or condense them if you're busy.</p>
+  </div>
+  <div class="faq-card">
+    <h4>🔮 How does the Echo system actually work?</h4>
+    <p>Each character has <strong>5 echo slots</strong> (Cost 4+3+3+1+1). The Cost-4 echo provides an <strong>active skill</strong> (press Q to transform/attack). Cost-3 and Cost-1 echoes provide <strong>passive stat bonuses</strong>. Equip echoes from the same <strong>Sonata set</strong> (2-piece gives one bonus, 5-piece gives a stronger one). Substats are randomly rolled with Tuners — expect to farm dozens of echoes for a good set.</p>
+  </div>
+  <div class="faq-card">
+    <h4>🗡️ Should I pull for signature weapons?</h4>
+    <p>Depends on your budget. Signature weapons are usually <strong>15-25% stronger</strong> than the best free alternative. If you're F2P or a low spender: characters > weapons — new characters unlock team variety and playstyles. If you spend on Lunite + BP and really love a character, their signature is a solid power spike. Free 5★ weapons (Standard Banner) and crafted weapons are good enough for all content.</p>
+  </div>
+  <div class="faq-card">
+    <h4>📅 How long does it take to build a character from scratch?</h4>
+    <p>With optimized Waveplate spending: <strong>~2 weeks</strong> to get a character to Level 80 with Level 6+ Forte skills and a passable echo set. Level 90 + max Forte + optimized echo substats can take <strong>3-5 weeks</strong> per character. Pro tip: pre-farm ascension materials before pulling using online farming guides — then you can level them day 1.</p>
+  </div>
+</div>
+
 </main>
 
+<!-- ── Footer ── -->
 <footer class="site-footer">
   <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>📊 Database</h4>
+        <a href="/characters/">Characters</a>
+        <a href="/weapons/">Weapons</a>
+        <a href="/echos/">Echoes</a>
+        <a href="/items/">Items</a>
+        <a href="/skills/">Skills</a>
+      </div>
+      <div class="footer-col">
+        <h4>🎯 Tools</h4>
+        <a href="/tier-list/">Tier List</a>
+        <a href="/build-planner/">Build Planner</a>
+        <a href="/map/">Interactive Map</a>
+        <a href="/codes/">Redeem Codes</a>
+      </div>
+      <div class="footer-col">
+        <h4>📖 Guides</h4>
+        <a href="/guide/">Beginner's Guide</a>
+        <a href="/guide/">Farming Routes</a>
+        <a href="/guide/">Team Building</a>
+        <a href="/guide/">Tower of Adversity</a>
+      </div>
+      <div class="footer-col">
+        <h4>🔗 Links</h4>
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms of Use</a>
+        <a href="/contact.html">Contact</a>
+        <a href="/sitemap.xml">Sitemap</a>
+      </div>
+    </div>
     <p>&copy; 2026 Wuthering Waves Database. Not affiliated with Kuro Games.</p>
     <div class="footer-links">
       <a href="/privacy.html">Privacy</a>

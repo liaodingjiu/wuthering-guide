@@ -98,12 +98,77 @@ nav { background: var(--nav-bg); position: sticky; top: 0; z-index: 100; }
 .hub-card p { font-size: 15px; color: var(--text2); line-height: 1.5; }
 
 /* ── Footer ── */
-.site-footer { background: var(--footer-bg); padding: 24px 20px; text-align: center; }
+.site-footer { background: var(--footer-bg); padding: 40px 20px 24px; text-align: center; }
 .footer-inner { max-width: 1100px; margin: 0 auto; }
 .footer-inner p { font-size: 14px; color: var(--footer-text); }
+.footer-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px; text-align: left; margin-bottom: 28px; padding-bottom: 24px; border-bottom: 1px solid rgba(255,255,255,0.06); }
+.footer-col h4 { font-size: 14px; font-weight: 600; color: #fff; margin-bottom: 12px; }
+.footer-col a { display: block; color: var(--footer-text); text-decoration: none; font-size: 13px; padding: 3px 0; transition: color .15s; }
+.footer-col a:hover { color: var(--footer-link); }
 .footer-links { display: flex; gap: 16px; justify-content: center; margin-top: 8px; flex-wrap: wrap; }
 .footer-links a { color: var(--footer-link); text-decoration: none; font-size: 14px; }
 .footer-links a:hover { text-decoration: underline; }
+@media (max-width: 768px) { .footer-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 480px) { .footer-grid { grid-template-columns: 1fr; } }
+
+/* ── AdSense Containers ── */
+.ad-box { text-align: center; margin: 20px auto; overflow: hidden; }
+.ad-box ins { display: block; margin: 0 auto; }
+.ad-leaderboard { max-width: 728px; min-height: 90px; }
+.ad-rectangle { max-width: 336px; min-height: 280px; }
+.ad-banner { max-width: 1100px; min-height: 90px; }
+/* fallback placeholder while AdSense is not yet configured */
+.ad-placeholder { display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.02); border: 1px dashed rgba(255,255,255,0.08); border-radius: var(--radius); }
+.ad-placeholder::after { content: "Advertisement"; font-size: 11px; color: rgba(255,255,255,0.12); letter-spacing: 2px; text-transform: uppercase; }
+
+/* ── Element Filter Chips ── */
+.el-chips { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; margin: 6px 0 14px; }
+.el-chip { padding: 6px 14px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; border: 1.5px solid rgba(255,255,255,0.12); background: transparent; color: var(--text2); transition: all .15s; font-family: inherit; }
+.el-chip:hover { border-color: rgba(255,255,255,0.3); color: #fff; }
+.el-chip.active { color: #fff; }
+.el-chip[data-el="Spectro"].active { background: rgba(250,204,21,0.18); border-color: #facc15; }
+.el-chip[data-el="Aero"].active { background: rgba(78,205,196,0.18); border-color: #4ECDC4; }
+.el-chip[data-el="Fusion"].active { background: rgba(249,115,22,0.18); border-color: #f97316; }
+.el-chip[data-el="Electro"].active { background: rgba(192,132,252,0.18); border-color: #c084fc; }
+.el-chip[data-el="Glacio"].active { background: rgba(147,197,253,0.18); border-color: #93c5fd; }
+.el-chip[data-el="Havoc"].active { background: rgba(232,121,249,0.18); border-color: #e879f9; }
+
+/* ── Sort/Filter Bar Extensions ── */
+.ch-bar select, .ch-bar .ch-sort { padding: 8px 12px; border: 1px solid rgba(78,205,196,0.3); border-radius: 12px; background: var(--surface); color: #fff; font-size: 14px; font-family: inherit; cursor: pointer; }
+.ch-bar select:focus, .ch-bar .ch-sort:focus { outline: none; border-color: #4ECDC4; }
+
+/* ── FAQ Cards ── */
+.faq-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 24px 0; }
+.faq-card { background: var(--surface); border: 1px solid rgba(78,205,196,0.15); border-radius: var(--radius); padding: 22px; transition: all .25s ease; }
+.faq-card:hover { border-color: rgba(78,205,196,0.5); transform: translateY(-1px); }
+.faq-card h4 { font-size: 16px; font-weight: 600; margin-bottom: 8px; color: var(--green); }
+.faq-card p { font-size: 14px; color: var(--text2); line-height: 1.6; }
+@media (max-width: 768px) { .faq-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 480px) { .faq-grid { grid-template-columns: 1fr; } }
+
+/* ── Beginner Guide Section ── */
+.guide-strip { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin: 20px 0; }
+.guide-strip-card { background: var(--surface); border: 1px solid rgba(240,160,64,0.2); border-radius: var(--radius); padding: 20px 16px; text-decoration: none; color: var(--text); transition: all .25s ease; display: flex; flex-direction: column; }
+.guide-strip-card:hover { border-color: rgba(240,160,64,0.5); transform: translateY(-2px); }
+.guide-strip-card .gs-num { font-size: 24px; font-weight: 800; color: var(--gold); margin-bottom: 6px; }
+.guide-strip-card h4 { font-size: 15px; font-weight: 600; margin-bottom: 4px; }
+.guide-strip-card p { font-size: 13px; color: var(--text2); line-height: 1.5; }
+@media (max-width: 768px) { .guide-strip { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 480px) { .guide-strip { grid-template-columns: 1fr; } }
+
+/* ── Section Header ── */
+.section-header { text-align: center; margin: 36px 0 8px; }
+.section-header h2 { font-size: 26px; font-weight: 700; }
+.section-header h2 span { color: var(--green); }
+.section-header p { font-size: 15px; color: var(--text2); margin-top: 4px; }
+
+/* ── Homepage Search ── */
+.hero-search { display: flex; gap: 8px; justify-content: center; margin-top: 18px; }
+.hero-search input { width: 380px; max-width: 80vw; padding: 12px 18px; border: 1px solid rgba(78,205,196,0.3); border-radius: 24px; background: var(--bg); color: #fff; font-size: 15px; font-family: inherit; }
+.hero-search input:focus { outline: none; border-color: #4ECDC4; box-shadow: 0 0 0 3px rgba(78,205,196,0.1); }
+.hero-search input::placeholder { color: #6b7d94; }
+.hero-search button { padding: 12px 24px; border-radius: 24px; background: var(--green); color: #0F2436; border: none; font-size: 15px; font-weight: 600; cursor: pointer; font-family: inherit; transition: all .15s; }
+.hero-search button:hover { background: #80d8d2; }
 
 @media (max-width: 768px) { .hub-grid { grid-template-columns: repeat(2, 1fr); } body { font-size: 18px; } }
 @media (max-width: 480px) { .hub-grid { grid-template-columns: 1fr; } .hero h1 { font-size: 32px; } }

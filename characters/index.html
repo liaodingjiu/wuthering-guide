@@ -8,15 +8,15 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <title>Wuthering Waves Characters — All Resonators List | Wuthering Database</title>
-<meta name="description" content="All Wuthering Waves characters with rarity, element, weapon type, and class. Search, filter, and find builds for every Resonator.">
+<meta name="description" content="All 45 Wuthering Waves playable Resonators with rarity, element, weapon type, class, and detailed stats. Search, filter by element, and sort by HP/ATK.">
 <meta name="robots" content="index,follow">
 <link rel="canonical" href="https://wutzone.com/characters/">
 <meta property="og:title" content="Wuthering Waves Characters List">
-<meta property="og:description" content="All Resonators with rarity, element, weapon, and class.">
+<meta property="og:description" content="45 playable Resonators with rarity, element, weapon, and stats.">
 <meta property="og:type" content="website"><meta property="og:url" content="https://wutzone.com/characters/">
 <link rel="stylesheet" href="/shared.css">
 <style>
-.ch-grid { display:grid; grid-template-columns:repeat(7,1fr); gap:10px; max-height:600px; overflow-y:auto; border:1px solid rgba(78,205,196,0.15); border-radius:12px; padding:12px; background:rgba(78,205,196,0.02); }
+.ch-grid { display:grid; grid-template-columns:repeat(7,1fr); gap:10px; margin:12px 0; }
 .ch-card { background:var(--surface); border:1px solid rgba(78,205,196,0.2); border-radius:12px; padding:14px 8px 10px; text-align:center; transition:all .25s ease; cursor:pointer; text-decoration:none; color:var(--text); display:flex; flex-direction:column; align-items:center; position:relative; }
 .ch-card:hover { border-color:rgba(78,205,196,0.7); transform:translateY(-2px); }
 .ch-card .ch-rarity { position:absolute;top:8px;right:8px;font-size:10px;padding:1px 6px;border-radius:4px;font-weight:700; }
@@ -26,17 +26,13 @@
 .ch-card .ch-meta { font-size:10px;color:#6b7d94;margin-top:2px; }
 .ch-card .ch-weapon { font-size:10px;color:#91A4B8;margin-top:2px; }
 .r-5{background:rgba(250,204,21,0.2);color:#facc15}.r-4{background:rgba(192,132,252,0.2);color:#c084fc}.r-3{background:rgba(96,165,250,0.2);color:#60a5fa}
-.ch-bar { display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:14px 0; }
-.ch-bar input { flex:1;min-width:160px;max-width:320px;padding:8px 14px;border:1px solid rgba(78,205,196,0.3);border-radius:12px;background:var(--surface);color:#fff;font-size:15px; }
-.ch-bar input:focus { outline:none;border-color:#4ECDC4; }
-.ch-bar input::placeholder { color:#6b7d94; }
-.ch-bar select { padding:8px 12px;border:1px solid rgba(78,205,196,0.3);border-radius:12px;background:var(--surface);color:#fff;font-size:14px; }
-.ch-bar .ch-count { font-size:14px;color:#91A4B8;white-space:nowrap; }
 .ch-hero { text-align:center;padding:24px 0 8px; }
 .ch-hero h1 { font-size:32px;font-weight:700; }
 .ch-hero h1 span { color:#4ECDC4; }
 .ch-hero .ch-sub { font-size:15px;color:#91A4B8; }
-.WEP_ICONS={'Broadblade':'⚔️','Sword':'🗡️','Pistols':'🔫','Gauntlets':'🥊','Rectifier':'📿'}
+.ch-stats-row { display:flex; gap:14px; justify-content:center; flex-wrap:wrap; margin:8px 0 14px; }
+.ch-stat-chip { background:var(--surface); border:1px solid rgba(78,205,196,0.15); border-radius:20px; padding:5px 14px; font-size:12px; color:var(--text2); }
+.ch-stat-chip strong { color:#fff; }
 @media(max-width:1200px){.ch-grid{grid-template-columns:repeat(5,1fr)}}
 @media(max-width:768px){.ch-grid{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:480px){.ch-grid{grid-template-columns:repeat(2,1fr)}}
@@ -50,45 +46,125 @@
 
 <header class="ch-hero">
   <h1>Wuthering Waves <span>Characters</span></h1>
-  <p class="ch-sub" id="chSub">All 45 playable Resonators with rarity, element, and weapon type. Data from the official wiki.</p>
+  <p class="ch-sub" id="chSub">All 45 playable Resonators — filter by element, rarity, and weapon. Click for full stats and builds.</p>
 </header>
 
+<!-- stats summary row -->
+<div class="ch-stats-row" id="statsRow"></div>
+
+<!-- element filter chips -->
+<div class="el-chips" id="elChips">
+  <button class="el-chip active" data-el="all">All</button>
+  <button class="el-chip" data-el="Spectro">💡 Spectro</button>
+  <button class="el-chip" data-el="Aero">💨 Aero</button>
+  <button class="el-chip" data-el="Fusion">🔥 Fusion</button>
+  <button class="el-chip" data-el="Electro">⚡ Electro</button>
+  <button class="el-chip" data-el="Glacio">❄️ Glacio</button>
+  <button class="el-chip" data-el="Havoc">💀 Havoc</button>
+</div>
+
+<!-- ad: leaderboard -->
+<div class="ad-box ad-leaderboard ad-placeholder">
+  <!-- <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX" data-ad-format="auto" data-full-width-responsive="true"></ins> -->
+</div>
+
+<!-- filter bar -->
 <div class="ch-bar">
-  <input type="text" id="s" placeholder="Enter character name" autocomplete="off">
+  <input type="text" id="s" placeholder="Search character name..." autocomplete="off">
   <span class="ch-count" id="c">45/45</span>
   <select id="rarity"><option value="all">All Rarities</option><option value="5">★★★★★</option><option value="4">★★★★</option></select>
   <select id="weapon"><option value="all">All Weapons</option><option>Broadblade</option><option>Sword</option><option>Pistols</option><option>Gauntlets</option><option>Rectifier</option></select>
+  <select id="cls"><option value="all">All Classes</option><option>Congenital</option><option>Natural</option><option>Mutant</option><option>Acquired</option></select>
+  <select id="sort"><option value="name">Sort: Name A–Z</option><option value="rarity-desc">Rarity: High→Low</option><option value="atk-desc">ATK: High→Low</option><option value="hp-desc">HP: High→Low</option><option value="def-desc">DEF: High→Low</option></select>
 </div>
 
+<!-- character grid -->
 <div class="ch-grid" id="g"></div>
+
+<!-- ad: rectangle -->
+<div class="ad-box ad-rectangle ad-placeholder">
+  <!-- <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX" data-ad-format="rectangle"></ins> -->
+</div>
+
 </main>
-<footer class="site-footer"><div class="footer-inner"><p>&copy; 2026 Wuthering Waves Database. Not affiliated with Kuro Games.</p><div class="footer-links"><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/contact.html">Contact</a></div></div></footer>
+<footer class="site-footer"><div class="footer-inner"><p>&copy; 2026 Wuthering Waves Database. Not affiliated with Kuro Games.</p><div class="footer-links"><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/contact.html">Contact</a></div><p style="font-size:11px;color:var(--text3);margin-top:8px">Data from <a href="https://wutheringwaves.fandom.com" style="color:var(--text3)">wutheringwaves.fandom.com</a> (CC BY-SA 3.0).</p></div></footer>
 <script src="/characters/char-data.js"></script>
 <script>
 var D=window.__CHARS__||[], WEP_ICONS={Broadblade:'⚔️',Sword:'🗡️',Pistols:'🔫',Gauntlets:'🥊',Rectifier:'📿'},ELEM_ICONS={Aero:'💨',Glacio:'❄️',Fusion:'🔥',Electro:'⚡',Spectro:'💡',Havoc:'💀'};
+var currentEl='all';
+
+// clean [[wiki markup]] from description text
+function cleanDesc(d){ return (d||'').replace(/\[\[[^\]]+\|([^\]]+)\]\]/g,'$1').replace(/\[\[([^\]]+)\]\]/g,'$1').replace(/==[^=]+==/g,'').trim(); }
+
 function render(l){
   document.getElementById('c').textContent=l.length+'/'+D.length;
   document.getElementById('g').innerHTML=l.map(function(c){
     var star=c.r!=='?'?'★'+c.r:'',rc=c.r==='5'?'r-5':c.r==='4'?'r-4':'',icon=ELEM_ICONS[c.e]||'👤';
     return '<a href="/characters/'+c.s+'/" class="ch-card">'+
       (star?'<span class="ch-rarity '+rc+'">'+star+'</span>':'')+
-      '<div class="ch-img"><img src="'+(c.img||'/images/characters/'+c.s+'.webp')+'" alt="'+c.n+'" style="width:80px;height:80px;border-radius:12px;object-fit:cover" onerror="this.style.display=\'none\'"></div>'+
+      '<div class="ch-img"><img src="'+(c.img||'/images/characters/'+c.s+'.webp')+'" alt="'+c.n+'" loading="lazy" decoding="async" style="width:80px;height:80px;border-radius:12px;object-fit:cover" onerror="this.style.display=\'none\'"></div>'+
       '<span class="ch-name">'+c.n+'</span>'+
       (c.e?'<span class="ch-meta">'+icon+' '+c.e+'</span>':'')+
       (c.w?'<span class="ch-weapon">'+(WEP_ICONS[c.w]||'')+' '+c.w+'</span>':'')+
     '</a>';
   }).join('');
 }
-function filter(){
-  var q=document.getElementById('s').value.toLowerCase(),r=document.getElementById('rarity').value,w=document.getElementById('weapon').value;
-  var l=D.filter(function(c){if(r!=='all'&&c.r!==r)return false;if(w!=='all'&&c.w!==w)return false;if(q&&c.n.toLowerCase().indexOf(q)<0)return false;return true});
-  l.sort(function(a,b){return a.n.localeCompare(b.n)});
-  render(l);
+
+function updateStats(l){
+  var t5=l.filter(function(c){return c.r==='5'}).length;
+  var t4=l.filter(function(c){return c.r==='4'}).length;
+  document.getElementById('statsRow').innerHTML=
+    '<span class="ch-stat-chip">⭐ <strong>'+t5+'</strong> 5★</span>'+
+    '<span class="ch-stat-chip">⭐ <strong>'+t4+'</strong> 4★</span>'+
+    '<span class="ch-stat-chip">🔍 Showing <strong>'+l.length+'</strong> of <strong>'+D.length+'</strong></span>';
 }
+
+function filter(){
+  var q=document.getElementById('s').value.toLowerCase();
+  var r=document.getElementById('rarity').value;
+  var w=document.getElementById('weapon').value;
+  var cl=document.getElementById('cls').value;
+  var sort=document.getElementById('sort').value;
+
+  var l=D.filter(function(c){
+    if(r!=='all'&&c.r!==r)return false;
+    if(w!=='all'&&c.w!==w)return false;
+    if(cl!=='all'&&c.cls!==cl)return false;
+    if(currentEl!=='all'&&c.e!==currentEl)return false;
+    if(q&&c.n.toLowerCase().indexOf(q)<0&&cleanDesc(c.d).toLowerCase().indexOf(q)<0)return false;
+    return true;
+  });
+
+  // sort
+  if(sort==='rarity-desc'){ l.sort(function(a,b){ return (b.r||0)-(a.r||0); }); }
+  else if(sort==='atk-desc'){ l.sort(function(a,b){ return (b.atk||0)-(a.atk||0); }); }
+  else if(sort==='hp-desc'){ l.sort(function(a,b){ return (b.hp||0)-(a.hp||0); }); }
+  else if(sort==='def-desc'){ l.sort(function(a,b){ return (b.def||0)-(a.def||0); }); }
+  else { l.sort(function(a,b){ return a.n.localeCompare(b.n); }); }
+
+  render(l);
+  updateStats(l);
+}
+
 document.getElementById('s').addEventListener('input',filter);
 document.getElementById('rarity').addEventListener('change',filter);
 document.getElementById('weapon').addEventListener('change',filter);
+document.getElementById('cls').addEventListener('change',filter);
+document.getElementById('sort').addEventListener('change',filter);
+
+// element chip clicks
+document.querySelectorAll('#elChips .el-chip').forEach(function(btn){
+  btn.addEventListener('click',function(){
+    document.querySelectorAll('#elChips .el-chip').forEach(function(b){b.classList.remove('active');});
+    btn.classList.add('active');
+    currentEl=btn.getAttribute('data-el');
+    filter();
+  });
+});
+
+// initial render
 render(D);
+updateStats(D);
 </script>
 </body>
 </html>
