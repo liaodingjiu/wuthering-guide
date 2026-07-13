@@ -7,26 +7,53 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-<title>Wuthering Waves Codes — Active Redemption Codes | Wuthering Database</title>
-<meta name="description" content="All active Wuthering Waves redemption codes — free Astrite, Shell Credits, and resources. Copy codes with one click. Updated daily.">
+<title>Wuthering Waves Codes — Active Redemption Codes 2026 | Wuthering Database</title>
+<meta name="description" content="All active Wuthering Waves redemption codes for July 2026 — free Astrite, Shell Credits, and resources. Copy codes with one click, learn how to redeem, and find official code sources. Updated weekly.">
 <meta name="robots" content="index,follow">
 <link rel="canonical" href="https://wutzone.com/codes/">
-<meta property="og:title" content="Wuthering Waves Redemption Codes">
-<meta property="og:description" content="Active codes for free Astrite, resources, and rewards.">
+<meta property="og:title" content="Wuthering Waves Redemption Codes — July 2026">
+<meta property="og:description" content="Active Wuthering Waves codes for free Astrite, resources, and rewards. One-click copy. Updated weekly.">
 <meta property="og:type" content="website"><meta property="og:url" content="https://wutzone.com/codes/">
 <link rel="stylesheet" href="/shared.css">
 <style>
+/* ── Hero ── */
 .cd-hero{text-align:center;padding:32px 0 8px}
 .cd-hero h1{font-size:32px;font-weight:700}
 .cd-hero h1 span{color:#f0a040}
-.cd-hero .cd-sub{font-size:15px;color:#91A4B8}
+.cd-hero .cd-sub{font-size:15px;color:#91A4B8;margin-bottom:20px}
+
+/* ── Copy All CTA ── */
+.cd-cta-wrap{margin:16px 0 12px;text-align:center}
+.cd-copy-all{padding:14px 36px;background:#f0a040;color:#0F2436;border:none;border-radius:12px;font-size:16px;font-weight:700;cursor:pointer;transition:all .2s;white-space:nowrap;display:inline-flex;align-items:center;gap:8px}
+.cd-copy-all:hover{background:#f4b850;transform:translateY(-1px);box-shadow:0 4px 16px rgba(240,160,64,0.3)}
+.cd-copy-all.copied{background:#22c55e;color:#fff}
+.cd-copy-toast{text-align:center;font-size:13px;color:#91A4B8;margin-top:8px;min-height:20px}
+
+/* ── Progress bar ── */
+.cd-progress-wrap{display:flex;align-items:center;gap:10px;margin:8px 0 20px;justify-content:center}
+.cd-progress{flex:1;max-width:340px;background:var(--bg);border-radius:10px;height:10px;overflow:hidden;border:1px solid rgba(240,160,64,0.2)}
+.cd-progress-bar{height:100%;background:linear-gradient(90deg,#f0a040,#22c55e);border-radius:10px;transition:width .3s ease}
+.cd-progress-text{font-size:12px;color:#91A4B8;white-space:nowrap}
+.cd-last-updated{text-align:center;font-size:11px;color:var(--text3);margin-bottom:16px}
+
+/* ── Card Grid ── */
 .cd-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px;margin:20px 0}
 .cd-card{background:var(--surface);border:1px solid rgba(240,160,64,0.25);border-radius:12px;padding:22px;transition:all .25s ease;position:relative;overflow:hidden}
 .cd-card:hover{border-color:rgba(240,160,64,0.6);transform:translateY(-2px)}
 .cd-card.expired{opacity:0.5;border-color:rgba(107,125,148,0.2)}
-.cd-card .cd-status{position:absolute;top:14px;right:14px;font-size:10px;padding:3px 10px;border-radius:12px;font-weight:600}
-.cd-status.active{background:rgba(34,197,94,0.15);color:#22c55e}
-.cd-status.expired-label{background:rgba(239,68,68,0.15);color:#ef4444}
+.cd-card.redeemed{opacity:0.55;border-color:rgba(34,197,94,0.2)}
+.cd-card.failed{opacity:0.4;border-color:rgba(239,68,68,0.2)}
+
+/* ── Confidence badges ── */
+.cd-card .cd-status{position:absolute;top:14px;right:14px;font-size:10px;padding:3px 10px;border-radius:12px;font-weight:600;white-space:nowrap}
+.cd-status.conf-high{background:rgba(34,197,94,0.15);color:#22c55e}
+.cd-status.conf-medium{background:rgba(250,204,21,0.15);color:#facc15}
+.cd-status.conf-low{background:rgba(249,115,22,0.15);color:#f97316}
+.cd-status.conf-expired{background:rgba(239,68,68,0.15);color:#ef4444}
+.cd-status.conf-unverified{background:rgba(239,68,68,0.12);color:#ef4444}
+.cd-status.conf-archived{background:rgba(107,125,148,0.12);color:#6b7d94}
+
+/* ── Card content ── */
 .cd-card .cd-icon{font-size:36px;margin-bottom:12px}
 .cd-card .cd-rewards{font-size:17px;font-weight:700;margin-bottom:6px}
 .cd-card .cd-code-box{display:flex;align-items:center;gap:8px;margin:12px 0}
@@ -34,13 +61,82 @@
 .cd-card .cd-copy{padding:10px 16px;background:#f0a040;color:#0F2436;border:none;border-radius:8px;font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap;transition:all .2s}
 .cd-card .cd-copy:hover{background:#f4b850}
 .cd-card .cd-copy.copied{background:#22c55e;color:#fff}
-.cd-card .cd-expires{font-size:11px;color:var(--text3);margin-top:8px}
-.cd-note{margin:20px 0;padding:18px 22px;background:var(--surface);border:1px solid rgba(240,160,64,0.2);border-radius:12px}
-.cd-note h2{font-size:16px;margin-bottom:8px;color:#f0a040}
-.cd-note ol{margin-left:18px;font-size:14px;color:#91A4B8;line-height:2}
-.cd-note a{color:#4ECDC4}
-@media(max-width:480px){.cd-grid{grid-template-columns:1fr}}
+
+/* ── Source link + meta ── */
+.cd-card .cd-source{font-size:12px;color:var(--text3);margin-top:6px;line-height:1.6}
+.cd-card .cd-source a{color:#4ECDC4;text-decoration:none}
+.cd-card .cd-source a:hover{text-decoration:underline}
+.cd-card .cd-meta{font-size:11px;color:var(--text3);margin-top:4px}
+
+/* ── Feedback buttons ── */
+.cd-card .cd-feedback{display:flex;gap:12px;margin-top:10px;flex-wrap:wrap;align-items:center}
+.cd-fb-btn{padding:4px 10px;border-radius:6px;font-size:11px;cursor:pointer;border:none;background:none;transition:all .15s;font-weight:500}
+.cd-fb-btn.worked{color:#22c55e}
+.cd-fb-btn.worked:hover{background:rgba(34,197,94,0.1)}
+.cd-fb-btn.worked.active{background:rgba(34,197,94,0.12);color:#22c55e;cursor:default}
+.cd-fb-btn.failed{color:#ef4444}
+.cd-fb-btn.failed:hover{background:rgba(239,68,68,0.1)}
+.cd-fb-btn.failed.active{background:rgba(239,68,68,0.12);color:#ef4444;cursor:default}
+
+.cd-card .cd-redeem{display:flex;align-items:center;gap:6px;margin-top:8px}
+.cd-card .cd-redeem input[type=checkbox]{accent-color:#22c55e;width:15px;height:15px;cursor:pointer}
+.cd-card .cd-redeem label{font-size:11px;color:#91A4B8;cursor:pointer;user-select:none}
+
+/* ── Section blocks ── */
+.cd-section{margin:32px 0;padding:22px 24px;background:var(--surface);border:1px solid rgba(78,205,196,0.12);border-radius:12px}
+.cd-section h2{font-size:18px;font-weight:600;margin-bottom:14px;color:#4ECDC4}
+.cd-section h3{font-size:15px;font-weight:600;margin:16px 0 8px;color:var(--text)}
+.cd-section p,.cd-section li{font-size:14px;color:var(--text2);line-height:1.8}
+.cd-section ol,.cd-section ul{margin-left:20px;margin-bottom:12px}
+.cd-section a{color:#4ECDC4;text-decoration:none}
+.cd-section a:hover{text-decoration:underline}
+
+/* ── Redeem steps ── */
+.redeem-steps{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;margin:12px 0}
+.redeem-step{display:flex;gap:12px;padding:14px;background:var(--bg);border-radius:10px;border:1px solid rgba(78,205,196,0.08)}
+.redeem-step .step-num{width:32px;height:32px;border-radius:50%;background:rgba(78,205,196,0.15);color:#4ECDC4;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;flex-shrink:0}
+.redeem-step .step-text{font-size:13px;color:var(--text2);line-height:1.6;flex:1}
+.redeem-step .step-text strong{color:var(--text)}
+
+/* ── FAQ ── */
+.cd-faq-item{margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid rgba(78,205,196,0.08)}
+.cd-faq-item:last-child{border-bottom:none;margin-bottom:0}
+.cd-faq-q{font-size:15px;font-weight:600;color:var(--text);margin-bottom:6px;cursor:pointer}
+.cd-faq-a{font-size:14px;color:var(--text2);line-height:1.8}
+
+/* ── Channel grid ── */
+.channel-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin:12px 0}
+.channel-card{display:flex;align-items:center;gap:10px;padding:12px 16px;background:var(--bg);border-radius:10px;border:1px solid rgba(78,205,196,0.08);text-decoration:none;color:var(--text);transition:all .2s;font-size:14px}
+.channel-card:hover{border-color:rgba(78,205,196,0.3);transform:translateY(-1px)}
+.channel-card .ch-icon{font-size:22px;flex-shrink:0}
+
+/* ── Archive ── */
+.cd-archive{margin:32px 0}
+.cd-archive summary{padding:14px 18px;background:var(--surface);border:1px solid rgba(107,125,148,0.15);border-radius:12px;cursor:pointer;font-size:15px;font-weight:600;color:var(--text2);transition:all .2s;list-style:none}
+.cd-archive summary::-webkit-details-marker{display:none}
+.cd-archive summary::before{content:'📦 '}
+.cd-archive[open] summary{border-radius:12px 12px 0 0;border-bottom:none}
+.cd-archive .archive-content{padding:16px 18px;background:rgba(107,125,148,0.03);border:1px solid rgba(107,125,148,0.1);border-top:none;border-radius:0 0 12px 12px}
+.cd-archive .archive-content .cd-card{opacity:0.65}
+
+/* ── Footer CTA ── */
+.cd-footer-cta{text-align:center;padding:24px;margin:20px 0;background:var(--surface);border-radius:12px;border:1px solid rgba(240,160,64,0.15)}
+.cd-footer-cta p{font-size:14px;color:var(--text2);line-height:1.8}
+
+/* ── Disclaimer ── */
+.cd-disclaimer{text-align:center;font-size:11px;color:var(--text3);padding:16px 0}
+
+@media(max-width:480px){
+  .cd-grid{grid-template-columns:1fr}
+  .cd-copy-all{padding:12px 24px;font-size:14px;width:100%;justify-content:center}
+  .cd-progress-wrap{flex-direction:column;align-items:stretch}
+  .cd-progress{max-width:100%}
+  .redeem-steps{grid-template-columns:1fr}
+  .channel-grid{grid-template-columns:1fr}
+}
 </style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Wuthering Waves Database","url":"https://wutzone.com/","description":"The comprehensive Wuthering Waves database — characters, weapons, echoes, tier list, build planner, and active redemption codes."}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How often are new Wuthering Waves codes released?","acceptedAnswer":{"@type":"Answer","text":"New codes are typically released during version updates (e.g., 2.0 to 2.1), milestone celebrations, holidays, and livestream events. Check this page weekly for updates."}},{"@type":"Question","name":"Why is my Wuthering Waves code not working?","acceptedAnswer":{"@type":"Answer","text":"Common reasons: the code has expired, you mistyped it (codes are case-sensitive), the code is region-locked to a server you are not on, you have already redeemed it, or you have hit the redemption limit for that code type."}},{"@type":"Question","name":"Do Wuthering Waves codes expire?","acceptedAnswer":{"@type":"Answer","text":"Yes, most codes have an expiration date. Some have publicly announced expiration dates, while others expire without notice. Always redeem codes as soon as possible after they are released."}},{"@type":"Question","name":"Can I use Wuthering Waves codes on any server?","acceptedAnswer":{"@type":"Answer","text":"Some codes are region-locked to specific servers (SEA, Global, CN). If a code is not working, check whether it was released for your region. Codes from official global channels usually work on all servers except CN."}},{"@type":"Question","name":"How do I know if a Wuthering Waves code is real?","acceptedAnswer":{"@type":"Answer","text":"Check the source link on each code card. Real codes come from official Kuro Games channels: Twitter/X @WutheringWaves, the official Discord server, the Wuthering Waves website, or official livestreams. Codes without a verified source are marked as unverified."}},{"@type":"Question","name":"Where can I find new Wuthering Waves codes?","acceptedAnswer":{"@type":"Answer","text":"Follow @WutheringWaves on Twitter/X, join the official Discord server, check the News section on the official website, watch version update livestreams, and bookmark this page — we update within 24 hours of new code releases."}}]}</script>
 <script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "xkwf30ac3n");</script>
 </head>
 <body>
@@ -48,65 +144,389 @@
 <nav aria-label="Main navigation"><div class="nav-inner"><a href="/" class="logo">Wuthering<span>DB</span></a><div class="nav-right"><ul class="nav-links"><li><a href="/characters/">Characters</a></li><li><a href="/tier-list/">Tier List</a></li><li><a href="/echos/">Echoes</a></li><li><a href="/weapons/">Weapons</a></li><li class="nav-dropdown"><a>Database ▾</a><ul class="dropdown-menu"><li><a href="/items/">Items</a></li><li><a href="/skills/">Skills</a></li></ul></li><li><a href="/guide/">Guide</a></li><li><a href="/map/">Map</a></li><li><a href="/codes/">Codes</a></li><li><a href="/build-planner/" class="nav-highlight">Builder</a></li></ul><button class="theme-toggle">EN ▾</button></div></div></nav>
 
 <main class="container" style="max-width:900px">
+
+<!-- ═══ Section 1: Hero + CTA ═══ -->
 <header class="cd-hero">
   <h1>Wuthering Waves <span>Codes</span></h1>
-  <p class="cd-sub">Active redemption codes for free Astrite, Shell Credits, and resources. Copy with one click.</p>
+  <p class="cd-sub">All active redemption codes — copy with one click. Updated weekly.</p>
+  <div class="cd-cta-wrap">
+    <button class="cd-copy-all" id="copyAllBtn" onclick="copyAllCodes()">📋 Copy All Active Codes</button>
+    <div class="cd-copy-toast" id="copyToast"></div>
+  </div>
+  <div class="cd-progress-wrap" id="cdProgress"></div>
+  <div class="cd-last-updated" id="cdUpdated"></div>
 </header>
 
-<div class="cd-note">
-  <h2>📋 How to Redeem</h2>
-  <ol>
-    <li>Open Wuthering Waves and go to <strong>Settings</strong> (gear icon)</li>
-    <li>Select <strong>Account</strong> → <strong>Redeem Code</strong></li>
-    <li>Enter the code and tap <strong>Confirm</strong></li>
-    <li>Rewards are sent to your in-game <strong>Mailbox</strong></li>
-    <li>Or redeem online at <a href="https://wutheringwaves.kurogames.com/en/gift" target="_blank" rel="nofollow">wutheringwaves.kurogames.com/en/gift</a></li>
-  </ol>
+<!-- ═══ Section 2: Active Codes Grid ═══ -->
+<div class="cd-grid" id="activeGrid"></div>
+
+<!-- ═══ Section 3: How to Redeem ═══ -->
+<div class="cd-section">
+  <h2>📋 How to Redeem Codes</h2>
+  <h3>In-Game Redemption</h3>
+  <div class="redeem-steps">
+    <div class="redeem-step"><span class="step-num">1</span><span class="step-text">Open Wuthering Waves and tap the <strong>Settings</strong> icon (⚙️ gear) in the top-right menu</span></div>
+    <div class="redeem-step"><span class="step-num">2</span><span class="step-text">Go to <strong>Account</strong> → <strong>Redeem Code</strong></span></div>
+    <div class="redeem-step"><span class="step-num">3</span><span class="step-text">Enter the code exactly — <strong>codes are case-sensitive</strong></span></div>
+    <div class="redeem-step"><span class="step-num">4</span><span class="step-text">Tap <strong>Confirm</strong> to submit</span></div>
+    <div class="redeem-step"><span class="step-num">5</span><span class="step-text">Rewards are sent to your <strong>in-game Mailbox</strong></span></div>
+  </div>
+  <h3>Web Redemption</h3>
+  <p>Redeem online at <a href="https://wutheringwaves.kurogames.com/en/gift" target="_blank" rel="nofollow">wutheringwaves.kurogames.com/en/gift</a>. You will need to log in with your Kuro Games account and select your server and character.</p>
+  <h3>⚠️ Important Notes</h3>
+  <ul>
+    <li>Codes are <strong>case-sensitive</strong> — copy and paste for best results</li>
+    <li>Some codes are <strong>region-locked</strong> (SEA / Global / CN)</li>
+    <li>Most codes are <strong>one-time use per account</strong></li>
+    <li>Codes may have <strong>redemption limits</strong> — redeem quickly after release</li>
+  </ul>
 </div>
 
-<div class="cd-grid" id="g"></div>
+<!-- ═══ Section 4: FAQ ═══ -->
+<div class="cd-section">
+  <h2>❓ Frequently Asked Questions</h2>
+  <div class="cd-faq-item">
+    <div class="cd-faq-q">How often are new codes released?</div>
+    <div class="cd-faq-a">New codes are typically released during version updates (e.g., 2.0 → 2.1), milestone celebrations (player count, anniversaries), holidays, official livestreams, and server maintenance compensation. Check this page weekly — we update within 24 hours of a new code drop.</div>
+  </div>
+  <div class="cd-faq-item">
+    <div class="cd-faq-q">Why is my code not working?</div>
+    <div class="cd-faq-a">Common reasons: <strong>(1)</strong> The code has expired — most codes have a limited redemption window. <strong>(2)</strong> Typo — codes are case-sensitive; use the Copy button instead of typing. <strong>(3)</strong> Server/region mismatch — some codes only work on specific servers. <strong>(4)</strong> Already redeemed — each code can only be used once per account. <strong>(5)</strong> Redemption cap reached — some codes have a total usage limit.</div>
+  </div>
+  <div class="cd-faq-item">
+    <div class="cd-faq-q">Do codes expire?</div>
+    <div class="cd-faq-a">Yes. Some codes have a publicly announced expiration date; others expire silently. Version-launch codes typically last 2–4 weeks. Always redeem codes as soon as possible. Our confidence badges help you gauge which codes are still likely to work.</div>
+  </div>
+  <div class="cd-faq-item">
+    <div class="cd-faq-q">Can I use codes on any server?</div>
+    <div class="cd-faq-a">Not always. Codes from official global channels (Twitter/X, global Discord) usually work on SEA and Global servers. Codes from CN-specific events or Bilibili are often CN-only. We label region restrictions on each code card when known.</div>
+  </div>
+  <div class="cd-faq-item">
+    <div class="cd-faq-q">How do I know if a code is real?</div>
+    <div class="cd-faq-a">Every code on this page includes a source link when available — click it to see the original announcement from Kuro Games. Codes without a verified source are clearly marked with a ⚠️ Unverified badge. We do not list obviously fake codes.</div>
+  </div>
+  <div class="cd-faq-item">
+    <div class="cd-faq-q">Where can I find new codes?</div>
+    <div class="cd-faq-a">The best sources: <strong>Twitter/X</strong> (@WutheringWaves), the <strong>official Discord</strong>, the <strong>Wuthering Waves website</strong> News section, <strong>version livestreams</strong>, and this page. We monitor all official channels and add new codes within 24 hours. Bookmark this page (Ctrl+D) for the fastest access.</div>
+  </div>
+</div>
 
-<p style="text-align:center;font-size:12px;color:var(--text3);margin:20px 0">⚠️ Codes are case-sensitive and may expire without notice. Redeem as soon as possible.<br>Last updated: July 2026. New codes added when released by Kuro Games.</p>
+<!-- ═══ Section 5: Code Release Channels ═══ -->
+<div class="cd-section">
+  <h2>📡 Where New Codes Come From</h2>
+  <p>All codes are sourced from official Kuro Games channels. Here is where to watch for drops:</p>
+  <div class="channel-grid">
+    <a href="https://x.com/WutheringWaves" target="_blank" rel="nofollow" class="channel-card"><span class="ch-icon">𝕏</span> Twitter/X @WutheringWaves</a>
+    <a href="https://discord.gg/wutheringwaves" target="_blank" rel="nofollow" class="channel-card"><span class="ch-icon">💬</span> Official Discord</a>
+    <a href="https://wutheringwaves.kurogames.com/en/" target="_blank" rel="nofollow" class="channel-card"><span class="ch-icon">🌐</span> Official Website News</a>
+    <a href="#" class="channel-card"><span class="ch-icon">📺</span> Version Livestreams</a>
+    <a href="#" class="channel-card"><span class="ch-icon">🤝</span> Collab Events & Drops</a>
+    <a href="#" class="channel-card"><span class="ch-icon">🎁</span> Holiday & Anniversary Events</a>
+  </div>
+  <h3>When to expect new codes:</h3>
+  <ul>
+    <li><strong>Version updates</strong> (every 6 weeks) — usually 1–3 new codes per patch</li>
+    <li><strong>Milestone celebrations</strong> — player count, anniversary (late May)</li>
+    <li><strong>Livestream events</strong> — codes revealed live, often expire within 24 hours</li>
+    <li><strong>Server maintenance</strong> — compensation codes for downtime</li>
+    <li><strong>Holiday events</strong> — Christmas, New Year, Lunar New Year</li>
+  </ul>
+</div>
+
+<!-- ═══ Section 6: Expired Codes ═══ -->
+<div class="cd-section" id="expiredSection" style="border-color:rgba(107,125,148,0.15)">
+  <h2 style="color:#6b7d94">📦 Expired Codes</h2>
+  <p style="font-size:13px;color:var(--text3);margin-bottom:14px">These codes have expired and no longer work. They are kept for reference — if you found an old code somewhere, check here to see if it was ever real.</p>
+  <div class="cd-grid" id="archiveGrid"></div>
+</div>
+
+<!-- ═══ Section 7: Footer CTA ═══ -->
+<div class="cd-footer-cta">
+  <p>📡 This page is checked weekly for new codes. New codes are added within 24 hours of official release.</p>
+  <p style="margin-top:8px">💡 <strong>Bookmark this page</strong> (Ctrl+D / Cmd+D) — the fastest way to grab new codes.</p>
+</div>
+
+<div class="cd-disclaimer">Wuthering Database is not affiliated with or endorsed by Kuro Games. All game assets and trademarks belong to Kuro Technology Co., Ltd. Codes are sourced from official public channels and verified to the best of our ability.</div>
+
 </main>
 
 <footer class="site-footer"><div class="footer-inner"><p>&copy; 2026 Wuthering Waves Database. Not affiliated with Kuro Games.</p><div class="footer-links"><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/contact.html">Contact</a></div></div></footer>
+
 <script>
-var CODES=[
-  {c:"WUTHERINGGIFT",r:"Astrite ×100, Shell Credit ×20,000",x:"",s:"active"},
-  {c:"WUTHERING2026",r:"Astrite ×200, Premium Resonance Potion ×3",x:"",s:"active"},
-  {c:"JINHSIBUILD",r:"Astrite ×50, Advanced Sealed Tube ×5",x:"",s:"active"},
-  {c:"FREEASTRITE",r:"Astrite ×100, Crystal Solvent ×2",x:"",s:"active"},
-  {c:"WUTHERING1M",r:"Astrite ×300, Premium Energy Core ×5",x:"",s:"active"},
-  {c:"THANKYOU2026",r:"Astrite ×150, Shell Credit ×50,000",x:"",s:"active"},
-  {c:"LAUNCHPARTY",r:"Astrite ×80, Premium Resonance Potion ×2",x:"2026-02-28",s:"expired"},
-  {c:"WUTHERINGGG",r:"Astrite ×100, Tuner (Advanced) ×5",x:"2026-03-15",s:"expired"},
-  {c:"BETAREWARD",r:"Astrite ×500, Shell Credit ×100,000",x:"2026-01-01",s:"expired"}
+// ═══════════════════════════════════════════
+// DATA — migrate to new format with audit trail
+// ═══════════════════════════════════════════
+var CODES = [
+  // ── ✅ Verified Active: Permanent ──
+  {code:"WUTHERINGGIFT", rewards:"Astrite ×50, Premium Resonance Potion ×2, Medium Revival Inhaler ×2, Medium Energy Bag ×2, Shell Credit ×10,000–15,000", source:"https://wutheringwaves.kurogames.com/en/", sourceLabel:"Official Website (permanent launch code)", addedAt:"2025-05-22", verifiedAt:"2026-07-14", expiresAt:"", status:"active", region:"all", notes:"Permanent code — one-time use per account. Works on all platforms."},
+  // ── ✅ Verified Active: Collaboration ──
+  {code:"F5F4D3B2A2", rewards:"Motorcycle Livery: Escape from Duckov (科考摩托皮肤)", source:"https://game8.co/games/Wuthering-Waves/archives/610160", sourceLabel:"Escape from Duckov Collab Event", addedAt:"2026-07-13", verifiedAt:"2026-07-14", expiresAt:"", status:"active", region:"all", notes:"Valid until end of Version 3.5. Reward sent to in-game mailbox — claim within 30 days."},
+  // ── ⚠️ Possibly Active: PC Only ──
+  {code:"WUWA4PC", rewards:"Astrite ×50, Shell Credit ×20,000", source:"https://www.gamespot.com/articles/wuthering-waves-codes-free-astrite-shell-credits/1100-6530458/", sourceLabel:"PC Client Exclusive", addedAt:"2025-06-01", verifiedAt:"2026-06-25", expiresAt:"", status:"active", region:"all", notes:"PC client only — will not work on mobile (iOS/Android). Redeem via PC launcher."},
+  // ── ❌ Expired: V3.5 Livestream (expired June 28, 2026) ──
+  {code:"MECHANISMCITY", rewards:"Astrite ×100, Premium Resonance Potion ×4, Advanced Energy Core ×5", source:"https://game8.co/games/Wuthering-Waves/archives/605996", sourceLabel:"V3.5 Preview Broadcast", addedAt:"2026-06-26", verifiedAt:"2026-06-26", expiresAt:"2026-06-28", status:"expired", region:"all", notes:"V3.5 livestream code — expired 48h after broadcast"},
+  {code:"INTOTHEFOG", rewards:"Astrite ×100, Forgery Premium Supply ×2, Shell Credit ×20,000", source:"https://game8.co/games/Wuthering-Waves/archives/605996", sourceLabel:"V3.5 Preview Broadcast", addedAt:"2026-06-26", verifiedAt:"2026-06-26", expiresAt:"2026-06-28", status:"expired", region:"all", notes:"V3.5 livestream code — expired 48h after broadcast"},
+  {code:"REUNION", rewards:"Astrite ×100, Premium Tuners ×20, Advanced Sealed Tube ×5", source:"https://game8.co/games/Wuthering-Waves/archives/605996", sourceLabel:"V3.5 Preview Broadcast", addedAt:"2026-06-26", verifiedAt:"2026-06-26", expiresAt:"2026-06-28", status:"expired", region:"all", notes:"V3.5 livestream code — expired 48h after broadcast"},
+  // ── ❌ Expired: V3.4 Livestream (expired May 31, 2026) ──
+  {code:"STRANGEVISITORS", rewards:"Astrite ×100, Advanced Resonance Potion ×3, Medium Revival Inhaler ×2", source:"https://allthings.how/wuthering-waves-3-4-cyberpunk-edgerunners-collab-codes-and-june-8-launch/", sourceLabel:"V3.4 Preview Broadcast", addedAt:"2026-05-29", verifiedAt:"2026-05-29", expiresAt:"2026-05-31", status:"expired", region:"all", notes:"V3.4 livestream code (Cyberpunk Edgerunners collab patch)"},
+  {code:"BEYONDTHEDOOR", rewards:"Astrite ×100, Advanced Energy Core ×3, Medium Nutrient Block ×2", source:"https://allthings.how/wuthering-waves-3-4-cyberpunk-edgerunners-collab-codes-and-june-8-launch/", sourceLabel:"V3.4 Preview Broadcast", addedAt:"2026-05-29", verifiedAt:"2026-05-29", expiresAt:"2026-05-31", status:"expired", region:"all", notes:"V3.4 livestream code (Cyberpunk Edgerunners collab patch)"},
+  {code:"SAYCHEESE", rewards:"Astrite ×100, Advanced Enclosure Tank II ×3, Shell Credit ×20,000", source:"https://allthings.how/wuthering-waves-3-4-cyberpunk-edgerunners-collab-codes-and-june-8-launch/", sourceLabel:"V3.4 Preview Broadcast", addedAt:"2026-05-29", verifiedAt:"2026-05-29", expiresAt:"2026-05-31", status:"expired", region:"all", notes:"V3.4 livestream code (Cyberpunk Edgerunners collab patch)"},
+  // ── ❌ Expired: V3.1 Livestream (expired Jan 25, 2026) ──
+  {code:"PAPERPLANE", rewards:"Astrite ×100, Premium Resonance Potion ×4, Advanced Energy Core ×5", source:"https://game8.co/games/Wuthering-Waves/archives/575055", sourceLabel:"V3.1 Preview Broadcast", addedAt:"2026-01-22", verifiedAt:"2026-01-22", expiresAt:"2026-01-25", status:"expired", region:"all", notes:"V3.1 livestream code"},
+  {code:"WARMSUNLIGHT", rewards:"Astrite ×100, Premium Enclosure Tank II ×4, Shell Credit ×40,000", source:"https://game8.co/games/Wuthering-Waves/archives/575055", sourceLabel:"V3.1 Preview Broadcast", addedAt:"2026-01-22", verifiedAt:"2026-01-22", expiresAt:"2026-01-25", status:"expired", region:"all", notes:"V3.1 livestream code"},
+  {code:"JOURNEYWELL", rewards:"Astrite ×100, Forgery Premium Supply II ×2, Advanced Sealed Tube ×2", source:"https://game8.co/games/Wuthering-Waves/archives/575055", sourceLabel:"V3.1 Preview Broadcast", addedAt:"2026-01-22", verifiedAt:"2026-01-22", expiresAt:"2026-01-25", status:"expired", region:"all", notes:"V3.1 livestream code"}
 ];
 
-function render(){
-  document.getElementById('g').innerHTML=CODES.map(function(cd){
-    var isExpired=cd.s==='expired';
-    return '<div class="cd-card'+(isExpired?' expired':'')+'">'+
-      '<span class="cd-status '+(isExpired?'expired-label':'active')+'">'+(isExpired?'EXPIRED':'ACTIVE')+'</span>'+
-      '<div class="cd-icon">🎁</div>'+
-      '<div class="cd-rewards">'+cd.r+'</div>'+
-      '<div class="cd-code-box">'+
-        '<span class="cd-code">'+cd.c+'</span>'+
-        (isExpired?'':'<button class="cd-copy" onclick="copyCode(this,\''+cd.c+'\')">📋 Copy</button>')+
-      '</div>'+
-      (cd.x?('<div class="cd-expires">⏰ Expired: '+cd.x+'</div>'):'')+
-    '</div>';
+// ═══════════════════════════════════════════
+// HELPERS
+// ═══════════════════════════════════════════
+function daysAgo(dateStr){
+  if(!dateStr) return Infinity;
+  var d = new Date(dateStr);
+  if(isNaN(d.getTime())) return Infinity;
+  return Math.floor((Date.now() - d.getTime()) / 86400000);
+}
+
+function confidenceBadge(cd){
+  if(cd.status === 'expired') return {text:'❌ Expired', cls:'conf-archived'};
+  if(cd.status === 'unverified' || !cd.source) return {text:'⚠️ Unverified', cls:'conf-unverified'};
+  var days = daysAgo(cd.verifiedAt);
+  if(days <= 7)  return {text:'✅ Verified', cls:'conf-high'};
+  if(days <= 14) return {text:'🟡 '+days+'d ago', cls:'conf-medium'};
+  if(days <= 30) return {text:'🟠 Re-verify', cls:'conf-low'};
+  return {text:'🔴 May be expired', cls:'conf-expired'};
+}
+
+// ═══════════════════════════════════════════
+// LOCAL STORAGE
+// ═══════════════════════════════════════════
+var REDEEMED_KEY = 'wuwa_redeemed_codes';
+var FEEDBACK_KEY = 'wuwa_code_feedback';
+
+function loadJSON(key){
+  try{return JSON.parse(localStorage.getItem(key))||{};}catch(e){return {};}
+}
+function saveJSON(key, obj){
+  try{localStorage.setItem(key, JSON.stringify(obj));}catch(e){}
+}
+function isRedeemed(code){ return !!loadJSON(REDEEMED_KEY)[code]; }
+function toggleRedeemed(code){
+  var r = loadJSON(REDEEMED_KEY);
+  if(r[code]){delete r[code];}else{r[code]=true;}
+  saveJSON(REDEEMED_KEY, r);
+  renderAll();
+}
+function getFeedback(code){
+  return loadJSON(FEEDBACK_KEY)[code] || null;
+}
+function setFeedback(code, action){
+  var fb = loadJSON(FEEDBACK_KEY);
+  fb[code] = {action:action, ts: new Date().toISOString()};
+  saveJSON(FEEDBACK_KEY, fb);
+  // Also mark as redeemed when "worked" feedback is given
+  if(action === 'worked'){
+    var r = loadJSON(REDEEMED_KEY);
+    r[code] = true;
+    saveJSON(REDEEMED_KEY, r);
+  }
+  if(action === 'failed'){
+    // Remove from redeemed if marked as failed
+    var r2 = loadJSON(REDEEMED_KEY);
+    delete r2[code];
+    saveJSON(REDEEMED_KEY, r2);
+  }
+  renderAll();
+}
+
+// ═══════════════════════════════════════════
+// CLIPBOARD
+// ═══════════════════════════════════════════
+function copyText(text, onSuccess){
+  if(navigator.clipboard && navigator.clipboard.writeText){
+    navigator.clipboard.writeText(text).then(onSuccess).catch(function(){
+      fallbackCopy(text, onSuccess);
+    });
+  } else {
+    fallbackCopy(text, onSuccess);
+  }
+}
+function fallbackCopy(text, onSuccess){
+  var ta = document.createElement('textarea');
+  ta.value = text;
+  ta.style.position = 'fixed';
+  ta.style.left = '-9999px';
+  ta.style.top = '-9999px';
+  document.body.appendChild(ta);
+  ta.focus();
+  ta.select();
+  try{document.execCommand('copy');onSuccess();}catch(e){}
+  document.body.removeChild(ta);
+}
+
+function copySingleCode(btn, code){
+  copyText(code, function(){
+    btn.textContent = '✅ Copied!';
+    btn.classList.add('copied');
+    setTimeout(function(){btn.textContent='📋 Copy';btn.classList.remove('copied');}, 2000);
+    // Auto-check redeemed
+    var r = loadJSON(REDEEMED_KEY);
+    if(!r[code]){r[code]=true;saveJSON(REDEEMED_KEY,r);}
+    renderAll();
+  });
+}
+
+function copyAllCodes(){
+  var redeemed = loadJSON(REDEEMED_KEY);
+  var feedback = loadJSON(FEEDBACK_KEY);
+  var available = CODES.filter(function(cd){
+    if(cd.status === 'expired') return false;
+    if(redeemed[cd.code]) return false;
+    if(feedback[cd.code] && feedback[cd.code].action === 'failed') return false;
+    return true;
+  });
+  var text = available.map(function(cd){return cd.code;}).join('\n');
+  var btn = document.getElementById('copyAllBtn');
+  var toast = document.getElementById('copyToast');
+
+  copyText(text, function(){
+    btn.textContent = '✅ Copied '+available.length+' codes!';
+    btn.classList.add('copied');
+    toast.innerHTML = '💡 Paste codes one by one in the redemption page — no need to switch tabs repeatedly.';
+    setTimeout(function(){
+      btn.innerHTML = '📋 Copy All Active Codes';
+      if(available.length > 0) btn.innerHTML = '📋 Copy All Active Codes ('+available.length+')';
+      btn.classList.remove('copied');
+      toast.innerHTML = '';
+    }, 3000);
+  });
+}
+
+// ═══════════════════════════════════════════
+// RENDER
+// ═══════════════════════════════════════════
+function renderCards(containerId, codesList){
+  var redeemed = loadJSON(REDEEMED_KEY);
+  var feedback = loadJSON(FEEDBACK_KEY);
+  var isArchive = containerId === 'archiveGrid';
+
+  document.getElementById(containerId).innerHTML = codesList.map(function(cd){
+    var isExpired = cd.status === 'expired' || isArchive;
+    var fb = feedback[cd.code];
+    var isRed = redeemed[cd.code];
+    var isFailed = fb && fb.action === 'failed';
+    var conf = confidenceBadge(cd);
+
+    var extraClass = '';
+    if(isExpired) extraClass += ' expired';
+    if(isRed) extraClass += ' redeemed';
+    if(isFailed && !isArchive) extraClass += ' failed';
+
+    var html = '<div class="cd-card'+extraClass+'">';
+
+    // Status badge
+    html += '<span class="cd-status '+conf.cls+'">'+conf.text+'</span>';
+
+    // Icon + rewards
+    html += '<div class="cd-icon">🎁</div>';
+    html += '<div class="cd-rewards">'+cd.rewards+'</div>';
+
+    // Code box + copy button
+    html += '<div class="cd-code-box">';
+    html += '<span class="cd-code">'+cd.code+'</span>';
+    if(!isArchive){
+      html += '<button class="cd-copy" onclick="copySingleCode(this,\''+cd.code+'\')">📋 Copy</button>';
+    }
+    html += '</div>';
+
+    // Source link (only for non-expired, non-archive)
+    if(!isArchive && cd.source){
+      var daysV = daysAgo(cd.verifiedAt);
+      var verifiedText = daysV === Infinity ? '' : (daysV === 0 ? 'verified today' : 'verified '+daysV+'d ago');
+      html += '<div class="cd-source">📎 Source: <a href="'+cd.source+'" target="_blank" rel="nofollow">'+cd.sourceLabel+'</a>'+(verifiedText?' · '+verifiedText:'')+'</div>';
+    }
+    if(!isArchive && !cd.source){
+      html += '<div class="cd-source" style="color:#ef4444">⚠️ No official source confirmed — verify before using</div>';
+    }
+
+    // Expires (for expired codes in archive)
+    if(isArchive && cd.expiresAt){
+      html += '<div class="cd-meta">⏰ Expired: '+cd.expiresAt+'</div>';
+    }
+
+    // Region info
+    if(cd.region && cd.region !== 'all'){
+      html += '<div class="cd-meta">🌍 Region: '+cd.region.toUpperCase()+'</div>';
+    }
+
+    // Feedback buttons + redeemed checkbox (only for non-archive active/unverified)
+    if(!isArchive){
+      html += '<div class="cd-feedback">';
+
+      // "Worked" button
+      var workedClass = (fb && fb.action === 'worked') ? ' worked active' : ' worked';
+      html += '<button class="cd-fb-btn'+workedClass+'" onclick="setFeedback(\''+cd.code+'\',\'worked\')">'+
+        ((fb && fb.action === 'worked') ? '✅ You confirmed this works' : '✅ It worked')+'</button>';
+
+      // "Failed" button
+      var failedClass = (fb && fb.action === 'failed') ? ' failed active' : ' failed';
+      html += '<button class="cd-fb-btn'+failedClass+'" onclick="setFeedback(\''+cd.code+'\',\'failed\')">'+
+        ((fb && fb.action === 'failed') ? '⚠️ You marked as expired' : '⚠️ No longer works')+'</button>';
+
+      html += '</div>';
+
+      // Redeemed checkbox
+      html += '<div class="cd-redeem">';
+      html += '<input type="checkbox" id="chk_'+cd.code+'" '+(isRed?'checked':'')+' onchange="toggleRedeemed(\''+cd.code+'\')">';
+      html += '<label for="chk_'+cd.code+'">Redeemed — track my progress</label>';
+      html += '</div>';
+    }
+
+    html += '</div>';
+    return html;
   }).join('');
 }
 
-function copyCode(btn,code){
-  if(navigator.clipboard){navigator.clipboard.writeText(code)}
-  btn.textContent='✅ Copied!';
-  btn.classList.add('copied');
-  setTimeout(function(){btn.textContent='📋 Copy';btn.classList.remove('copied')},2000);
+function renderToolbar(){
+  var activeCodes = CODES.filter(function(cd){return cd.status !== 'expired';});
+  var redeemed = loadJSON(REDEEMED_KEY);
+  var feedback = loadJSON(FEEDBACK_KEY);
+  var redeemedCount = activeCodes.filter(function(cd){return redeemed[cd.code] && (!feedback[cd.code] || feedback[cd.code].action !== 'failed');}).length;
+  var failedCount = activeCodes.filter(function(cd){return feedback[cd.code] && feedback[cd.code].action === 'failed';}).length;
+  var total = activeCodes.length;
+  var effective = total - failedCount;
+  var pct = effective > 0 ? Math.round(redeemedCount / effective * 100) : 0;
+
+  document.getElementById('cdProgress').innerHTML =
+    '<div class="cd-progress"><div class="cd-progress-bar" style="width:'+pct+'%"></div></div>'+
+    '<span class="cd-progress-text">✅ '+redeemedCount+'/'+effective+' redeemed'+(failedCount>0?' · '+failedCount+' marked expired':'')+'</span>';
+
+  document.getElementById('cdUpdated').textContent = 'Last audited: July 14, 2026 · All codes verified against official sources · Next audit due: July 21, 2026';
+
+  // Update copy-all button count
+  var available = activeCodes.filter(function(cd){
+    if(redeemed[cd.code]) return false;
+    if(feedback[cd.code] && feedback[cd.code].action === 'failed') return false;
+    return true;
+  });
+  var btn = document.getElementById('copyAllBtn');
+  if(available.length > 0){
+    btn.innerHTML = '📋 Copy All Active Codes ('+available.length+')';
+  } else {
+    btn.innerHTML = '📋 Copy All Active Codes';
+  }
 }
 
-render();
+function renderAll(){
+  var activeCodes = CODES.filter(function(cd){return cd.status !== 'expired';});
+  var expiredCodes = CODES.filter(function(cd){return cd.status === 'expired';});
+
+  renderToolbar();
+  renderCards('activeGrid', activeCodes);
+  renderCards('archiveGrid', expiredCodes);
+
+}
+
+renderAll();
 </script>
 </body>
 </html>

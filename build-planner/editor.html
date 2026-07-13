@@ -96,7 +96,8 @@
 
   <div class="ed-actions">
     <button class="ed-btn secondary" onclick="resetBuild()">🔄 Reset</button>
-    <button class="ed-btn primary" onclick="shareBuild()">🔗 Share Build</button>
+    <button class="ed-btn primary" onclick="optimalBuild()">⚡ Optimal Build</button>
+    <button class="ed-btn secondary" onclick="shareBuild()">🔗 Share Build</button>
   </div>
   <div id="shareMsg" style="text-align:center;margin-top:10px;font-size:13px;color:#4ECDC4;display:none">Link copied!</div>
 </div>
@@ -108,8 +109,9 @@
 <script src="/characters/char-data.js"></script>
 <script src="/weapons/weapons-data.js"></script>
 <script src="/echos/echos-data.js"></script>
+<script src="/data/build-recs.js"></script>
 <script>
-var W=window.__WEAPONS__||[],E=window.__ECHOES__||[],CHARS=window.__CHARS__||[];
+var W=window.__WEAPONS__||[],E=window.__ECHOES__||[],CHARS=window.__CHARS__||[],BUILD_RECS=window.__BUILD_RECS__||{};
 var ELEM_ICONS={Aero:'💨',Glacio:'❄️',Fusion:'🔥',Electro:'⚡',Spectro:'💡',Havoc:'💀'};
 var WEP_ICONS={Broadblade:'⚔️',Sword:'🗡️',Pistols:'🔫',Gauntlets:'🥊',Rectifier:'📿'};
 
@@ -261,6 +263,26 @@ function resetBuild(){
   updateStats();
 }
 
+  function optimalBuild(){
+    var rec=BUILD_RECS[charSlug];
+    if(!rec){alert('No optimal build data available for this character yet.');return;}
+    if(rec.bestWeapon){wpnSel.value=rec.bestWeapon;}
+    var recSonata=rec.sonata||'';
+    var sonataEchoes=E.filter(function(e){return e.se===recSonata});
+    var usedEchoes=[];
+    var slot0=document.getElementById('echo0');
+    if(rec.bestEcho&&slot0){slot0.value=rec.bestEcho;updateEchoLabel(0);usedEchoes.push(rec.bestEcho);}
+    var si=1;
+    sonataEchoes.forEach(function(e){
+      if(si>4||usedEchoes.indexOf(e.s)>=0)return;
+      var slotCost=(si<=2)?3:1;
+      if(e.c===slotCost){
+        var sel=document.getElementById('echo'+si);
+        if(sel){sel.value=e.s;updateEchoLabel(si);usedEchoes.push(e.s);si++;}
+      }
+    });
+    updateStats();
+  }
 function shareBuild(){
   var wSlug=wpnSel.value;
   var eSlugs=[];

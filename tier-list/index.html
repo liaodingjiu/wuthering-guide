@@ -43,6 +43,8 @@
 .tl-card:hover{border-color:rgba(78,205,196,0.7);transform:translateY(-2px)}
 .tl-card .tl-icon{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:4px;border:2px solid rgba(78,205,196,0.15)}
 .tl-card .tl-name{font-size:11px;font-weight:600;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:80px}
+.tl-build-btn{display:block;margin-top:6px;padding:3px 10px;background:#3b82f6;color:#fff;border:none;border-radius:6px;font-size:10px;font-weight:700;cursor:pointer;text-decoration:none;transition:all .2s;z-index:2;position:relative}
+.tl-build-btn:hover{background:#2563eb;transform:scale(1.05)}
 .tl-card .tl-rarity{position:absolute;top:4px;right:4px;font-size:8px;padding:1px 5px;border-radius:4px;font-weight:700}
 .r5{background:rgba(250,204,21,0.2);color:#facc15}
 .r4{background:rgba(192,132,252,0.2);color:#c084fc}
@@ -115,7 +117,9 @@ function buildTier(pals,tab){
       html+='<a href="/characters/'+p.s+'/" class="tl-card">'+
         '<span class="tl-rarity '+rc+'">★'+p.r+'</span>'+
         '<div class="tl-icon">'+p.icon+'</div>'+
-        '<span class="tl-name">'+p.n+'</span></a>';
+        '<span class="tl-name">'+p.n+'</span>'+
+        '<span class="tl-build-btn" onclick="event.preventDefault();event.stopPropagation();window.location.href=\'/build-planner/editor.html?char='+p.s+'\'">⚡ Build</span>'+
+        '</a>';
     });
     html+='</div></div>';
   });
