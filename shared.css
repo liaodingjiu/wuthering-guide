@@ -105,7 +105,19 @@ nav { background: var(--nav-bg); position: sticky; top: 0; z-index: 100; }
   background: transparent; border: 1px solid rgba(255,255,255,.15); border-radius: 4px;
   padding: 4px 8px; cursor: pointer; font-size: 14px; color: #91A4B8; flex-shrink: 0;
 }
-@media (max-width: 768px) { .nav-links { gap: 14px; } .nav-links a { font-size: 13px; } .logo { padding: 8px 14px; font-size: 15px; } }
+/* ── Mobile Nav: Priority + More Dropdown ── */
+.nav-more { display: none; position: relative; }
+.nav-hidden-desktop { display: block; }
+.nav-more-dropdown { display: none; position: absolute; top: 100%; right: -8px; background: #172E43; border: 1px solid rgba(78,205,196,0.2); border-radius: 0 0 8px 8px; min-width: 160px; padding: 4px 0; z-index: 999; list-style: none; }
+.nav-more.open .nav-more-dropdown { display: block; }
+.nav-more-dropdown li { display: block; }
+.nav-more-dropdown li a { display: block; padding: 10px 18px; font-size: 14px; color: #91A4B8; text-decoration: none; white-space: nowrap; }
+.nav-more-dropdown li a:hover { background: rgba(78,205,196,0.1); color: #fff; }
+.nav-more-dropdown .nav-dropdown { position: static; }
+.nav-more-dropdown .dropdown-menu { display: block; position: static; border: none; padding: 0 0 0 12px; background: transparent; min-width: auto; }
+.nav-more-dropdown .dropdown-menu li a { font-size: 12px; padding: 6px 18px; color: #6b7d94; }
+@media (max-width: 868px) { .nav-more { display: block; } }
+@media (max-width: 768px) { .nav-links { gap: 14px; } .nav-links a { font-size: 13px; } .logo { padding: 8px 14px; font-size: 15px; } .nav-hidden-desktop { display: none; } .nav-more { display: block; } .nav-more > a { cursor: pointer; } }
 
 /* ── Container ── */
 .container { max-width: 1300px; margin: 0 auto; padding: 24px 20px; }
