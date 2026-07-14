@@ -1,0 +1,220 @@
+{
+  "specific": {
+    "jinhsi": [
+      {
+        "slug": "shorekeeper",
+        "role": "support",
+        "synergy": "Spectro Resonance \u00b7 23% DMG buff on Outro"
+      },
+      {
+        "slug": "verina",
+        "role": "healer",
+        "synergy": "Universal ATK buff \u00b7 Team-wide healing"
+      },
+      {
+        "slug": "yinlin",
+        "role": "subdps",
+        "synergy": "Off-field Electro DMG \u00b7 Res. Skill buff"
+      }
+    ],
+    "camellya": [
+      {
+        "slug": "shorekeeper",
+        "role": "support",
+        "synergy": "Universal CRIT buff \u00b7 Team sustain"
+      },
+      {
+        "slug": "verina",
+        "role": "healer",
+        "synergy": "ATK buff \u00b7 Keeps Camellya alive in melee"
+      },
+      {
+        "slug": "sanhua",
+        "role": "subdps",
+        "synergy": "Basic Attack DMG buff \u00b7 Fast Concerto rotation"
+      }
+    ],
+    "jiyan": [
+      {
+        "slug": "shorekeeper",
+        "role": "support",
+        "synergy": "Aero Resonance \u00b7 CRIT buff"
+      },
+      {
+        "slug": "verina",
+        "role": "healer",
+        "synergy": "Universal ATK buff \u00b7 Healing"
+      },
+      {
+        "slug": "mortefi",
+        "role": "subdps",
+        "synergy": "Heavy Attack DMG buff \u00b7 Off-field Aero DMG"
+      }
+    ],
+    "changli": [
+      {
+        "slug": "shorekeeper",
+        "role": "support",
+        "synergy": "Universal CRIT buff \u00b7 Sustain"
+      },
+      {
+        "slug": "verina",
+        "role": "healer",
+        "synergy": "ATK buff \u00b7 Team-wide healing"
+      },
+      {
+        "slug": "encore",
+        "role": "subdps",
+        "synergy": "Fusion Resonance \u00b7 Quick-swap DPS"
+      }
+    ],
+    "yinlin": [
+      {
+        "slug": "shorekeeper",
+        "role": "support",
+        "synergy": "Universal CRIT buff \u00b7 Sustain"
+      },
+      {
+        "slug": "verina",
+        "role": "healer",
+        "synergy": "ATK buff \u00b7 Team-wide healing"
+      },
+      {
+        "slug": "jinhsi",
+        "role": "dps",
+        "synergy": "Electro buffs Jinhsi's Res. Skill \u00b7 Off-field coverage"
+      }
+    ],
+    "carlotta": [
+      {
+        "slug": "shorekeeper",
+        "role": "support",
+        "synergy": "Universal CRIT buff \u00b7 Sustain"
+      },
+      {
+        "slug": "verina",
+        "role": "healer",
+        "synergy": "ATK buff \u00b7 Healing for ranged DPS"
+      },
+      {
+        "slug": "zhezhi",
+        "role": "subdps",
+        "synergy": "Glacio Resonance \u00b7 Res. Skill DMG buff"
+      }
+    ],
+    "shorekeeper": [
+      {
+        "slug": "jinhsi",
+        "role": "dps",
+        "synergy": "23% Spectro DMG from Shorekeeper's Outro"
+      },
+      {
+        "slug": "camellya",
+        "role": "dps",
+        "synergy": "CRIT buff maximizes Camellya's burst"
+      },
+      {
+        "slug": "jiyan",
+        "role": "dps",
+        "synergy": "Aero Resonance \u00b7 CRIT for consistent DPS"
+      }
+    ],
+    "verina": [
+      {
+        "slug": "jinhsi",
+        "role": "dps",
+        "synergy": "ATK buff amplifies Jinhsi's burst window"
+      },
+      {
+        "slug": "camellya",
+        "role": "dps",
+        "synergy": "Sustain keeps melee DPS alive"
+      },
+      {
+        "slug": "changli",
+        "role": "dps",
+        "synergy": "Quick rotation synergy \u00b7 ATK buff"
+      }
+    ],
+    "zhezhi": [
+      {
+        "slug": "carlotta",
+        "role": "dps",
+        "synergy": "Glacio Resonance \u00b7 Res. Skill synergy"
+      },
+      {
+        "slug": "shorekeeper",
+        "role": "support",
+        "synergy": "Universal CRIT buff \u00b7 Sustain"
+      },
+      {
+        "slug": "verina",
+        "role": "healer",
+        "synergy": "ATK buff \u00b7 Team healing"
+      }
+    ],
+    "encore": [
+      {
+        "slug": "changli",
+        "role": "dps",
+        "synergy": "Fusion Resonance \u00b7 Quick-swap combo"
+      },
+      {
+        "slug": "shorekeeper",
+        "role": "support",
+        "synergy": "CRIT buff for burst window"
+      },
+      {
+        "slug": "verina",
+        "role": "healer",
+        "synergy": "ATK buff \u00b7 Sustain"
+      }
+    ],
+    "sanhua": [
+      {
+        "slug": "camellya",
+        "role": "dps",
+        "synergy": "Basic ATK buff synergizes perfectly"
+      },
+      {
+        "slug": "shorekeeper",
+        "role": "support",
+        "synergy": "Universal CRIT buff"
+      },
+      {
+        "slug": "verina",
+        "role": "healer",
+        "synergy": "ATK buff \u00b7 Team healing"
+      }
+    ],
+    "mortefi": [
+      {
+        "slug": "jiyan",
+        "role": "dps",
+        "synergy": "Heavy ATK buff for Jiyan's burst"
+      },
+      {
+        "slug": "shorekeeper",
+        "role": "support",
+        "synergy": "CRIT buff \u00b7 Sustain"
+      },
+      {
+        "slug": "verina",
+        "role": "healer",
+        "synergy": "ATK buff \u00b7 Team healing"
+      }
+    ]
+  },
+  "default": [
+    {
+      "slug": "verina",
+      "role": "healer",
+      "synergy": "Universal ATK buff \u00b7 Team-wide healing"
+    },
+    {
+      "slug": "shorekeeper",
+      "role": "support",
+      "synergy": "Universal CRIT buff \u00b7 Sustain"
+    }
+  ]
+}
