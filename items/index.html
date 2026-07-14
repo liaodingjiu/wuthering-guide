@@ -5,12 +5,12 @@
 <link rel="preload" href="/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-<title>Wuthering Waves Items — All Materials & Consumables | Wuthering Database</title>
-<meta name="description" content="All Wuthering Waves items — ascension materials, skill materials, weapon materials, consumables, and more. Search and filter by category.">
+<title>Wuthering Waves Items — Materials, Consumables & What They're Used For</title>
+<meta name="description" content="Complete Wuthering Waves items database — ascension materials, skill materials, weapon materials, consumables. See which characters use each item and where to farm them.">
 <meta name="robots" content="index,follow">
 <link rel="canonical" href="https://wutzone.com/items/">
-<meta property="og:title" content="Wuthering Waves Items Database">
-<meta property="og:description" content="All items — materials, consumables, and resources.">
+<meta property="og:title" content="Wuthering Waves Items — Materials & Uses">
+<meta property="og:description" content="All items with character usage and farming locations.">
 <meta property="og:type" content="website"><meta property="og:url" content="https://wutzone.com/items/">
 <link rel="stylesheet" href="/shared.css">
 <style>
@@ -32,14 +32,34 @@
 .it-table thead{background:var(--nav-bg);position:sticky;top:0;z-index:1}
 .it-table th{padding:12px 14px;text-align:left;font-size:12px;font-weight:600;color:#91A4B8;text-transform:uppercase;letter-spacing:.06em;border-bottom:2px solid rgba(78,205,196,0.2);white-space:nowrap}
 .it-table td{padding:10px 14px;border-bottom:1px solid rgba(78,205,196,0.08);color:var(--text);vertical-align:middle}
-.it-table tbody tr{transition:background .15s}
-.it-table tbody tr:hover{background:rgba(78,205,196,0.03)}
+.it-table tbody tr{transition:background .15s;cursor:pointer}
+.it-table tbody tr:hover{background:rgba(78,205,196,0.04)}
+.it-table tbody tr.expanded{background:rgba(78,205,196,0.06)}
 .it-table .it-rarity{display:inline-block;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600}
 .r-5{background:rgba(250,204,21,0.15);color:#facc15}
 .r-4{background:rgba(192,132,252,0.15);color:#c084fc}
 .r-3{background:rgba(96,165,250,0.15);color:#60a5fa}
 .r-2{background:rgba(107,114,128,0.15);color:#9ca3af}
-.it-emoji{font-size:18px}
+
+/* ── Expandable Detail Row ── */
+.it-detail-row{display:none}
+.it-detail-row.show{display:table-row}
+.it-detail-row td{padding:0 14px 14px 14px;border-bottom:1px solid rgba(78,205,196,0.12);background:rgba(78,205,196,0.02)}
+.it-detail-box{display:flex;gap:14px;flex-wrap:wrap;align-items:flex-start;padding:10px 0}
+.it-detail-box .it-detail-label{font-size:11px;font-weight:600;color:var(--text3);text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px}
+.it-used-by{display:flex;flex-wrap:wrap;gap:5px;align-items:center}
+.it-used-by a{display:inline-block;padding:4px 10px;border-radius:6px;font-size:12px;font-weight:500;text-decoration:none;background:rgba(78,205,196,0.06);color:var(--green);border:1px solid rgba(78,205,196,0.12);transition:all .15s}
+.it-used-by a:hover{background:rgba(78,205,196,0.15);border-color:rgba(78,205,196,0.4);color:#fff}
+.it-used-by .it-universal{font-size:12px;color:var(--text3)}
+.it-farm-link{display:inline-block;padding:4px 12px;border-radius:6px;font-size:12px;font-weight:500;text-decoration:none;background:rgba(34,197,94,0.08);color:#4ade80;border:1px solid rgba(34,197,94,0.2);transition:all .15s}
+.it-farm-link:hover{background:rgba(34,197,94,0.15);border-color:rgba(34,197,94,0.4)}
+.it-expand-icon{font-size:11px;color:var(--text3);transition:transform .2s;display:inline-block}
+tr.expanded .it-expand-icon{transform:rotate(90deg)}
+
+.it-cta-row{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin:24px 0 12px}
+.it-cta-btn{padding:10px 22px;border-radius:10px;font-size:14px;font-weight:500;text-decoration:none;transition:all .2s;background:rgba(78,205,196,0.06);color:var(--green);border:1px solid rgba(78,205,196,0.15)}
+.it-cta-btn:hover{background:rgba(78,205,196,0.14);border-color:rgba(78,205,196,0.4);color:#fff}
+
 @media(max-width:768px){.it-table{font-size:12px}.it-table th,.it-table td{padding:8px 10px}}
 </style>
 <script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "xkwf30ac3n");</script>
@@ -52,7 +72,7 @@
 
 <header class="it-hero">
   <h1>Wuthering Waves <span>Items</span></h1>
-  <p class="it-sub" id="itSub">All materials, consumables, and resources. Data from the official wiki.</p>
+  <p class="it-sub" id="itSub">Click any row to see which characters use each item and where to farm it.</p>
 </header>
 
 <div class="it-chips" id="chips">
@@ -74,19 +94,29 @@
 
 <div class="it-table-wrap">
 <table class="it-table">
-<thead><tr><th>Item</th><th>Rarity</th><th>Category</th><th>Description</th><th>Source</th></tr></thead>
+<thead><tr><th></th><th>Item</th><th>Rarity</th><th>Category</th><th>Description</th><th>Source</th></tr></thead>
 <tbody id="tb"></tbody>
 </table>
 </div>
+
+<div class="it-cta-row">
+  <a href="/characters/" class="it-cta-btn">👤 Browse Characters →</a>
+  <a href="/map/" class="it-cta-btn">🗺️ Farming Map →</a>
+  <a href="/guide/" class="it-cta-btn">📖 Upgrade Guide →</a>
+  <a href="/echos/" class="it-cta-btn">🔮 Echo Materials →</a>
+</div>
+
 </main>
 
 <footer class="site-footer"><div class="footer-inner"><p>&copy; 2026 Wuthering Waves Database. Not affiliated with Kuro Games.</p><div class="footer-links"><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/contact.html">Contact</a></div></div></footer>
+
 <script>
+// ── Item data ──
 var ITEMS=[
   {n:"Astrite",r:"5",cat:"Currency",d:"Premium currency used for Convene (gacha pulls). The most valuable resource in Wuthering Waves.",src:"Events, Quest Rewards, Shop"},
   {n:"Shell Credit",r:"2",cat:"Currency",d:"Basic currency used for upgrading characters, weapons, and purchasing items from shops.",src:"Exploration, Quests, Events"},
-  {n:"Oscillated Coral",r:"5",cat:"Currency",d:"Premium exchange currency obtained from duplicate Resonators. Traded for Resonance Chains.",src:"Convene (duplicate characters)"},
-  {n:"Afterglow Coral",r:"4",cat:"Currency",d:"Exchange currency obtained from Convene. Used to purchase materials and Wavebands.",src:"Convene"},
+  {n:"Oscillated Coral",r:"5",cat:"Currency",d:"Premium exchange currency from duplicate Resonators. Traded for Resonance Chains.",src:"Convene (duplicate characters)"},
+  {n:"Afterglow Coral",r:"4",cat:"Currency",d:"Exchange currency from Convene. Used to purchase materials and Wavebands.",src:"Convene"},
   {n:"Waveplate",r:"3",cat:"Currency",d:"Stamina resource consumed to claim rewards from Forgery Challenge, Simulation Training, and Bosses.",src:"Auto-regenerates (240/day)"},
   {n:"Crystallized Solvent",r:"4",cat:"Consumable",d:"Restores 60 Waveplates instantly. A must-hoard item for efficient farming.",src:"Battle Pass, Events, Shop"},
   {n:"Premium Resonance Potion",r:"4",cat:"Consumable",d:"Grants 8000 Resonator EXP. The most efficient way to level up characters.",src:"Simulation Training, Events"},
@@ -97,7 +127,7 @@ var ITEMS=[
   {n:"Medium Energy Core",r:"2",cat:"Consumable",d:"Grants 1000 Weapon EXP.",src:"Exploration, Shops"},
   {n:"Premium Sealed Tube",r:"4",cat:"Echo Material",d:"Grants 5000 Echo EXP. Used to level up Echoes.",src:"Tacet Field Cleanup, Events"},
   {n:"Advanced Sealed Tube",r:"3",cat:"Echo Material",d:"Grants 2000 Echo EXP.",src:"Tacet Field Cleanup"},
-  {n:"Medium Sealed Tube",r:"2",cat:"Echo Material",d:"Grants 800 Echo EXP.",src:"Exploration, Tacet Fields"},
+  {n:"Medium Sealed Tube",r:"2",cat:"Echo Material",d:"Grants 800 Echo EXP.",src:"Tacet Field Cleanup, Exploration"},
   {n:"Tuner (Advanced)",r:"4",cat:"Echo Material",d:"Used to tune Echoes and unlock substats. Essential for endgame build optimization.",src:"Tacet Field Cleanup, Events"},
   {n:"Tuner (Medium)",r:"3",cat:"Echo Material",d:"Used to tune Echoes and unlock substats up to level 4.",src:"Tacet Field Cleanup"},
   {n:"Tuner (Basic)",r:"2",cat:"Echo Material",d:"Used to tune Echoes and unlock substats up to level 2.",src:"Exploration, Quests"},
@@ -130,14 +160,104 @@ var ITEMS=[
   {n:"CRIT Rate Formula",r:"4",cat:"Consumable",d:"Increases CRIT Rate by 12% for 300s.",src:"Crafting (Alchemy), Events"},
   {n:"Elemental Resist Spray",r:"2",cat:"Consumable",d:"Increases all Elemental RES by 15% for 300s.",src:"Crafting, Shops"}
 ];
+
+// ── Item → Character mapping (auto-generated from data) ──
+var ITEM_CHARS = {
+  "Shell Credit":["aalto","aemeath","augusta","baizhi","brant","buling","calcharo","camellya","cantarella","carlotta","cartethyia","changli","chisa","chixia","ciaccona","danjin","denia","encore","galbrena","hiyuki","iuno","jianxin","jinhsi","jiyan","lingyang","lucilla","lucy","lumi","lupa","luuk-herssen","lynae","mornye","mortefi","phoebe","phrolova","qiuyuan","rebecca","roccia","sanhua","shorekeeper","sigrika","suisui","taoqi","verina","xiangli-yao","yangyang","yangyang:-xuanling","yinlin","youhu","yuanwu","zani","zhezhi"],
+  "Premium Resonance Potion":["aalto","aemeath","augusta","baizhi","brant","buling","calcharo","camellya","cantarella","carlotta","cartethyia","changli","chisa","chixia","ciaccona","danjin","denia","encore","galbrena","hiyuki","iuno","jianxin","jinhsi","jiyan","lingyang","lucilla","lucy","lumi","lupa","luuk-herssen","lynae","mornye","mortefi","phoebe","phrolova","qiuyuan","rebecca","roccia","sanhua","shorekeeper","sigrika","suisui","taoqi","verina","xiangli-yao","yangyang","yangyang:-xuanling","yinlin","youhu","yuanwu","zani","zhezhi"],
+  "Premium Sealed Tube":["aalto","aemeath","augusta","baizhi","brant","buling","calcharo","camellya","cantarella","carlotta","cartethyia","changli","chisa","chixia","ciaccona","danjin","denia","encore","galbrena","hiyuki","iuno","jianxin","jinhsi","jiyan","lingyang","lucilla","lucy","lumi","lupa","luuk-herssen","lynae","mornye","mortefi","phoebe","phrolova","qiuyuan","rebecca","roccia","sanhua","shorekeeper","sigrika","suisui","taoqi","verina","xiangli-yao","yangyang","yangyang:-xuanling","yinlin","youhu","yuanwu","zani","zhezhi"],
+  "Tuner (Advanced)":["aalto","aemeath","augusta","baizhi","brant","buling","calcharo","camellya","cantarella","carlotta","cartethyia","changli","chisa","chixia","ciaccona","danjin","denia","encore","galbrena","hiyuki","iuno","jianxin","jinhsi","jiyan","lingyang","lucilla","lucy","lumi","lupa","luuk-herssen","lynae","mornye","mortefi","phoebe","phrolova","qiuyuan","rebecca","roccia","sanhua","shorekeeper","sigrika","suisui","taoqi","verina","xiangli-yao","yangyang","yangyang:-xuanling","yinlin","youhu","yuanwu","zani","zhezhi"],
+  "FF Whisperin Core":["aalto","aemeath","augusta","baizhi","brant","buling","calcharo","camellya","cantarella","carlotta","cartethyia","changli","chisa","chixia","ciaccona","danjin","denia","encore","galbrena","hiyuki","iuno","jianxin","jinhsi","jiyan","lingyang","lucilla","lucy","lumi","lupa","luuk-herssen","lynae","mornye","mortefi","phoebe","phrolova","qiuyuan","rebecca","roccia","sanhua","shorekeeper","sigrika","suisui","taoqi","verina","xiangli-yao","yangyang","yangyang:-xuanling","yinlin","youhu","yuanwu","zani","zhezhi"],
+  "FF Whisperin Core (Element)":["jinhsi","lucy","luuk-herssen","lynae","phoebe","shorekeeper","verina","zani"],
+  "Forgery: Sword":["aemeath","brant","camellya","cartethyia","changli","danjin","galbrena","hiyuki","qiuyuan","sanhua","yangyang","yangyang:-xuanling"],
+  "Forgery: Broadblade":["augusta","calcharo","chisa","jiyan","jinhsi","lumi","lupa","mornye","taoqi"],
+  "Forgery: Pistols":["aalto","baizhi","chixia","carlotta","ciaccona","lynae","lucy","mortefi","rebecca"],
+  "Forgery: Gauntlets":["jianxin","iuno","lingyang","luuk-herssen","roccia","sigrika","xiangli-yao","youhu","yuanwu","zani"],
+  "Forgery: Rectifier":["buling","cantarella","denia","encore","lucilla","phoebe","phrolova","shorekeeper","suisui","verina","yinlin","zhezhi","carlotta"]
+};
+
+// ── Character name lookup ──
+var CHAR_NAMES = {
+  "aalto":"Aalto","aemeath":"Aemeath","augusta":"Augusta","baizhi":"Baizhi","brant":"Brant",
+  "buling":"Buling","calcharo":"Calcharo","camellya":"Camellya","cantarella":"Cantarella",
+  "carlotta":"Carlotta","cartethyia":"Cartethyia","changli":"Changli","chisa":"Chisa",
+  "chixia":"Chixia","ciaccona":"Ciaccona","danjin":"Danjin","denia":"Denia",
+  "encore":"Encore","galbrena":"Galbrena","hiyuki":"Hiyuki","iuno":"Iuno",
+  "jianxin":"Jianxin","jinhsi":"Jinhsi","jiyan":"Jiyan","lingyang":"Lingyang",
+  "lucilla":"Lucilla","lucy":"Lucy","lumi":"Lumi","lupa":"Lupa",
+  "luuk-herssen":"Luuk Herssen","lynae":"Lynae","mornye":"Mornye","mortefi":"Mortefi",
+  "phoebe":"Phoebe","phrolova":"Phrolova","qiuyuan":"Qiuyuan","rebecca":"Rebecca",
+  "roccia":"Roccia","sanhua":"Sanhua","shorekeeper":"Shorekeeper","sigrika":"Sigrika",
+  "suisui":"Suisui","taoqi":"Taoqi","verina":"Verina","xiangli-yao":"Xiangli Yao",
+  "yangyang":"Yangyang","yangyang:-xuanling":"Yangyang: Xuanling","yinlin":"Yinlin",
+  "youhu":"Youhu","yuanwu":"Yuanwu","zani":"Zani","zhezhi":"Zhezhi"
+};
+
 var D=ITEMS,category="all";
+
+function getItemChars(itemName) {
+  var slugs = ITEM_CHARS[itemName] || [];
+  if (slugs.length > 20) return {universal: true, count: slugs.length};
+  if (slugs.length === 0) return {none: true};
+  return {slugs: slugs};
+}
+
+function getFarmLink(item) {
+  if (item.cat === "Ascension Material" || item.cat === "Echo Material") return "/map/";
+  if (item.cat === "Weapon Material" || item.cat === "Crafting") return "/map/";
+  if (item.cat === "Skill Material") return "/map/";
+  return null;
+}
+
+function buildDetailHTML(item) {
+  var info = getItemChars(item.n);
+  var parts = [];
+
+  // Characters who use this
+  if (info.slugs && info.slugs.length > 0) {
+    var links = info.slugs.map(function(s){
+      return '<a href="/characters/'+s+'/">'+(CHAR_NAMES[s]||s)+'</a>';
+    }).join('');
+    parts.push('<div><div class="it-detail-label">👤 Used by</div><div class="it-used-by">'+links+'</div></div>');
+  } else if (info.universal) {
+    parts.push('<div><div class="it-detail-label">👤 Used by</div><div class="it-used-by"><span class="it-universal">All ' + info.count + ' characters — universal material</span></div></div>');
+  } else if (info.none) {
+    parts.push('<div><div class="it-detail-label">👤 Used by</div><div class="it-used-by"><span class="it-universal">Specific character data coming soon</span></div></div>');
+  }
+
+  // Farming link
+  var farm = getFarmLink(item);
+  if (farm) {
+    parts.push('<div><div class="it-detail-label">🗺️ Farming Location</div><a href="'+farm+'" class="it-farm-link">Open Interactive Map →</a></div>');
+  } else if (item.cat === "Currency" || item.cat === "Consumable") {
+    parts.push('<div><div class="it-detail-label">📋 How to Get</div><span style="font-size:12px;color:var(--text3)">'+item.src+'</span></div>');
+  }
+
+  return '<div class="it-detail-box">'+parts.join('')+'</div>';
+}
 
 function render(l){
   document.getElementById('c').textContent=l.length+'/'+D.length;
-  document.getElementById('tb').innerHTML=l.map(function(i){
-    var rc='r-'+i.r;
-    return '<tr><td><span class="it-emoji"></span> <strong>'+i.n+'</strong></td><td><span class="it-rarity '+rc+'">★'+i.r+'</span></td><td>'+i.cat+'</td><td style="color:#91A4B8">'+i.d+'</td><td style="font-size:12px;color:#6b7d94">'+i.src+'</td></tr>';
+  document.getElementById('tb').innerHTML=l.map(function(i,idx){
+    var rc='r-'+i.r, detail=buildDetailHTML(i);
+    return '<tr class="it-main-row" data-idx="'+idx+'"><td><span class="it-expand-icon">▶</span></td><td><strong>'+i.n+'</strong></td><td><span class="it-rarity '+rc+'">★'+i.r+'</span></td><td>'+i.cat+'</td><td style="color:#91A4B8">'+i.d+'</td><td style="font-size:12px;color:#6b7d94">'+i.src+'</td></tr><tr class="it-detail-row" data-idx="'+idx+'"><td colspan="6">'+detail+'</td></tr>';
   }).join('');
+
+  // Click to expand
+  document.querySelectorAll('.it-main-row').forEach(function(row){
+    row.addEventListener('click', function(){
+      var idx = this.dataset.idx;
+      var detailRow = document.querySelector('.it-detail-row[data-idx="'+idx+'"]');
+      var wasOpen = detailRow.classList.contains('show');
+      // Close all
+      document.querySelectorAll('.it-detail-row.show').forEach(function(r){r.classList.remove('show')});
+      document.querySelectorAll('tr.expanded').forEach(function(r){r.classList.remove('expanded')});
+      if (!wasOpen) {
+        detailRow.classList.add('show');
+        this.classList.add('expanded');
+      }
+    });
+  });
 }
 
 function filter(){

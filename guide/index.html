@@ -5,45 +5,248 @@
 <link rel="preload" href="/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-<title>Wuthering Waves Guide — Beginner Tips, Farming & Team Building</title>
-<meta name="description" content="Wuthering Waves game guide — beginner tips, farming routes, boss strategies, team composition, and progression guides.">
+<title>Wuthering Waves Guide — Beginner Tips, Echo System, Team Building & Farming</title>
+<meta name="description" content="Complete Wuthering Waves guide covering the gacha and pity system, echo farming and substat rolling, combat mechanics, team building, daily routine, weapon progression, and ascension materials.">
 <meta name="robots" content="index,follow">
 <link rel="canonical" href="https://wutzone.com/guide/">
+<meta property="og:title" content="Wuthering Waves Complete Guide — Beginner to Endgame">
+<meta property="og:description" content="Master Wuthering Waves with our comprehensive guide: gacha strategy, echo system, team building, farming routes, and daily optimization.">
+<meta property="og:type" content="website"><meta property="og:url" content="https://wutzone.com/guide/">
 <link rel="stylesheet" href="/shared.css">
 <style>
-.guide-hero{text-align:center;padding:32px 0 8px}
-.guide-hero h1{font-size:32px;font-weight:700}
+.guide-hero{text-align:center;padding:36px 20px 12px}
+.guide-hero h1{font-size:36px;font-weight:700}
 .guide-hero h1 span{color:#4ECDC4}
-.guide-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;margin:20px 0}
-.guide-card{background:var(--surface);border:1px solid rgba(78,205,196,0.15);border-radius:12px;padding:22px;transition:all .25s ease;text-decoration:none;color:var(--text);display:block}
-.guide-card:hover{border-color:rgba(78,205,196,0.6);transform:translateY(-2px)}
-.guide-card .gc-icon{font-size:36px;margin-bottom:12px}
-.guide-card h3{font-size:18px;font-weight:600;margin-bottom:8px}
-.guide-card p{font-size:14px;color:#91A4B8;line-height:1.6}
-.guide-card .gc-tag{display:inline-block;padding:2px 10px;border-radius:12px;font-size:11px;margin-top:10px;background:rgba(78,205,196,0.1);color:#4ECDC4;border:1px solid rgba(78,205,196,0.2)}
+.guide-hero .gh-sub{font-size:15px;color:var(--text2);max-width:680px;margin:8px auto 0;line-height:1.6}
+
+.guide-toc{background:var(--surface);border:1px solid rgba(78,205,196,0.15);border-radius:12px;padding:18px 22px;margin:24px 0;display:flex;flex-wrap:wrap;gap:10px}
+.guide-toc a{font-size:13px;font-weight:500;color:var(--green);text-decoration:none;padding:4px 12px;border-radius:16px;border:1px solid rgba(78,205,196,0.15);transition:all .15s;white-space:nowrap}
+.guide-toc a:hover{background:rgba(78,205,196,0.1);border-color:rgba(78,205,196,0.4)}
+
+.guide-section{background:var(--surface);border:1px solid rgba(78,205,196,0.1);border-radius:14px;padding:24px 26px;margin-bottom:18px;scroll-margin-top:80px}
+.guide-section h2{font-size:20px;font-weight:700;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.guide-section h2 span{color:#4ECDC4}
+.guide-section p{font-size:15px;color:var(--text2);line-height:1.8;margin-bottom:12px}
+.guide-section p a{color:var(--green);text-decoration:none;border-bottom:1px dotted rgba(78,205,196,0.3)}
+.guide-section p a:hover{border-bottom-color:var(--green)}
+.guide-section ul{font-size:14px;color:var(--text2);line-height:1.8;padding-left:20px;margin-bottom:12px}
+.guide-section ul li{margin-bottom:4px}
+.guide-section ul li strong{color:var(--text)}
+
+.guide-cta-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px;padding-top:14px;border-top:1px solid rgba(78,205,196,0.08)}
+.guide-cta-row a{display:inline-block;padding:7px 16px;border-radius:8px;font-size:13px;font-weight:500;text-decoration:none;transition:all .15s;background:rgba(78,205,196,0.06);color:var(--green);border:1px solid rgba(78,205,196,0.15)}
+.guide-cta-row a:hover{background:rgba(78,205,196,0.14);border-color:rgba(78,205,196,0.4);color:#fff}
+
+.guide-highlight{background:rgba(240,160,64,0.06);border:1px solid rgba(240,160,64,0.2);border-radius:10px;padding:14px 18px;margin:14px 0;font-size:14px;color:var(--text2);line-height:1.6}
+.guide-highlight strong{color:var(--gold)}
+
+@media(max-width:768px){.guide-section{padding:18px 16px}.guide-hero h1{font-size:26px}}
 </style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Wuthering Waves Complete Guide — Beginner to Endgame","description":"Master Wuthering Waves with our comprehensive guide covering the gacha system, echo farming, combat mechanics, team building, and daily optimization.","datePublished":"2026-07-11","dateModified":"2026-07-14","author":{"@type":"Organization","name":"Wuthering Waves Database"}}</script>
 <script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "xkwf30ac3n");</script>
 </head>
 <body>
 <div class="top-bar">📊 Wuthering Waves Database — Data-driven, always up to date.</div>
 <nav aria-label="Main navigation"><div class="nav-inner"><a href="/" class="logo">Wuthering<span>DB</span></a><div class="nav-right"><ul class="nav-links"><li><a href="/characters/">Characters</a></li><li><a href="/tier-list/">Tier List</a></li><li><a href="/echos/">Echoes</a></li><li><a href="/weapons/">Weapons</a></li><li class="nav-dropdown"><a>Database ▾</a><ul class="dropdown-menu"><li><a href="/items/">Items</a></li><li><a href="/skills/">Skills</a></li></ul></li><li><a href="/guide/">Guide</a></li><li><a href="/map/">Map</a></li><li><a href="/codes/">Codes</a></li><li><a href="/build-planner/" class="nav-highlight">Builder</a></li></ul><button class="theme-toggle">EN ▾</button></div></div></nav>
-<main class="container" style="max-width:1000px">
+
+<main class="container" style="max-width:900px">
+
 <header class="guide-hero">
   <h1>Wuthering Waves <span>Guide</span></h1>
-  <p style="color:#91A4B8;font-size:15px">Game guides are being written — meanwhile, explore the database resources below.<br>Each card links to existing tools and pages that answer the topic.</p>
+  <p class="gh-sub">A complete walkthrough from your first pull to endgame optimization. Learn how gacha works, how to farm echoes efficiently, how to build teams, and how to spend every Waveplate wisely.</p>
 </header>
-<div class="guide-grid">
-  <a href="/characters/" class="guide-card"><div class="gc-icon">🎓</div><h3>Beginner's Guide</h3><p>Start by browsing all 45 Resonators — each character page has full stats, skills, and recommended builds.</p><span class="gc-tag">👤 Browse Characters →</span></a>
-  <a href="/characters/" class="guide-card"><div class="gc-icon">⭐</div><h3>Resonator Leveling Guide</h3><p>Each character detail page shows ascension materials and stats at every level. Find your main and plan their progression.</p><span class="gc-tag">👤 Browse Characters →</span></a>
-  <a href="/weapons/" class="guide-card"><div class="gc-icon">🔧</div><h3>Weapon Progression Guide</h3><p>Browse all 48 weapons with base stats, passives, and Best For recommendations. Filter by type and find the right weapon for each character.</p><span class="gc-tag">⚔️ Browse Weapons →</span></a>
-  <a href="/echos/" class="guide-card"><div class="gc-icon">🔮</div><h3>Echo Farming Guide</h3><p>Explore all 41 echoes with Sonata effects, stats, and drop locations. Filter by element, cost, and set bonus.</p><span class="gc-tag">🔮 Browse Echoes →</span></a>
-  <a href="/skills/" class="guide-card"><div class="gc-icon">⚔️</div><h3>Combat System Explained</h3><p>Every character's skills are documented with cooldowns, energy costs, and damage descriptions. Compare abilities and learn each kit.</p><span class="gc-tag">⚡ Browse Skills →</span></a>
-  <a href="/tier-list/" class="guide-card"><div class="gc-icon">👥</div><h3>Team Building Guide</h3><p>Check the Tier List to see which characters rank highest for Main DPS, Sub-DPS, and Support. Build balanced teams with proven synergies.</p><span class="gc-tag">📊 Tier List →</span></a>
-  <a href="/map/" class="guide-card"><div class="gc-icon">🗺️</div><h3>Farming Routes</h3><p>The Interactive Map shows resource nodes, boss locations, and collectible positions. Filter by category to plan your farming route.</p><span class="gc-tag">🗺️ Interactive Map →</span></a>
-  <a href="/build-planner/" class="guide-card"><div class="gc-icon">🏆</div><h3>Tower of Adversity Guide</h3><p>Use the Build Planner to optimize your team's weapons and echoes. Compare stat outcomes before committing resources.</p><span class="gc-tag">🛠️ Build Planner →</span></a>
-  <a href="/#faq" class="guide-card"><div class="gc-icon">❓</div><h3>FAQ & Common Questions</h3><p>Pity system, Battle Pass value, free pulls per patch, Waveplate spending — all answered on the homepage FAQ section.</p><span class="gc-tag">❓ Homepage FAQ →</span></a>
-</div>
+
+<nav class="guide-toc" aria-label="Guide table of contents">
+  <a href="#gacha">💎 Gacha & Pity</a>
+  <a href="#echo">🔮 Echo System</a>
+  <a href="#combat">⚔️ Combat</a>
+  <a href="#teams">👥 Team Building</a>
+  <a href="#daily">📅 Daily Routine</a>
+  <a href="#weapons">🔧 Weapons</a>
+  <a href="#ascension">📈 Ascension</a>
+  <a href="#faq">❓ FAQ</a>
+</nav>
+
+<!-- ══ SECTION 1: Gacha ══ -->
+<section class="guide-section" id="gacha">
+  <h2>💎 <span>Gacha & Pity System</span></h2>
+  <p>Wuthering Waves uses a <strong>pity-based gacha</strong> similar to Genshin Impact. Here's exactly how it works:</p>
+
+  <ul>
+    <li><strong>80 pulls to hard pity</strong> — you are guaranteed a 5-star within 80 pulls on any character banner. Soft pity kicks in around pull <strong>65</strong>, where your 5-star rate increases dramatically with each subsequent pull.</li>
+    <li><strong>50/50 on first pity</strong> — when you hit pity, there's a 50% chance of getting the featured limited character, and a 50% chance of getting a standard 5-star. If you lose the 50/50, your <strong>next pity is guaranteed</strong> to be the featured character.</li>
+    <li><strong>160 pulls = worst case</strong> — in the absolute worst scenario (lose 50/50 at 80, then go to 80 again), you need 160 pulls to guarantee a limited character. Realistically, most players get theirs between <strong>70–150 pulls</strong>.</li>
+    <li><strong>Pity carries over</strong> — your pull count transfers between limited character banners of the same type. Weapon banner pity is separate and caps at 80 with no 50/50.</li>
+  </ul>
+
+  <div class="guide-highlight">
+    <strong>💡 Pro tip:</strong> As a new player, prioritize <strong>characters over weapons</strong>. A new character unlocks team variety and playstyles. Signature weapons are 15-25% stronger than free alternatives — meaningful, but not worth skipping a character for. Use the <a href="/tier-list/" style="color:var(--gold)">Tier List →</a> to decide which banner to pull on.
+  </div>
+
+  <div class="guide-cta-row">
+    <a href="/tier-list/">📊 Tier List — see who's worth pulling →</a>
+    <a href="/characters/">👤 Browse all 45 Resonators →</a>
+    <a href="/codes/">🎫 Redeem free Astrite codes →</a>
+  </div>
+</section>
+
+<!-- ══ SECTION 2: Echo System ══ -->
+<section class="guide-section" id="echo">
+  <h2>🔮 <span>Echo System Explained</span></h2>
+  <p>Echoes are Wuthering Waves' equivalent of artifacts or relics — equipable monster skills that provide stats and set bonuses. Understanding this system is <strong>the single biggest power spike</strong> you'll get outside of pulling characters.</p>
+
+  <ul>
+    <li><strong>5 echo slots per character:</strong> one Cost 4 (boss echo), two Cost 3 (elite echoes), and two Cost 1 (common echoes). The Cost 4 echo provides an <strong>active skill</strong> you can use in combat.</li>
+    <li><strong>Sonata Effects (set bonuses):</strong> equip 2 echoes from the same set for a small bonus, or 5 for the full effect. For example, <em>Sun-sinking Eclipse</em> gives +10% Havoc DMG at 2-piece and up to +30% at 5-piece. Getting the <strong>full 5-piece bonus is always the goal</strong>.</li>
+    <li><strong>Main stat vs. substats:</strong> the main stat is fixed by echo slot. Substats are randomly rolled. You <strong>reveal substats using Tuners</strong> — don't spend Tuners on echoes with bad main stats, and stop investing once you see 2+ dead substats.</li>
+    <li><strong>Experience transfers:</strong> when you feed a leveled echo into a new one, 80% of the EXP carries over. This means you can be aggressive about leveling promising echoes to see their early substats — you won't lose much if they're bad.</li>
+  </ul>
+
+  <div class="guide-highlight">
+    <strong>⚡ Substats matter more than main stats:</strong> A Cost 4 Echo with CRIT Rate main stat and CRIT DMG + ATK% substats will outperform one with perfect main stat but flat DEF and HP substats. Farm until you hit at least <strong>one CRIT substat</strong> on every echo piece before moving on. Use our <a href="/echos/" style="color:var(--gold)">Echo database →</a> to find the right set for your character.
+  </div>
+
+  <div class="guide-cta-row">
+    <a href="/echos/">🔮 Browse all 41 Echoes by element & set →</a>
+    <a href="/map/">🗺️ Find echo farming locations on the Map →</a>
+    <a href="/build-planner/">🛠️ Preview your echo build stats →</a>
+  </div>
+</section>
+
+<!-- ══ SECTION 3: Combat ══ -->
+<section class="guide-section" id="combat">
+  <h2>⚔️ <span>Combat Fundamentals</span></h2>
+  <p>Wuthering Waves combat is fast and skill-based. Unlike turn-based gachas, your mechanical skill directly impacts your damage output. Here are the mechanics that matter most:</p>
+
+  <ul>
+    <li><strong>Intro & Outro Skills:</strong> when you swap characters, the incoming character triggers their <strong>Intro Skill</strong> and the outgoing character triggers their <strong>Outro Skill</strong>. Outro Skills often provide team-wide buffs — for example, <em>Verina's Outro buffs the entire team's ATK</em>, while <em>Shorekeeper's Outro buffs Spectro DMG by 23%</em>. Rotate intentionally, not randomly.</li>
+    <li><strong>Concerto Energy:</strong> each character generates Concerto by dealing damage and using skills. When Concerto is full, your next swap triggers both Intro and Outro. Building Concerto <strong>quickly on your support</strong> and swapping to your DPS is the core rotation loop.</li>
+    <li><strong>Dodge counter & parry:</strong> a well-timed dodge triggers a <strong>dodge counter</strong> — a special attack that deals bonus damage. Certain enemy attacks can be <strong>parried</strong> by attacking into them, stunning the enemy briefly. Mastering these two mechanics will double your effective DPS in boss fights.</li>
+    <li><strong>Forte Circuit:</strong> every character has a unique Forte gauge that powers their strongest abilities. Read your main DPS's Forte description carefully — it's their core mechanic. For Jinhsi, it's <em>Incandescence stacks</em>; for Camellya, it's <em>Thorn stacks that fuel a special blooming strike</em>.</li>
+  </ul>
+
+  <div class="guide-cta-row">
+    <a href="/skills/">⚡ Browse all character skills →</a>
+    <a href="/characters/">👤 Study your main's Forte Circuit →</a>
+  </div>
+</section>
+
+<!-- ══ SECTION 4: Team Building ══ -->
+<section class="guide-section" id="teams">
+  <h2>👥 <span>Team Building Basics</span></h2>
+  <p>A strong Wuthering Waves team follows a simple formula: <strong>1 Main DPS + 1 Sub-DPS + 1 Support/Healer</strong>. The synergy comes from element matching, Outro buff alignment, and rotation speed.</p>
+
+  <ul>
+    <li><strong>Main DPS:</strong> your on-field damage dealer. They spend the most time attacking and should have the highest investment (levels, Forte upgrades, best echoes). Examples: <em>Jinhsi (Spectro), Camellya (Havoc), Jiyan (Aero), Changli (Fusion)</em>.</li>
+    <li><strong>Sub-DPS:</strong> provides off-field damage and quick-swap bursts. Ideally matches or complements your Main DPS's element. Their Outro Skill should buff something your Main DPS uses. Example: <em>Yinlin buffs Electro and Resonance Skill DMG for Jinhsi; Mortefi buffs Heavy Attack DMG for Jiyan</em>.</li>
+    <li><strong>Support/Healer:</strong> keeps the team alive and provides ATK or CRIT buffs. <em>Verina</em> and <em>Shorekeeper</em> are the two universal top-tier supports — they fit into virtually any team. <em>Baizhi</em> is the budget alternative.</li>
+    <li><strong>Element matching bonus:</strong> having two characters of the same element provides an elemental resonance effect. For example, double Spectro increases Spectro DMG for the whole team.</li>
+  </ul>
+
+  <div class="guide-highlight">
+    <strong>🔰 Beginner team template:</strong> Pick a Main DPS from the <a href="/tier-list/" style="color:var(--gold)">Tier List →</a>, add Verina or Shorekeeper as your healer, and fill the third slot with a Sub-DPS who shares an element or buffs your DPS's damage type. This template works for 90% of content.
+  </div>
+
+  <div class="guide-cta-row">
+    <a href="/tier-list/">📊 Tier List — Main DPS / Sub-DPS / Support →</a>
+    <a href="/characters/">👤 Find your team members →</a>
+    <a href="/build-planner/">🛠️ Build each character →</a>
+  </div>
+</section>
+
+<!-- ══ SECTION 5: Daily Routine ══ -->
+<section class="guide-section" id="daily">
+  <h2>📅 <span>Daily Routine & Waveplate Spending</span></h2>
+  <p>Waveplates (resin/stamina) cap at <strong>240</strong> and regenerate at a rate of 1 per 6 minutes. Never let them cap — log in at least twice a day to spend them. Here's the optimal spending priority:</p>
+
+  <ul>
+    <li><strong>① Weekly Bosses (3/week):</strong> the highest priority. Weekly bosses drop materials needed for <strong>Forte skill upgrades beyond level 6</strong>. You can claim 3 per week. Don't skip these — Forte materials are time-gated and you'll regret falling behind.</li>
+    <li><strong>② Ascension & Upgrade Materials:</strong> spend Waveplates on world bosses and Forgery Challenges to get the materials your active team needs. Focus on <strong>one character at a time</strong> — spreading resources across 4+ characters is the most common new player mistake.</li>
+    <li><strong>③ Tacet Fields (Echo farming):</strong> once your team is leveled, Tacet Fields are your primary echo source. They guarantee echoes of a specific Sonata set and have boosted drop rates for Cost 3 and Cost 4 echoes. Run these after you've done weekly bosses and ascension farming.</li>
+    <li><strong>④ Shell Credits:</strong> you <em>will</em> run out of credits at endgame. Leveling a character from 1-90 costs over 1 million credits. Don't farm credits early, but don't ignore them entirely — a couple of credit runs per week add up.</li>
+  </ul>
+
+  <div class="guide-highlight">
+    <strong>⏰ Time-saving tip:</strong> You can <strong>condense Waveplates</strong> into Crystal Solvents from the inventory menu. This lets you store up to 480 extra Waveplates for days when you have time to play. Always condense before logging off if you're near the cap.
+  </div>
+
+  <div class="guide-cta-row">
+    <a href="/map/">🗺️ Find farming locations on the Map →</a>
+    <a href="/echos/">🔮 Browse echo drop locations →</a>
+    <a href="/characters/">👤 Plan your next ascension →</a>
+  </div>
+</section>
+
+<!-- ══ SECTION 6: Weapons ══ -->
+<section class="guide-section" id="weapons">
+  <h2>🔧 <span>Weapon Progression</span></h2>
+  <p>Weapons are straightforward but high-impact. The right weapon for your character can be a <strong>15-25% damage increase</strong> over the wrong one.</p>
+
+  <ul>
+    <li><strong>Signature weapons:</strong> each limited 5-star character releases with a matching signature weapon on the weapon banner. These are <strong>15-25% stronger</strong> than the best free alternative. Pull for them only if you're a spender or really love the character.</li>
+    <li><strong>Standard 5-star weapons:</strong> available from the standard banner and as off-banner pulls. <em>Emerald of Genesis (Sword)</em>, <em>Lustrous Razor (Broadblade)</em>, and <em>Cosmic Ripples (Rectifier)</em> are all solid generalist options that work on multiple characters.</li>
+    <li><strong>Crafted & Battle Pass weapons:</strong> good budget alternatives. The BP weapons are roughly on par with standard 5-stars at high refinement. Crafted weapons are weaker but essentially free.</li>
+    <li><strong>Weapon type matters:</strong> each character can only equip their specific weapon type. Jinhsi uses Broadblades; Camellya uses Swords; Verina uses Rectifiers. You can <a href="/weapons/" style="color:var(--green)">filter our weapon database by type →</a> to find all compatible options.</li>
+  </ul>
+
+  <div class="guide-cta-row">
+    <a href="/weapons/">⚔️ Browse all 48 weapons →</a>
+    <a href="/build-planner/">🛠️ Compare weapons in Build Planner →</a>
+  </div>
+</section>
+
+<!-- ══ SECTION 7: Ascension ══ -->
+<section class="guide-section" id="ascension">
+  <h2>📈 <span>Ascension & Character Leveling</span></h2>
+  <p>Leveling a character from 1 to 90 takes <strong>approximately 2-3 weeks</strong> of optimized Waveplate spending. Here's the roadmap:</p>
+
+  <ul>
+    <li><strong>Phase 1 (Lv.1 → 40):</strong> cheap and fast. Do this immediately for any character you plan to use. Costs basic overworld materials and a few boss drops.</li>
+    <li><strong>Phase 2 (Lv.40 → 60):</strong> requires the first significant boss material investment. Start farming the character's specific world boss. Each character detail page lists their required boss — for example, Jinhsi needs materials from <em>Mourning Aix</em>.</li>
+    <li><strong>Phase 3 (Lv.60 → 80):</strong> the grind begins. Boss material requirements double. <strong>Pre-farm materials before pulling</strong> if you're targeting a specific upcoming character — use our database to check requirements ahead of time.</li>
+    <li><strong>Phase 4 (Lv.80 → 90):</strong> the final push. Expensive but worth it for your Main DPS. Support characters can stay at 80 for a while — the stat gain from 80→90 is modest and the resource cost is high.</li>
+  </ul>
+
+  <div class="guide-highlight">
+    <strong>📋 Pre-farming is the meta:</strong> Once a new character is announced, use our <a href="/characters/" style="color:var(--gold)">character database →</a> to look up their element, weapon type, and recommended echo set. Farm the boss materials, element cores, and echo set <em>before</em> their banner drops. Then you can level them to 90 on day one.
+  </div>
+
+  <div class="guide-cta-row">
+    <a href="/characters/">👤 Check ascension materials per character →</a>
+    <a href="/map/">🗺️ Find boss locations →</a>
+    <a href="/build-planner/">🛠️ Plan your build →</a>
+  </div>
+</section>
+
+<!-- ══ SECTION 8: FAQ ══ -->
+<section class="guide-section" id="faq">
+  <h2>❓ <span>Quick Answers</span></h2>
+
+  <p><strong>Should I pull for weapons or characters?</strong><br>
+  Characters &gt; weapons, always. A new character unlocks team variety, playstyles, and synergy options. Signature weapons are 15-25% DPS gains — meaningful but replaceable. Free and crafted weapons are good enough for all content including Tower of Adversity.</p>
+
+  <p><strong>Is the Battle Pass worth buying?</strong><br>
+  Yes if you're a new player — the raw EXP mats, shell credits, and BP weapon alone justify the $10. For veterans, it's about 9 extra limited pulls for $10, which is still better pull-per-dollar than direct top-ups.</p>
+
+  <p><strong>How many free pulls do I get per patch?</strong><br>
+  Approximately <strong>110 pulls per version</strong> as F2P from dailies, events, Tower of Adversity, exploration, and redemption codes. With Lunite Subscription + Battle Pass, roughly 138-152 pulls per patch.</p>
+
+  <p><strong>What's the best way to spend real money?</strong><br>
+  Priority order: <strong>Lunite Subscription ($5/mo)</strong> &gt; Weekly Subscription ($10, once per patch) &gt; Battle Pass ($10) &gt; Top-up bundles (buy each tier's first-purchase bonus before repeating any tier). Everything else is significantly less efficient.</p>
+
+  <p><strong>How long to build a character from scratch?</strong><br>
+  ~2 weeks to Lv.80 with Lv.6+ Forte skills and a passable echo set. Lv.90 + max Forte + optimized echo substats takes 3-5 weeks. Pre-farm ascension materials before pulling to level them day one.</p>
+
+  <div class="guide-cta-row">
+    <a href="/tier-list/">📊 Tier List →</a>
+    <a href="/build-planner/">🛠️ Build Planner →</a>
+    <a href="/codes/">🎫 Redeem Codes →</a>
+    <a href="/">🏠 Back to Homepage →</a>
+  </div>
+</section>
+
 </main>
-<footer class="site-footer"><div class="footer-inner"><p>&copy; 2026 Wuthering Waves Database. Not affiliated with Kuro Games.</p><div class="footer-links"><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/contact.html">Contact</a></div><p style="font-size:11px;color:var(--text3);margin-top:8px">Data from <a href="https://wutheringwaves.fandom.com" style="color:var(--text3)">wutheringwaves.fandom.com</a> (CC BY-SA 3.0). Game assets &copy; Kuro Technology Co., Ltd.</p></div></footer>
+
+<footer class="site-footer"><div class="footer-inner"><p>&copy; 2026 Wuthering Waves Database. Not affiliated with Kuro Games.</p><div class="footer-links"><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/contact.html">Contact</a></div><p style="font-size:11px;color:var(--text3);margin-top:8px">Guide content written by the Wuthering Waves Database team. Game data from <a href="https://wutheringwaves.fandom.com" style="color:var(--text3)" target="_blank" rel="nofollow">wutheringwaves.fandom.com</a> (CC BY-SA 3.0). Game assets &copy; Kuro Technology Co., Ltd.</p></div></footer>
 </body>
 </html>

@@ -5,76 +5,206 @@
 <link rel="preload" href="/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-<title>Wuthering Waves Skills — Character Abilities & Combat Roles | Wuthering Database</title>
-<meta name="description" content="All Wuthering Waves combat skills and abilities by element and weapon type. Filter characters by combat role.">
+<title>Wuthering Waves Skills — Combat System, Ability Types & Mechanics Guide</title>
+<meta name="description" content="Complete Wuthering Waves combat skills reference — learn how Basic Attacks, Resonance Skills, Resonance Liberation, Forte Circuits, and Outro Skills work. Master Concerto energy, dodge counters, and team rotations.">
 <meta name="robots" content="index,follow">
 <link rel="canonical" href="https://wutzone.com/skills/">
-<meta property="og:title" content="Wuthering Waves Skills Database">
-<meta property="og:description" content="Character abilities and combat roles — filter by element.">
+<meta property="og:title" content="Wuthering Waves Skills & Combat Mechanics">
+<meta property="og:description" content="Master Wuthering Waves combat: ability types, Concerto energy, dodge counters, and rotation strategy.">
 <meta property="og:type" content="website"><meta property="og:url" content="https://wutzone.com/skills/">
 <link rel="stylesheet" href="/shared.css">
 <style>
-.sk-hero { text-align:center;padding:24px 0 8px; }
-.sk-hero h1 { font-size:28px;font-weight:700; }
-.sk-hero h1 span { color:#4ECDC4; }
-.sk-hero .sk-sub { font-size:15px;color:#91A4B8; }
-.sk-grid { display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:14px;max-height:600px;overflow-y:auto;border:1px solid rgba(78,205,196,0.15);border-radius:12px;padding:14px;background:rgba(78,205,196,0.02);margin-bottom:20px }
-.sk-card { background:var(--surface);border:1px solid rgba(78,205,196,0.2);border-radius:12px;padding:16px;transition:all .25s ease;display:flex;gap:14px;align-items:flex-start }
-.sk-card:hover { border-color:rgba(78,205,196,0.7);transform:translateY(-2px) }
-.sk-card img { width:64px;height:64px;border-radius:12px;object-fit:cover;flex-shrink:0 }
-.sk-info { flex:1;min-width:0 }
-.sk-info .sk-name { font-size:16px;font-weight:700 }
-.sk-info .sk-name a { color:var(--text);text-decoration:none }
-.sk-info .sk-name a:hover { color:#4ECDC4 }
-.sk-info .sk-meta { font-size:12px;color:#91A4B8;margin-top:2px }
-.sk-info .sk-desc { font-size:13px;color:#6b7d94;margin-top:6px;line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden }
-.sk-info .sk-stats { display:flex;gap:12px;margin-top:8px;font-size:12px;color:#91A4B8 }
-.sk-chips { display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px;justify-content:center }
-.sk-chip { padding:4px 12px;border:1px solid rgba(78,205,196,0.3);border-radius:20px;font-size:12px;cursor:pointer;color:#91A4B8;transition:all .25s ease }
-.sk-chip:hover,.sk-chip.active { border-color:#4ECDC4;color:#4ECDC4;background:rgba(78,205,196,0.06) }
-@media(max-width:640px){.sk-grid{grid-template-columns:1fr}}
+.sk-hero{text-align:center;padding:36px 20px 12px}
+.sk-hero h1{font-size:32px;font-weight:700}
+.sk-hero h1 span{color:#4ECDC4}
+.sk-hero .sk-sub{font-size:15px;color:var(--text2);max-width:680px;margin:8px auto 0;line-height:1.6}
+
+.sk-toc{background:var(--surface);border:1px solid rgba(78,205,196,0.15);border-radius:12px;padding:16px 20px;margin:20px 0;display:flex;flex-wrap:wrap;gap:8px}
+.sk-toc a{font-size:13px;font-weight:500;color:var(--green);text-decoration:none;padding:4px 12px;border-radius:16px;border:1px solid rgba(78,205,196,0.15);transition:all .15s;white-space:nowrap}
+.sk-toc a:hover{background:rgba(78,205,196,0.1)}
+
+.sk-section{background:var(--surface);border:1px solid rgba(78,205,196,0.1);border-radius:14px;padding:24px 26px;margin-bottom:18px;scroll-margin-top:80px}
+.sk-section h2{font-size:20px;font-weight:700;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.sk-section h2 span{color:#4ECDC4}
+.sk-section p{font-size:15px;color:var(--text2);line-height:1.8;margin-bottom:10px}
+.sk-section p a{color:var(--green);text-decoration:none;border-bottom:1px dotted rgba(78,205,196,0.3)}
+.sk-section p a:hover{border-bottom-color:var(--green)}
+
+/* Skill type cards */
+.sk-type-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;margin:14px 0}
+.sk-type-card{background:var(--bg);border:1px solid rgba(78,205,196,0.08);border-radius:12px;padding:18px 20px;transition:all .2s}
+.sk-type-card:hover{border-color:rgba(78,205,196,0.3)}
+.sk-type-card .st-icon{font-size:32px;margin-bottom:8px}
+.sk-type-card h4{font-size:16px;font-weight:600;margin-bottom:6px}
+.sk-type-card p{font-size:13px;color:var(--text2);line-height:1.6;margin:0}
+
+/* Element grid */
+.sk-element-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:14px 0}
+.sk-element-card{background:var(--bg);border:1px solid rgba(78,205,196,0.08);border-radius:10px;padding:14px 16px;text-align:center;text-decoration:none;color:var(--text);transition:all .2s}
+.sk-element-card:hover{border-color:rgba(78,205,196,0.4);transform:translateY(-1px)}
+.sk-element-card .se-icon{font-size:36px;margin-bottom:6px}
+.sk-element-card .se-name{font-size:15px;font-weight:600}
+.sk-element-card .se-count{font-size:11px;color:var(--text3);margin-top:2px}
+
+.sk-cta-row{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin:24px 0 8px}
+.sk-cta-btn{padding:10px 22px;border-radius:10px;font-size:14px;font-weight:500;text-decoration:none;transition:all .2s;background:rgba(78,205,196,0.06);color:var(--green);border:1px solid rgba(78,205,196,0.15)}
+.sk-cta-btn:hover{background:rgba(78,205,196,0.14);border-color:rgba(78,205,196,0.4);color:#fff}
+.sk-cta-btn.primary{background:rgba(59,130,246,0.12);color:#60a5fa;border:1px solid rgba(59,130,246,0.25)}
+.sk-cta-btn.primary:hover{background:rgba(59,130,246,0.2);border-color:rgba(59,130,246,0.5)}
+
+.sk-highlight{background:rgba(240,160,64,0.06);border:1px solid rgba(240,160,64,0.2);border-radius:10px;padding:14px 18px;margin:14px 0;font-size:14px;color:var(--text2);line-height:1.6}
+.sk-highlight strong{color:var(--gold);font-weight:600}
+
+@media(max-width:768px){.sk-section{padding:18px 16px}.sk-hero h1{font-size:26px}}
 </style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Wuthering Waves Combat Skills & Mechanics Guide","description":"Complete reference for Wuthering Waves combat system: Basic Attacks, Resonance Skills, Resonance Liberation, Forte Circuits, Outro Skills, Concerto Energy, dodge counters, and team rotation strategy.","datePublished":"2026-07-11","dateModified":"2026-07-14","author":{"@type":"Organization","name":"Wuthering Waves Database"}}</script>
 <script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "xkwf30ac3n");</script>
 </head>
 <body>
 <div class="top-bar">📊 Wuthering Waves Database — Data-driven, always up to date.</div>
 <nav aria-label="Main navigation"><div class="nav-inner"><a href="/" class="logo">Wuthering<span>DB</span></a><div class="nav-right"><ul class="nav-links"><li><a href="/characters/">Characters</a></li><li><a href="/tier-list/">Tier List</a></li><li><a href="/echos/">Echoes</a></li><li><a href="/weapons/">Weapons</a></li><li class="nav-dropdown"><a>Database ▾</a><ul class="dropdown-menu"><li><a href="/items/">Items</a></li><li><a href="/skills/">Skills</a></li></ul></li><li><a href="/guide/">Guide</a></li><li><a href="/map/">Map</a></li><li><a href="/codes/">Codes</a></li><li><a href="/build-planner/" class="nav-highlight">Builder</a></li></ul><button class="theme-toggle">EN ▾</button></div></div></nav>
-<main class="container" style="max-width:1200px">
+
+<main class="container" style="max-width:900px">
 
 <header class="sk-hero">
-  <h1>Wuthering Waves <span>Skills</span> &amp; Combat Roles</h1>
-  <p class="sk-sub">Character abilities, combat roles, and synergies. Filter by element. Click a character for full details including stats and description.</p>
+  <h1>Wuthering Waves <span>Skills</span> &amp; Combat</h1>
+  <p class="sk-sub">Every character in Wuthering Waves has five ability types. Understanding how they work — and how they chain together — is the difference between clearing content and struggling through it.</p>
 </header>
 
-<div class="sk-chips" id="f">
-<span class="sk-chip active" data-cat="all">All 45 Characters</span>
-<span class="sk-chip" data-cat="Aero">💨 Aero</span>
-<span class="sk-chip" data-cat="Fusion">🔥 Fusion</span>
-<span class="sk-chip" data-cat="Electro">⚡ Electro</span>
-<span class="sk-chip" data-cat="Glacio">❄️ Glacio</span>
-<span class="sk-chip" data-cat="Spectro">💡 Spectro</span>
-<span class="sk-chip" data-cat="Havoc">💀 Havoc</span>
+<nav class="sk-toc" aria-label="Skills table of contents">
+  <a href="#ability-types">⚔️ Ability Types</a>
+  <a href="#concerto">🔄 Concerto Energy</a>
+  <a href="#intro-outro">🔁 Intro & Outro</a>
+  <a href="#dodge-parry">💨 Dodge & Parry</a>
+  <a href="#elements">🌈 Elements</a>
+  <a href="#characters">👤 Characters</a>
+</nav>
+
+<!-- ══ SECTION 1: Ability Types ══ -->
+<section class="sk-section" id="ability-types">
+  <h2>⚔️ <span>The 5 Ability Types</span></h2>
+  <p>Every Resonator has exactly five abilities. They always appear in this order on each <a href="/characters/">character detail page →</a>:</p>
+
+  <div class="sk-type-grid">
+    <div class="sk-type-card">
+      <div class="st-icon">⚔️</div>
+      <h4>① Basic Attack</h4>
+      <p>Your bread-and-butter damage. Usually a 4-5 hit combo. Heavy Attack variant consumes stamina for a charged hit. Mid-air attack for plunging damage. This is what you do between skill cooldowns.</p>
+    </div>
+    <div class="sk-type-card">
+      <div class="st-icon">✨</div>
+      <h4>② Resonance Skill</h4>
+      <p>Your primary active ability. Short cooldown (8-15s). Generates Concerto Energy on hit. Often enters an enhanced state or provides a buff. This is the skill you spam most often.</p>
+    </div>
+    <div class="sk-type-card">
+      <div class="st-icon">💥</div>
+      <h4>③ Resonance Liberation</h4>
+      <p>Your ultimate. Long cooldown (20-30s), high Energy cost (100-150). Deals massive damage in a large area. Always generates significant Concerto Energy. Use it as the climax of your damage rotation.</p>
+    </div>
+    <div class="sk-type-card">
+      <div class="st-icon">⚙️</div>
+      <h4>④ Forte Circuit</h4>
+      <p>Your character's unique mechanic. Every Resonator's Forte works differently — Jinhsi builds Incandescence stacks, Camellya accumulates Thorns for a special blooming strike. <strong>Read this carefully for your Main DPS.</strong></p>
+    </div>
+    <div class="sk-type-card">
+      <div class="st-icon">🔁</div>
+      <h4>⑤ Outro Skill</h4>
+      <p>Triggers when you swap this character out with full Concerto. Usually applies a team-wide buff or deals parting damage. <strong>Rotating to trigger the right Outro buff is the core of team building.</strong></p>
+    </div>
+  </div>
+
+  <div class="sk-highlight">
+    <strong>💡 Skill leveling priority:</strong> Forte Circuit → Resonance Liberation → Resonance Skill → Basic Attack → Outro Skill. Max Forte first — it's the core mechanic everything else scales from. Check each <a href="/characters/" style="color:var(--gold)">character page →</a> for their specific skill descriptions and cooldowns.
+  </div>
+</section>
+
+<!-- ══ SECTION 2: Concerto Energy ══ -->
+<section class="sk-section" id="concerto">
+  <h2>🔄 <span>Concerto Energy</span></h2>
+  <p>Concerto is the invisible resource that governs team rotations. Every attack and skill generates Concerto. When a character's Concerto gauge fills completely, swapping them out triggers <strong>both</strong> their Outro Skill and the incoming character's Intro Skill simultaneously.</p>
+
+  <p>Key facts:</p>
+  <ul style="font-size:14px;color:var(--text2);line-height:1.8;padding-left:20px;margin-bottom:10px">
+    <li><strong>Resonance Skills generate the most Concerto</strong> — typically 8-15 per cast. Basic attacks generate small amounts per hit.</li>
+    <li><strong>Resonance Liberation instantly generates 20-30 Concerto</strong> — one Liberation often fills the gauge by itself.</li>
+    <li><strong>Support characters build Concerto fastest</strong> — their skills are designed to fill the gauge quickly so you can swap back to your DPS. Verina and Shorekeeper can fill theirs in 3-4 seconds.</li>
+    <li><strong>You can see Concerto as a glowing circle around the character icon</strong> in the top-right HUD during combat.</li>
+  </ul>
+
+  <div class="sk-highlight">
+    <strong>🎯 The core rotation loop:</strong> Support builds Concerto → swap to Sub-DPS (triggers buffs) → Sub-DPS uses skill + liberation → builds Concerto → swap to Main DPS (triggers more buffs) → Main DPS goes all-out during the buff window → repeat.
+  </div>
+</section>
+
+<!-- ══ SECTION 3: Intro & Outro ══ -->
+<section class="sk-section" id="intro-outro">
+  <h2>🔁 <span>Intro & Outro Skills</span></h2>
+  <p>Intro and Outro skills are what make team composition matter. They're not just damage — they're your primary source of team-wide buffs.</p>
+
+  <ul style="font-size:14px;color:var(--text2);line-height:1.8;padding-left:20px;margin-bottom:10px">
+    <li><strong>Outro Skill:</strong> the outgoing character's parting gift. Examples: <em>Shorekeeper's Outro gives +23% Spectro DMG for 14s</em>; <em>Verina's Outro buffs the entire team's ATK</em>; <em>Mortefi's Outro buffs Heavy Attack DMG for Jiyan</em>.</li>
+    <li><strong>Intro Skill:</strong> the incoming character's entrance. Often deals damage and applies an element-specific debuff or self-buff. Intro Skill damage is usually modest — the real value is the Outro buff it carries.</li>
+    <li><strong>Swapping without full Concerto</strong> still works — it just doesn't trigger Intro/Outro. You can quick-swap to dodge or reposition, but you lose the buff chain.</li>
+  </ul>
+
+  <div class="sk-highlight">
+    <strong>🔰 Building around Outros:</strong> When choosing teammates, look at their Outro descriptions. If your Main DPS deals Spectro DMG, pair them with Shorekeeper (Spectro Outro buff). If they rely on Basic Attacks, Sanhua's Outro buffs Basic ATK DMG by 25%. This synergy is more important than element matching. See our <a href="/tier-list/" style="color:var(--gold)">Tier List →</a> for recommended team comps.
+  </div>
+</section>
+
+<!-- ══ SECTION 4: Dodge & Parry ══ -->
+<section class="sk-section" id="dodge-parry">
+  <h2>💨 <span>Dodge Counter & Parry</span></h2>
+  <p>Wuthering Waves rewards mechanical skill. Two techniques separate good players from great ones:</p>
+
+  <ul style="font-size:14px;color:var(--text2);line-height:1.8;padding-left:20px;margin-bottom:10px">
+    <li><strong>Dodge Counter:</strong> dodge at the exact moment an enemy attacks and you'll trigger a special counter-attack. The timing window is generous (roughly 0.3s), and the counter deals significantly more damage than a normal dodge. <strong>Dodge Counters also generate extra Concerto Energy.</strong></li>
+    <li><strong>Parry (Clash):</strong> certain enemy attacks glow with a golden circle — these can be <strong>parried</strong> by attacking into them. A successful parry staggers the enemy briefly, opening a damage window. Bosses often have 2-3 parryable attacks per cycle.</li>
+    <li><strong>Stamina management:</strong> dodging costs stamina. If you run out, you can't dodge. Don't spam dodge — time them. Characters with high combat uptime benefit from stamina food or Echo substats that reduce dodge cost.</li>
+  </ul>
+</section>
+
+<!-- ══ SECTION 5: Elements ══ -->
+<section class="sk-section" id="elements">
+  <h2>🌈 <span>Elements & Combat Roles</span></h2>
+  <p>Wuthering Waves has six elements. Each character deals damage of their element type. Matching two characters of the same element provides an elemental resonance bonus.</p>
+
+  <div class="sk-element-grid">
+    <a href="/characters/?element=spectro" class="sk-element-card"><span class="se-icon">💡</span><span class="se-name">Spectro</span><span class="se-count">Light · Jinhsi, Shorekeeper</span></a>
+    <a href="/characters/?element=havoc" class="sk-element-card"><span class="se-icon">💀</span><span class="se-name">Havoc</span><span class="se-count">Dark · Camellya, Cantarella</span></a>
+    <a href="/characters/?element=fusion" class="sk-element-card"><span class="se-icon">🔥</span><span class="se-name">Fusion</span><span class="se-count">Fire · Changli, Encore</span></a>
+    <a href="/characters/?element=aero" class="sk-element-card"><span class="se-icon">💨</span><span class="se-name">Aero</span><span class="se-count">Wind · Jiyan, Aalto</span></a>
+    <a href="/characters/?element=electro" class="sk-element-card"><span class="se-icon">⚡</span><span class="se-name">Electro</span><span class="se-count">Lightning · Yinlin, Calcharo</span></a>
+    <a href="/characters/?element=glacio" class="sk-element-card"><span class="se-icon">❄️</span><span class="se-name">Glacio</span><span class="se-count">Ice · Carlotta, Zhezhi</span></a>
+  </div>
+</section>
+
+<!-- ══ SECTION 6: Character Links ══ -->
+<section class="sk-section" id="characters">
+  <h2>👤 <span>Browse Character Skills</span></h2>
+  <p>Each character detail page shows all five abilities with full descriptions, cooldowns, energy costs, and damage values. Click through to study any character's kit:</p>
+
+  <div style="display:flex;gap:10px;flex-wrap:wrap">
+    <a href="/characters/jinhsi/" class="sk-cta-btn">💡 Jinhsi · Spectro Broadblade</a>
+    <a href="/characters/camellya/" class="sk-cta-btn">💀 Camellya · Havoc Sword</a>
+    <a href="/characters/changli/" class="sk-cta-btn">🔥 Changli · Fusion Sword</a>
+    <a href="/characters/jiyan/" class="sk-cta-btn">💨 Jiyan · Aero Broadblade</a>
+    <a href="/characters/yinlin/" class="sk-cta-btn">⚡ Yinlin · Electro Rectifier</a>
+    <a href="/characters/carlotta/" class="sk-cta-btn">❄️ Carlotta · Glacio Pistols</a>
+    <a href="/characters/shorekeeper/" class="sk-cta-btn">💡 Shorekeeper · Spectro Support</a>
+    <a href="/characters/verina/" class="sk-cta-btn">💡 Verina · Spectro Healer</a>
+  </div>
+</section>
+
+<div class="sk-cta-row">
+  <a href="/characters/" class="sk-cta-btn primary">👤 Browse All 45 Characters →</a>
+  <a href="/guide/#combat" class="sk-cta-btn">📖 Combat Guide Section →</a>
+  <a href="/tier-list/" class="sk-cta-btn">📊 Tier List →</a>
+  <a href="/build-planner/" class="sk-cta-btn">🛠️ Build Planner →</a>
 </div>
 
-<div class="sk-grid" id="g"></div>
 </main>
-<footer class="site-footer"><div class="footer-inner"><p>&copy; 2026 Wuthering Waves Database. Not affiliated with Kuro Games.</p><div class="footer-links"><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/contact.html">Contact</a></div><p style="font-size:11px;color:var(--text3);margin-top:8px">Data sourced from Wuthering Waves wiki. Game assets &copy; Kuro Technology Co., Ltd.</p></div></footer>
-<script src="/characters/char-data.js"></script>
-<script>
-var D=window.__CHARS__||[],A="all",E_ICONS={Aero:'💨',Glacio:'❄️',Fusion:'🔥',Electro:'⚡',Spectro:'💡',Havoc:'💀'};
-function render(l){
-  document.getElementById('g').innerHTML=l.map(function(c){
-    var star=c.r!=='?'?'★'.repeat(parseInt(c.r)):'',img=c.img||'/images/characters/'+c.s+'.webp';
-    return '<div class="sk-card"><a href="/characters/'+c.s+'/"><img src="'+img+'" alt="'+c.n+'" onerror="this.style.display=\'none\'"></a><div class="sk-info"><div class="sk-name"><a href="/characters/'+c.s+'/">'+c.n+'</a> <span style="color:#facc15;font-size:11px">'+star+'</span></div><div class="sk-meta">'+(E_ICONS[c.e]||'')+' '+c.e+' · '+(c.w||'')+' · '+(c.cls||'')+'</div><div class="sk-desc">'+(c.d||'Skills and combat information coming soon.')+'</div><div class="sk-stats">'+((c.hp||0)>0?'<span>❤️ '+c.hp.toLocaleString()+'</span>':'')+((c.atk||0)>0?'<span>⚔️ '+c.atk+'</span>':'')+((c.def||0)>0?'<span>🛡️ '+c.def+'</span>':'')+'</div></div></div>';
-  }).join('');
-}
-function filter(){
-  var l=D.filter(function(c){if(A!=="all"&&c.e!==A)return false;return true});
-  l.sort(function(a,b){return (parseInt(b.r)||0)-(parseInt(a.r)||0)||a.n.localeCompare(b.n)});
-  render(l);
-}
-document.querySelectorAll('#f .sk-chip').forEach(function(c){c.addEventListener('click',function(){document.querySelectorAll('#f .sk-chip').forEach(function(x){x.classList.remove('active')});this.classList.add('active');A=this.getAttribute('data-cat');filter()})});
-render(D);
-</script>
+
+<footer class="site-footer"><div class="footer-inner"><p>&copy; 2026 Wuthering Waves Database. Not affiliated with Kuro Games.</p><div class="footer-links"><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/contact.html">Contact</a></div><p style="font-size:11px;color:var(--text3);margin-top:8px">Game data from <a href="https://wutheringwaves.fandom.com" style="color:var(--text3)" target="_blank" rel="nofollow">wutheringwaves.fandom.com</a> (CC BY-SA 3.0). Game assets &copy; Kuro Technology Co., Ltd.</p></div></footer>
 </body>
 </html>
