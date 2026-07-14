@@ -5,29 +5,81 @@
 <link rel="preload" href="/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-<title>Wuthering Waves Interactive Map — Coming Soon | Wuthering Database</title>
-<meta name="description" content="Interactive map for Wuthering Waves — all resource nodes, boss locations, Sonance Caskets, and collectibles. Coming soon.">
-<meta name="robots" content="noindex,follow">
+<title>Wuthering Waves Map — Boss Locations, Echo Farming & Resource Index</title>
+<meta name="description" content="Wuthering Waves interactive map — all world boss locations, echo farming spots, and resource nodes. Browse by region: Central Plains, Desorock Highland, Whining Aix's Mire, Port City of Guixu, and more.">
+<meta name="robots" content="index,follow">
 <link rel="canonical" href="https://wutzone.com/map/">
-<meta property="og:title" content="Wuthering Waves Interactive Map">
-<meta property="og:description" content="All resources, bosses, and collectibles. Coming soon.">
+<meta property="og:title" content="Wuthering Waves Map — Boss & Echo Locations">
+<meta property="og:description" content="All world boss locations, echo farming spots, and resource nodes. Browse by region with links to detailed echo and character pages.">
 <meta property="og:type" content="website"><meta property="og:url" content="https://wutzone.com/map/">
 <link rel="stylesheet" href="/shared.css">
 <style>
-.map-hero{text-align:center;padding:60px 20px}
-.map-hero .map-icon{font-size:80px;margin-bottom:20px}
-.map-hero h1{font-size:36px;font-weight:700;margin-bottom:12px}
+.map-hero{text-align:center;padding:36px 20px 10px}
+.map-hero h1{font-size:36px;font-weight:700}
 .map-hero h1 span{color:#22c55e}
-.map-hero .map-sub{font-size:17px;color:#91A4B8;max-width:600px;margin:0 auto 32px;line-height:1.7}
-.map-features{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;max-width:800px;margin:0 auto 40px}
-.map-feat{background:var(--surface);border:1px solid rgba(78,205,196,0.15);border-radius:12px;padding:20px;text-align:center}
-.map-feat .feat-icon{font-size:32px;margin-bottom:10px}
-.map-feat .feat-name{font-size:15px;font-weight:600;margin-bottom:4px}
-.map-feat .feat-desc{font-size:12px;color:#91A4B8}
-.map-cta{text-align:center;margin:30px 0}
-.map-cta .cta-btn{display:inline-block;padding:12px 32px;background:#22c55e;color:#0F2436;border-radius:12px;font-size:16px;font-weight:700;text-decoration:none;transition:all .2s}
-.map-cta .cta-btn:hover{background:#16a34a;transform:translateY(-2px)}
-.map-cta .cta-sub{font-size:13px;color:var(--text3);margin-top:10px}
+.map-hero .map-sub{font-size:15px;color:var(--text2);max-width:650px;margin:8px auto 0;line-height:1.6}
+
+/* ── Map Banner ── */
+.map-banner{text-align:center;margin:16px 0 4px;position:relative}
+.map-banner img{width:100%;max-width:800px;border-radius:14px;border:1px solid rgba(34,197,94,0.2);opacity:.85}
+.map-banner .mb-credit{font-size:10px;color:var(--text3);margin-top:6px}
+.map-banner .mb-credit a{color:var(--text3)}
+
+/* ── Region Stats ── */
+.map-region-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;margin:20px 0}
+.map-region-stat{background:var(--surface);border:1px solid rgba(78,205,196,0.1);border-radius:10px;padding:16px;text-align:center;text-decoration:none;color:var(--text);transition:all .2s}
+.map-region-stat:hover{border-color:rgba(34,197,94,0.4);transform:translateY(-1px)}
+.map-region-stat .rs-icon{font-size:28px;margin-bottom:6px}
+.map-region-stat .rs-name{font-size:14px;font-weight:600}
+.map-region-stat .rs-count{font-size:11px;color:var(--text3);margin-top:3px}
+
+/* ── Boss Location Grid ── */
+.map-boss-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:14px;margin:16px 0}
+.map-boss-card{background:var(--surface);border:1px solid rgba(78,205,196,0.1);border-radius:12px;padding:20px;transition:all .2s;display:flex;gap:14px;align-items:flex-start}
+.map-boss-card:hover{border-color:rgba(78,205,196,0.3)}
+.map-boss-card .mb-icon{font-size:40px;flex-shrink:0;width:48px;text-align:center}
+.map-boss-card .mb-info{flex:1;min-width:0}
+.map-boss-card .mb-name{font-size:16px;font-weight:600;margin-bottom:2px}
+.map-boss-card .mb-name a{color:var(--text);text-decoration:none}
+.map-boss-card .mb-name a:hover{color:var(--green)}
+.map-boss-card .mb-location{font-size:12px;color:var(--text3);margin-bottom:6px}
+.map-boss-card .mb-tags{display:flex;flex-wrap:wrap;gap:5px}
+.mb-tag{display:inline-block;padding:3px 10px;border-radius:8px;font-size:11px;font-weight:500;text-decoration:none;transition:all .15s}
+.mb-tag.echo{background:rgba(192,132,252,0.1);color:#c084fc;border:1px solid rgba(192,132,252,0.2)}
+.mb-tag.echo:hover{background:rgba(192,132,252,0.2);color:#d8b4fe}
+.mb-tag.char{background:rgba(240,160,64,0.1);color:#f0a040;border:1px solid rgba(240,160,64,0.2)}
+.mb-tag.char:hover{background:rgba(240,160,64,0.2)}
+
+/* ── Section Headers ── */
+.map-section-title{font-size:20px;font-weight:600;margin:32px 0 12px;display:flex;align-items:center;gap:8px}
+.map-section-title span{color:#22c55e}
+
+/* ── CTA ── */
+.map-cta-row{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin:28px 0 8px}
+.map-cta-btn{display:inline-block;padding:11px 24px;border-radius:10px;font-size:14px;font-weight:600;text-decoration:none;transition:all .2s}
+.map-cta-btn.primary{background:#22c55e;color:#0F2436}
+.map-cta-btn.primary:hover{background:#16a34a;transform:translateY(-1px)}
+.map-cta-btn.secondary{background:rgba(78,205,196,0.08);color:var(--green);border:1px solid rgba(78,205,196,0.2)}
+.map-cta-btn.secondary:hover{background:rgba(78,205,196,0.15);border-color:rgba(78,205,196,0.4)}
+
+/* ── Interactive Map Overlay ── */
+.map-wrapper{position:relative;display:inline-block;width:100%;max-width:1100px;margin:0 auto;cursor:default}
+.map-wrapper img{display:block;width:100%;height:auto;border-radius:14px;border:1px solid rgba(34,197,94,0.2)}
+.map-marker{position:absolute;transform:translate(-50%,-50%);text-decoration:none;z-index:2;transition:transform .2s}
+.map-marker:hover{transform:translate(-50%,-50%) scale(1.3);z-index:10}
+.map-marker .mk-dot{display:block;width:18px;height:18px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 8px rgba(0,0,0,0.5);transition:all .2s}
+.map-marker:hover .mk-dot{box-shadow:0 0 16px rgba(255,255,255,0.5)}
+.map-marker .mk-label{position:absolute;left:50%;bottom:calc(100% + 4px);transform:translateX(-50%);white-space:nowrap;font-size:11px;font-weight:600;color:#fff;background:rgba(0,0,0,0.75);padding:3px 8px;border-radius:6px;pointer-events:none;opacity:0;transition:opacity .2s}
+.map-marker:hover .mk-label{opacity:1}
+.mk-dot.boss{background:#ef4444}
+.mk-dot.elite{background:#f0a040}
+.mk-dot.boss-weekly{background:#c084fc;width:22px;height:22px}
+
+.map-legend{display:flex;gap:18px;flex-wrap:wrap;justify-content:center;margin:10px 0 0;font-size:12px;color:var(--text3)}
+.map-legend span{display:flex;align-items:center;gap:5px}
+.map-legend .lg-dot{width:10px;height:10px;border-radius:50%}
+
+@media(max-width:768px){.map-boss-grid{grid-template-columns:1fr}.map-region-stats{grid-template-columns:repeat(2,1fr)}.map-marker .mk-dot{width:14px;height:14px}}
 </style>
 <script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "xkwf30ac3n");</script>
 </head>
@@ -35,28 +87,384 @@
 <div class="top-bar">📊 Wuthering Waves Database — Data-driven, always up to date.</div>
 <nav aria-label="Main navigation"><div class="nav-inner"><a href="/" class="logo">Wuthering<span>DB</span></a><div class="nav-right"><ul class="nav-links"><li><a href="/characters/">Characters</a></li><li><a href="/tier-list/">Tier List</a></li><li><a href="/echos/">Echoes</a></li><li><a href="/weapons/">Weapons</a></li><li class="nav-dropdown"><a>Database ▾</a><ul class="dropdown-menu"><li><a href="/items/">Items</a></li><li><a href="/skills/">Skills</a></li></ul></li><li><a href="/guide/">Guide</a></li><li><a href="/map/">Map</a></li><li><a href="/codes/">Codes</a></li><li><a href="/build-planner/" class="nav-highlight">Builder</a></li></ul><button class="theme-toggle">EN ▾</button></div></div></nav>
 
-<main class="container" style="max-width:900px">
-<div class="map-hero">
-  <div class="map-icon">🗺️</div>
-  <h1>Interactive <span>Map</span></h1>
-  <p class="map-sub">A fully interactive Wuthering Waves map is coming — resource nodes, boss locations, Sonance Caskets, viewpoint puzzles, and every collectible. Filter by category, track your progress, and sync across devices.</p>
+<main class="container" style="max-width:1100px">
 
-  <div class="map-features">
-    <div class="map-feat"><div class="feat-icon">💎</div><div class="feat-name">Resource Nodes</div><div class="feat-desc">All mining nodes, plants, and gathering spots</div></div>
-    <div class="map-feat"><div class="feat-icon">👹</div><div class="feat-name">Boss Locations</div><div class="feat-desc">Weekly bosses, Tacet Discords, overworld elites</div></div>
-    <div class="map-feat"><div class="feat-icon">📦</div><div class="feat-name">Sonance Caskets</div><div class="feat-desc">All Casket locations for permanent stat upgrades</div></div>
-    <div class="map-feat"><div class="feat-icon">🧩</div><div class="feat-name">Puzzles & Viewpoints</div><div class="feat-desc">Perspective puzzles, magnetic platforms, and more</div></div>
-    <div class="map-feat"><div class="feat-icon">🏴</div><div class="feat-name">Resonance Beacons</div><div class="feat-desc">All fast-travel points and Nexus towers</div></div>
-    <div class="map-feat"><div class="feat-icon">✅</div><div class="feat-name">Progress Tracking</div><div class="feat-desc">Mark as collected/found, save your progress</div></div>
+<header class="map-hero">
+  <h1>Wuthering Waves <span>Map</span></h1>
+  <p class="map-sub">All world boss locations and echo farming spots across Huanglong and Rinascita.<br>Click any boss to see its echo page, drop details, and best characters.</p>
+</header>
+
+<!-- ══ Interactive Map ══ -->
+<div class="map-banner" style="text-align:center;margin:16px 0 4px">
+  <div class="map-wrapper">
+    <img src="/images/map/huanglong-map.webp" alt="Wuthering Waves Huanglong Map — Click markers to explore boss & echo locations" width="2584" height="2100" loading="eager">
+
+    <!-- ══ World Boss Markers (adjust left/top % to match actual map) ══ -->
+
+    <!-- Central Plains area (center of map) -->
+    <a href="/echos/crownless/" class="map-marker" style="left:48%;top:42%" title="Crownless — Stone Pile Plain, Central Plains">
+      <span class="mk-dot boss"></span><span class="mk-label">Crownless · Havoc</span></a>
+
+    <a href="/echos/tempest-mephis/" class="map-marker" style="left:52%;top:38%" title="Tempest Mephis — Qichi Village, Central Plains">
+      <span class="mk-dot boss"></span><span class="mk-label">Tempest Mephis · Aero</span></a>
+
+    <!-- Whining Aix's Mire (south-west) -->
+    <a href="/echos/mourning-aix/" class="map-marker" style="left:35%;top:58%" title="Mourning Aix — Fallen Grave, Whining Aix's Mire">
+      <span class="mk-dot boss"></span><span class="mk-label">Mourning Aix · Spectro</span></a>
+
+    <a href="/echos/mech-abomination/" class="map-marker" style="left:40%;top:52%" title="Mech Abomination — Court of Savantae Ruins">
+      <span class="mk-dot boss"></span><span class="mk-label">Mech Abomination · Electro</span></a>
+
+    <!-- Desorock Highland (east / right side) -->
+    <a href="/echos/thundering-mephis/" class="map-marker" style="left:62%;top:45%" title="Thundering Mephis — Withering Frontline, Desorock Highland">
+      <span class="mk-dot boss"></span><span class="mk-label">Thundering Mephis · Electro</span></a>
+
+    <a href="/echos/impermanence-heron/" class="map-marker" style="left:58%;top:55%" title="Impermanence Heron — Camp Overwatch">
+      <span class="mk-dot boss"></span><span class="mk-label">Impermanence Heron · Havoc</span></a>
+
+    <a href="/echos/dreamless/" class="map-marker" style="left:55%;top:50%" title="Dreamless — Desorock Highland">
+      <span class="mk-dot boss-weekly"></span><span class="mk-label">Dreamless · Havoc</span></a>
+
+    <!-- Port City of Guixu / Sea of Flames (south-east) -->
+    <a href="/echos/inferno-rider/" class="map-marker" style="left:68%;top:62%" title="Inferno Rider — Sea of Flames, Port City of Guixu">
+      <span class="mk-dot boss"></span><span class="mk-label">Inferno Rider · Fusion</span></a>
+
+    <!-- Dim Forest (north-east) -->
+    <a href="/echos/feilian-beringal/" class="map-marker" style="left:65%;top:28%" title="Feilian Beringal — Giant Banyan, Dim Forest">
+      <span class="mk-dot boss"></span><span class="mk-label">Feilian Beringal · Aero</span></a>
+
+    <!-- Tiger's Maw (north) -->
+    <a href="/echos/lampylumen-myriad/" class="map-marker" style="left:45%;top:22%" title="Lampylumen Myriad — Dust-Sealed Track, Tiger's Maw">
+      <span class="mk-dot boss"></span><span class="mk-label">Lampylumen Myriad · Glacio</span></a>
+
+    <!-- Norfall Barrens (north-west) -->
+    <a href="/echos/bell-borne-geochelone/" class="map-marker" style="left:30%;top:25%" title="Bell-Borne Geochelone — Norfall Barrens">
+      <span class="mk-dot boss"></span><span class="mk-label">Bell-Borne Geochelone · Glacio</span></a>
+
+    <!-- Rinascita (separate continent, may be on different part of map) -->
+    <a href="/echos/dragon-of-dirge/" class="map-marker" style="left:75%;top:35%" title="Dragon of Dirge — Rinascita">
+      <span class="mk-dot boss"></span><span class="mk-label">Dragon of Dirge · Aero</span></a>
+
+  </div>
+  <div class="map-legend">
+    <span><span class="lg-dot" style="background:#ef4444"></span> World Boss (Cost 4)</span>
+    <span><span class="lg-dot" style="background:#c084fc;width:12px;height:12px"></span> Weekly Boss</span>
+    <span>🖱️ Hover for name · Click to explore</span>
+  </div>
+  <p class="mb-credit">📍 Map image from community sources. Markers link to echo detail pages. For the full interactive map, visit <a href="https://wuthering-waves-map.appsample.com/" target="_blank" rel="nofollow">AppSample →</a></p>
+</div>
+
+<script>
+// ── Drag-to-position marker editor ──
+(function(){
+  var active = null, offsetX = 0, offsetY = 0;
+  var wrapper = document.querySelector('.map-wrapper');
+  if (!wrapper) return;
+
+  function setCoords(el, leftPct, topPct) {
+    el.style.left = leftPct + '%';
+    el.style.top = topPct + '%';
+    el.dataset.left = leftPct;
+    el.dataset.top = topPct;
+  }
+
+  function onDown(e) {
+    var mk = e.target.closest('.map-marker');
+    if (!mk) return;
+    e.preventDefault();
+    active = mk;
+    var rect = wrapper.getBoundingClientRect();
+    var mr = mk.getBoundingClientRect();
+    offsetX = e.clientX - mr.left;
+    offsetY = e.clientY - mr.top;
+    mk.style.zIndex = 50;
+    mk.style.transform = 'translate(-50%,-50%) scale(1.4)';
+  }
+
+  function onMove(e) {
+    if (!active) return;
+    e.preventDefault();
+    var rect = wrapper.getBoundingClientRect();
+    var x = e.clientX - rect.left - offsetX;
+    var y = e.clientY - rect.top - offsetY;
+    var pctX = (x / rect.width * 100).toFixed(1);
+    var pctY = (y / rect.height * 100).toFixed(1);
+    pctX = Math.max(0, Math.min(100, pctX));
+    pctY = Math.max(0, Math.min(100, pctY));
+    setCoords(active, pctX, pctY);
+  }
+
+  function onUp(e) {
+    if (!active) return;
+    active.style.zIndex = 2;
+    active.style.transform = 'translate(-50%,-50%)';
+    var slug = active.getAttribute('href').replace('/echos/','').replace('/','');
+    console.log('📍 ' + slug + ' → left:' + active.dataset.left + '%; top:' + active.dataset.top + '%;');
+    active = null;
+  }
+
+  wrapper.addEventListener('mousedown', onDown);
+  document.addEventListener('mousemove', onMove);
+  document.addEventListener('mouseup', onUp);
+
+  // Touch support
+  wrapper.addEventListener('touchstart', function(e){
+    var mk = e.target.closest('.map-marker');
+    if (!mk) return;
+    e.preventDefault();
+    active = mk;
+    var rect = wrapper.getBoundingClientRect();
+    var mr = mk.getBoundingClientRect();
+    offsetX = e.touches[0].clientX - mr.left;
+    offsetY = e.touches[0].clientY - mr.top;
+    mk.style.zIndex = 50;
+    mk.style.transform = 'translate(-50%,-50%) scale(1.4)';
+  }, {passive: false});
+  document.addEventListener('touchmove', function(e){
+    if (!active) return;
+    e.preventDefault();
+    var rect = wrapper.getBoundingClientRect();
+    var x = e.touches[0].clientX - rect.left - offsetX;
+    var y = e.touches[0].clientY - rect.top - offsetY;
+    var pctX = (x / rect.width * 100).toFixed(1);
+    var pctY = (y / rect.height * 100).toFixed(1);
+    pctX = Math.max(0, Math.min(100, pctX));
+    pctY = Math.max(0, Math.min(100, pctY));
+    setCoords(active, pctX, pctY);
+  }, {passive: false});
+  document.addEventListener('touchend', onUp);
+
+  console.log('🗺️ Map marker editor ready!');
+  console.log('  Drag any red dot to the correct position.');
+  console.log('  Coordinates print to console on drop.');
+  console.log('  When done, run: copyAllCoords() to copy all positions.');
+  console.log('');
+
+  window.copyAllCoords = function() {
+    var lines = [];
+    wrapper.querySelectorAll('.map-marker').forEach(function(mk){
+      var slug = mk.getAttribute('href').replace('/echos/','').replace('/','');
+      lines.push('  ' + slug + ': left:' + (mk.dataset.left || mk.style.left) + ' top:' + (mk.dataset.top || mk.style.top));
+    });
+    var out = lines.join('\n');
+    console.log('=== All Marker Coordinates ===\n' + out);
+    navigator.clipboard.writeText(out).then(function(){
+      console.log('✅ Copied to clipboard!');
+    });
+    return out;
+  };
+})();
+</script>
+
+<!-- ══ Region Quick Stats ══ -->
+<div class="map-region-stats">
+  <a href="#central-plains" class="map-region-stat"><span class="rs-icon">🏙️</span><span class="rs-name">Central Plains</span><span class="rs-count">Crownless · Tempest Mephis</span></a>
+  <a href="#desorock" class="map-region-stat"><span class="rs-icon">🏜️</span><span class="rs-name">Desorock Highland</span><span class="rs-count">Thundering Mephis · Imp. Heron</span></a>
+  <a href="#whining" class="map-region-stat"><span class="rs-icon">🌫️</span><span class="rs-name">Whining Aix's Mire</span><span class="rs-count">Mourning Aix · Mech Abom.</span></a>
+  <a href="#port-city" class="map-region-stat"><span class="rs-icon">⚓</span><span class="rs-name">Port City of Guixu</span><span class="rs-count">Inferno Rider · Fusion echoes</span></a>
+  <a href="#dim-forest" class="map-region-stat"><span class="rs-icon">🌲</span><span class="rs-name">Dim Forest</span><span class="rs-count">Feilian Beringal</span></a>
+  <a href="#tigers-maw" class="map-region-stat"><span class="rs-icon">⛰️</span><span class="rs-name">Tiger's Maw</span><span class="rs-count">Lampylumen Myriad</span></a>
+</div>
+
+<!-- ══ World Boss Locations ══ -->
+<h2 class="map-section-title">👹 <span>World Bosses</span> — Huanglong</h2>
+<div class="map-boss-grid" id="central-plains">
+
+  <!-- Crownless -->
+  <div class="map-boss-card">
+    <div class="mb-icon">💀</div>
+    <div class="mb-info">
+      <div class="mb-name"><a href="/echos/crownless/">Crownless</a></div>
+      <div class="mb-location">📍 Stone Pile Plain, Central Plains — Glide down from the cliff arena</div>
+      <div class="mb-tags">
+        <a href="/echos/crownless/" class="mb-tag echo">🔮 Crownless Echo (Cost 4 · Havoc)</a>
+        <a href="/characters/camellya/" class="mb-tag char">👤 Best: Camellya</a>
+        <a href="/echos/?element=Havoc&cost=4" class="mb-tag char">All Havoc Cost 4 →</a>
+      </div>
+    </div>
   </div>
 
-  <div class="map-cta">
-    <a href="/" class="cta-btn">🔔 Notify Me When Ready</a>
-    <p class="cta-sub">Expected: Phase 2 (Q3 2026). Join our Discord for development updates.</p>
+  <!-- Mourning Aix -->
+  <div class="map-boss-card">
+    <div class="mb-icon">💡</div>
+    <div class="mb-info">
+      <div class="mb-name"><a href="/echos/mourning-aix/">Mourning Aix</a></div>
+      <div class="mb-location">📍 Fallen Grave, Whining Aix's Mire — Plunge down from the cliff arena</div>
+      <div class="mb-tags">
+        <a href="/echos/mourning-aix/" class="mb-tag echo">🔮 Mourning Aix Echo (Cost 4 · Spectro)</a>
+        <a href="/characters/jinhsi/" class="mb-tag char">👤 Best: Jinhsi</a>
+        <a href="/echos/?element=Spectro&cost=4" class="mb-tag char">All Spectro Cost 4 →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Inferno Rider -->
+  <div class="map-boss-card" id="port-city">
+    <div class="mb-icon">🔥</div>
+    <div class="mb-info">
+      <div class="mb-name"><a href="/echos/inferno-rider/">Inferno Rider</a></div>
+      <div class="mb-location">📍 Sea of Flames, Port City of Guixu — Complete exploration quest to clear fire hazard</div>
+      <div class="mb-tags">
+        <a href="/echos/inferno-rider/" class="mb-tag echo">🔮 Inferno Rider Echo (Cost 4 · Fusion)</a>
+        <a href="/characters/changli/" class="mb-tag char">👤 Best: Changli</a>
+        <a href="/echos/?element=Fusion&cost=4" class="mb-tag char">All Fusion Cost 4 →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Thundering Mephis -->
+  <div class="map-boss-card" id="desorock">
+    <div class="mb-icon">⚡</div>
+    <div class="mb-info">
+      <div class="mb-name"><a href="/echos/thundering-mephis/">Thundering Mephis</a></div>
+      <div class="mb-location">📍 Withering Frontline, Desorock Highland — Teleport to northern beacon, glide toward arena</div>
+      <div class="mb-tags">
+        <a href="/echos/thundering-mephis/" class="mb-tag echo">🔮 Thundering Mephis Echo (Cost 4 · Electro)</a>
+        <a href="/characters/yinlin/" class="mb-tag char">👤 Best: Yinlin</a>
+        <a href="/echos/?element=Electro&cost=4" class="mb-tag char">All Electro Cost 4 →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Feilian Beringal -->
+  <div class="map-boss-card" id="dim-forest">
+    <div class="mb-icon">💨</div>
+    <div class="mb-info">
+      <div class="mb-name"><a href="/echos/feilian-beringal/">Feilian Beringal</a></div>
+      <div class="mb-location">📍 Giant Banyan, Dim Forest — East of the central Dim Forest region</div>
+      <div class="mb-tags">
+        <a href="/echos/feilian-beringal/" class="mb-tag echo">🔮 Feilian Beringal Echo (Cost 4 · Aero)</a>
+        <a href="/characters/jiyan/" class="mb-tag char">👤 Best: Jiyan</a>
+        <a href="/echos/?element=Aero&cost=4" class="mb-tag char">All Aero Cost 4 →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Impermanence Heron -->
+  <div class="map-boss-card">
+    <div class="mb-icon">💀</div>
+    <div class="mb-info">
+      <div class="mb-name"><a href="/echos/impermanence-heron/">Impermanence Heron</a></div>
+      <div class="mb-location">📍 Camp Overwatch, Desorock Highland — Southern highland region</div>
+      <div class="mb-tags">
+        <a href="/echos/impermanence-heron/" class="mb-tag echo">🔮 Impermanence Heron Echo (Cost 4 · Havoc)</a>
+        <a href="/echos/?element=Havoc&cost=4" class="mb-tag char">All Havoc Cost 4 →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lampylumen Myriad -->
+  <div class="map-boss-card" id="tigers-maw">
+    <div class="mb-icon">❄️</div>
+    <div class="mb-info">
+      <div class="mb-name"><a href="/echos/lampylumen-myriad/">Lampylumen Myriad</a></div>
+      <div class="mb-location">📍 Dust-Sealed Track, Tiger's Maw — Northern mining region</div>
+      <div class="mb-tags">
+        <a href="/echos/lampylumen-myriad/" class="mb-tag echo">🔮 Lampylumen Myriad Echo (Cost 4 · Glacio)</a>
+        <a href="/characters/carlotta/" class="mb-tag char">👤 Best: Carlotta</a>
+        <a href="/echos/?element=Glacio&cost=4" class="mb-tag char">All Glacio Cost 4 →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mech Abomination -->
+  <div class="map-boss-card" id="whining">
+    <div class="mb-icon">⚡</div>
+    <div class="mb-info">
+      <div class="mb-name"><a href="/echos/mech-abomination/">Mech Abomination</a></div>
+      <div class="mb-location">📍 Court of Savantae Ruins, Whining Aix's Mire</div>
+      <div class="mb-tags">
+        <a href="/echos/mech-abomination/" class="mb-tag echo">🔮 Mech Abomination Echo (Cost 4 · Electro)</a>
+        <a href="/echos/?element=Electro&cost=4" class="mb-tag char">All Electro Cost 4 →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bell-Borne Geochelone -->
+  <div class="map-boss-card">
+    <div class="mb-icon">🐢</div>
+    <div class="mb-info">
+      <div class="mb-name"><a href="/echos/bell-borne-geochelone/">Bell-Borne Geochelone</a></div>
+      <div class="mb-location">📍 Norfall Barrens — Northern glacial region</div>
+      <div class="mb-tags">
+        <a href="/echos/bell-borne-geochelone/" class="mb-tag echo">🔮 Bell-Borne Echo (Cost 4 · Glacio)</a>
+        <a href="/characters/shorekeeper/" class="mb-tag char">👤 Best: Shorekeeper, Verina</a>
+        <a href="/echos/?element=Glacio&cost=4" class="mb-tag char">All Glacio Cost 4 →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dreamless -->
+  <div class="map-boss-card">
+    <div class="mb-icon">💀</div>
+    <div class="mb-info">
+      <div class="mb-name"><a href="/echos/dreamless/">Dreamless</a></div>
+      <div class="mb-location">📍 Desorock Highland — Weekly boss variant area</div>
+      <div class="mb-tags">
+        <a href="/echos/dreamless/" class="mb-tag echo">🔮 Dreamless Echo (Cost 4 · Havoc)</a>
+        <a href="/echos/?element=Havoc&cost=4" class="mb-tag char">All Havoc Cost 4 →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tempest Mephis -->
+  <div class="map-boss-card">
+    <div class="mb-icon">💨</div>
+    <div class="mb-info">
+      <div class="mb-name"><a href="/echos/tempest-mephis/">Tempest Mephis</a></div>
+      <div class="mb-location">📍 North of Qichi Village, Central Plains</div>
+      <div class="mb-tags">
+        <a href="/echos/tempest-mephis/" class="mb-tag echo">🔮 Tempest Mephis Echo (Cost 4 · Aero)</a>
+        <a href="/echos/?element=Aero&cost=4" class="mb-tag char">All Aero Cost 4 →</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ══ More Bosses: Rinascita ══ -->
+<h2 class="map-section-title">🌃 <span>Rinascita</span> — 2.0 Region</h2>
+<div class="map-boss-grid">
+  <div class="map-boss-card">
+    <div class="mb-icon">🌊</div>
+    <div class="mb-info">
+      <div class="mb-name"><a href="/echos/dragon-of-dirge/">Dragon of Dirge</a></div>
+      <div class="mb-location">📍 Rinascita region</div>
+      <div class="mb-tags">
+        <a href="/echos/dragon-of-dirge/" class="mb-tag echo">🔮 Dragon of Dirge Echo (Cost 4 · Aero)</a>
+        <a href="/echos/?element=Aero&cost=4" class="mb-tag char">All Aero Cost 4 →</a>
+      </div>
+    </div>
+  </div>
+  <div class="map-boss-card">
+    <div class="mb-icon">🔮</div>
+    <div class="mb-info">
+      <div class="mb-name"><a href="/echos/sentinel-construct/">Sentinel Construct</a></div>
+      <div class="mb-location">📍 Rinascita region</div>
+      <div class="mb-tags">
+        <a href="/echos/sentinel-construct/" class="mb-tag echo">🔮 Sentinel Construct Echo (Cost 4 · Spectro)</a>
+        <a href="/echos/?element=Spectro&cost=4" class="mb-tag char">All Spectro Cost 4 →</a>
+      </div>
+    </div>
+  </div>
+  <div class="map-boss-card" style="border-style:dashed;border-color:rgba(255,255,255,0.06);justify-content:center;align-items:center">
+    <div style="text-align:center;color:var(--text3)">
+      <div style="font-size:28px;margin-bottom:6px">🗺️</div>
+      <div style="font-size:13px;font-weight:500">More Rinascita bosses<br>being added as data<br>becomes available</div>
+    </div>
   </div>
 </div>
+
+<!-- ══ CTA Row ══ -->
+<div class="map-cta-row">
+  <a href="/echos/" class="map-cta-btn primary">🔮 Browse All 41 Echoes →</a>
+  <a href="/characters/" class="map-cta-btn secondary">👤 Character Boss Drops →</a>
+  <a href="/guide/" class="map-cta-btn secondary">📖 Farming Routes Guide →</a>
+  <a href="/build-planner/" class="map-cta-btn secondary">🛠️ Build Planner →</a>
+</div>
+
 </main>
 
-<footer class="site-footer"><div class="footer-inner"><p>&copy; 2026 Wuthering Waves Database. Not affiliated with Kuro Games.</p><div class="footer-links"><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/contact.html">Contact</a></div></div></footer>
+<footer class="site-footer"><div class="footer-inner"><p>&copy; 2026 Wuthering Waves Database. Not affiliated with Kuro Games.</p><div class="footer-links"><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/contact.html">Contact</a></div><p style="font-size:11px;color:var(--text3);margin-top:8px">Map data from community sources. Boss locations verified against game data. Map image from <a href="https://wuthering-waves-map.appsample.com/" style="color:var(--text3)" target="_blank" rel="nofollow">AppSample</a>. Data from <a href="https://wutheringwaves.fandom.com" style="color:var(--text3)" target="_blank" rel="nofollow">wutheringwaves.fandom.com</a> (CC BY-SA 3.0).</p></div></footer>
 </body>
 </html>
