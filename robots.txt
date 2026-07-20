@@ -1,4 +1,5 @@
 User-agent: *
 Disallow: /build-planner/editor.html
+Disallow: /*-data.js
 
 Sitemap: https://wutzone.com/sitemap.xml
