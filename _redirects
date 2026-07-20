@@ -1,0 +1,19 @@
+# Cloudflare Pages redirects
+# Trailing slash normalization — redirect non-slash to slash for HTML pages
+# Note: root domain (wutzone.com → wutzone.com/) is handled at edge level;
+# see Cloudflare Dashboard → Rules → Redirect Rules for the root rule.
+
+# Redirect non-slash directory paths to slash versions
+/characters   /characters/   301
+/tier-list    /tier-list/    301
+/weapons      /weapons/      301
+/echos        /echos/        301
+/items        /items/        301
+/skills       /skills/       301
+/codes        /codes/        301
+/guide        /guide/        301
+/build-planner /build-planner/ 301
+/banners      /banners/      301
+/news         /news/         301
+
+# External redirects (if needed in future)
