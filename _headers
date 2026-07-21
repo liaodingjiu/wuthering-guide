@@ -1,0 +1,23 @@
+# Cloudflare Pages custom headers
+# Set proper cache TTL for static content
+
+/*.html
+  Cache-Control: public, max-age=86400
+
+/*.css
+  Cache-Control: public, max-age=604800
+
+/*.js
+  Cache-Control: public, max-age=604800
+
+/*.webp
+  Cache-Control: public, max-age=2592000
+
+/*.svg
+  Cache-Control: public, max-age=2592000
+
+/*.woff2
+  Cache-Control: public, max-age=2592000
+
+/sitemap.xml
+  Cache-Control: public, max-age=3600
