@@ -197,15 +197,13 @@ function replaceTag(html, tag, newContent) {
 
 function replaceMetaContent(html, name, newContent) {
   // <meta name="description" content="...">
-  // <meta property="og:description" content="...">
-  // <meta property="og:title" content="...">
-  const patterns = [
-    { re: new RegExp(`<meta name="${name}" content="[^"]*"`, 'i'), repl: `<meta name="${name}" content="${escapeHTML(newContent)}"` },
-  ];
-  for (const p of patterns) {
-    if (p.re.test(html)) {
-      html = html.replace(p.re, p.repl);
-    }
+  // NOTE: Uses [^>]*> to match the full tag — handles cases where
+  // unescaped quotes in the original content corrupted the HTML,
+  // leaving orphan text between the content closing quote and >.
+  const re = new RegExp(`<meta name="${name}" content="[^"]*"[^>]*>`, 'i');
+  const repl = `<meta name="${name}" content="${escapeHTML(newContent)}">`;
+  if (re.test(html)) {
+    html = html.replace(re, repl);
   }
   return html;
 }
@@ -216,9 +214,11 @@ function escapeHTML(str) {
 
 function replaceOgTag(html, prop, newContent) {
   // <meta property="og:title" content="...">
-  const re = new RegExp(`<meta property="og:${prop}" content="[^"]*"`, 'i');
+  // NOTE: Uses [^>]*> to match the full tag — handles cases where
+  // unescaped quotes in the original content corrupted the HTML.
+  const re = new RegExp(`<meta property="og:${prop}" content="[^"]*"[^>]*>`, 'i');
   if (re.test(html)) {
-    return html.replace(re, `<meta property="og:${prop}" content="${escapeHTML(newContent)}"`);
+    return html.replace(re, `<meta property="og:${prop}" content="${escapeHTML(newContent)}">`);
   }
   return html;
 }

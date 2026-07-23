@@ -1,6 +1,9 @@
 # Cloudflare Pages custom headers
 # Set proper cache TTL for static content
 
+/
+  Cache-Control: public, max-age=86400
+
 /*.html
   Cache-Control: public, max-age=86400
 
